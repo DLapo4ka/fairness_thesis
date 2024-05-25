@@ -1,0 +1,816 @@
+INFO:root:Logging to ./results/dev/MTC_age/multilingual/English/opt_acc_mtc_age_unbal/fairlib_bert_no_sn_MTC_age_vanilla_42/output.log
+WARNING:root:Log file already exists, will append
+Some weights of the model checkpoint at bert-base-multilingual-cased were not used when initializing BertModel: ['cls.predictions.decoder.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.bias', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+2024-04-20 02:58:08 [INFO ]  ======================================== 2024-04-20 02:58:08 ========================================
+2024-04-20 02:58:08 [INFO ]  Base directory is ./results/dev/MTC_age/multilingual/English/opt_acc_mtc_age_unbal/fairlib_bert_no_sn_MTC_age_vanilla_42
+2024-04-20 02:58:08 [INFO ]  Options: 
+2024-04-20 02:58:08 [INFO ]  	BT: null
+2024-04-20 02:58:08 [INFO ]  	BTObj: null
+2024-04-20 02:58:08 [INFO ]  	DyBT: null
+2024-04-20 02:58:08 [INFO ]  	DyBTObj: null
+2024-04-20 02:58:08 [INFO ]  	DyBTalpha: 0.1
+2024-04-20 02:58:08 [INFO ]  	DyBTinit: original
+2024-04-20 02:58:08 [INFO ]  	FCL: false
+2024-04-20 02:58:08 [INFO ]  	FCLObj: g
+2024-04-20 02:58:08 [INFO ]  	GBT: false
+2024-04-20 02:58:08 [INFO ]  	GBTObj: null
+2024-04-20 02:58:08 [INFO ]  	GBT_N: null
+2024-04-20 02:58:08 [INFO ]  	GBT_alpha: 1
+2024-04-20 02:58:08 [INFO ]  	INLP: false
+2024-04-20 02:58:08 [INFO ]  	INLP_by_class: false
+2024-04-20 02:58:08 [INFO ]  	INLP_discriminator_reweighting: null
+2024-04-20 02:58:08 [INFO ]  	INLP_min_acc: 0.0
+2024-04-20 02:58:08 [INFO ]  	INLP_n: 190
+2024-04-20 02:58:08 [INFO ]  	LEACE: false
+2024-04-20 02:58:08 [INFO ]  	activation_function: Tanh
+2024-04-20 02:58:08 [INFO ]  	adv_BT: null
+2024-04-20 02:58:08 [INFO ]  	adv_BTObj: null
+2024-04-20 02:58:08 [INFO ]  	adv_activation_function: ReLu
+2024-04-20 02:58:08 [INFO ]  	adv_batch_norm: false
+2024-04-20 02:58:08 [INFO ]  	adv_batch_size: 1024
+2024-04-20 02:58:08 [INFO ]  	adv_checkpoint_interval: 1
+2024-04-20 02:58:08 [INFO ]  	adv_debiasing: false
+2024-04-20 02:58:08 [INFO ]  	adv_decoupling: false
+2024-04-20 02:58:08 [INFO ]  	adv_decoupling_labelled_proportion: 1.0
+2024-04-20 02:58:08 [INFO ]  	adv_diverse_lambda: 0.0
+2024-04-20 02:58:08 [INFO ]  	adv_dropout: 0
+2024-04-20 02:58:08 [INFO ]  	adv_epochs: 100
+2024-04-20 02:58:08 [INFO ]  	adv_epochs_since_improvement: 5
+2024-04-20 02:58:08 [INFO ]  	adv_gated: false
+2024-04-20 02:58:08 [INFO ]  	adv_gated_mapping: null
+2024-04-20 02:58:08 [INFO ]  	adv_hidden_size: 300
+2024-04-20 02:58:08 [INFO ]  	adv_lambda: 1
+2024-04-20 02:58:08 [INFO ]  	adv_level: last_hidden
+2024-04-20 02:58:08 [INFO ]  	adv_lr: 0.001
+2024-04-20 02:58:08 [INFO ]  	adv_n_hidden: 2
+2024-04-20 02:58:08 [INFO ]  	adv_num_subDiscriminator: 1
+2024-04-20 02:58:08 [INFO ]  	adv_test_batch_size: 1024
+2024-04-20 02:58:08 [INFO ]  	adv_uniform_label: false
+2024-04-20 02:58:08 [INFO ]  	adv_update_frequency: Batch
+2024-04-20 02:58:08 [INFO ]  	balance_test: false
+2024-04-20 02:58:08 [INFO ]  	base_seed: 42
+2024-04-20 02:58:08 [INFO ]  	batch_norm: false
+2024-04-20 02:58:08 [INFO ]  	batch_size: 16
+2024-04-20 02:58:08 [INFO ]  	checkpoint_interval: 1
+2024-04-20 02:58:08 [INFO ]  	classification_head_update_frequency: 1
+2024-04-20 02:58:08 [INFO ]  	conf_file: null
+2024-04-20 02:58:08 [INFO ]  	cross_val: false
+2024-04-20 02:58:08 [INFO ]  	cross_val_fold: null
+2024-04-20 02:58:08 [INFO ]  	cross_val_n_splits: 5
+2024-04-20 02:58:08 [INFO ]  	data_dir: /home/dalapko/MTC_English
+2024-04-20 02:58:08 [INFO ]  	dataset: MTC_age
+2024-04-20 02:58:08 [INFO ]  	deemojify: 0
+2024-04-20 02:58:08 [INFO ]  	dev_idx: null
+2024-04-20 02:58:08 [INFO ]  	device_id: 0
+2024-04-20 02:58:08 [INFO ]  	dropout: 0.05
+2024-04-20 02:58:08 [INFO ]  	early_stopping_criterion: loss
+2024-04-20 02:58:08 [INFO ]  	early_stopping_weights:
+2024-04-20 02:58:08 [INFO ]  	- 1.0
+2024-04-20 02:58:08 [INFO ]  	- 1.0
+2024-04-20 02:58:08 [INFO ]  	emb_size: 768
+2024-04-20 02:58:08 [INFO ]  	encoder_architecture: BERT
+2024-04-20 02:58:08 [INFO ]  	epochs: 20
+2024-04-20 02:58:08 [INFO ]  	epochs_since_improvement: 5
+2024-04-20 02:58:08 [INFO ]  	eval: false
+2024-04-20 02:58:08 [INFO ]  	exp_id: multilingual/English/opt_acc_mtc_age_unbal/fairlib_bert_no_sn_MTC_age_vanilla_42
+2024-04-20 02:58:08 [INFO ]  	f: null
+2024-04-20 02:58:08 [INFO ]  	fcl_base_temperature_g: 0.01
+2024-04-20 02:58:08 [INFO ]  	fcl_base_temperature_y: 0.01
+2024-04-20 02:58:08 [INFO ]  	fcl_lambda_g: 0.1
+2024-04-20 02:58:08 [INFO ]  	fcl_lambda_y: 0.1
+2024-04-20 02:58:08 [INFO ]  	fcl_temperature_g: 0.01
+2024-04-20 02:58:08 [INFO ]  	fcl_temperature_y: 0.01
+2024-04-20 02:58:08 [INFO ]  	full_label: true
+2024-04-20 02:58:08 [INFO ]  	full_splits: []
+2024-04-20 02:58:08 [INFO ]  	gated: false
+2024-04-20 02:58:08 [INFO ]  	gated_mapping: null
+2024-04-20 02:58:08 [INFO ]  	group_agg_power: -1
+2024-04-20 02:58:08 [INFO ]  	hidden_size: 300
+2024-04-20 02:58:08 [INFO ]  	joint_protected_attrs: null
+2024-04-20 02:58:08 [INFO ]  	leace_load_model: 0
+2024-04-20 02:58:08 [INFO ]  	leace_mode: last
+2024-04-20 02:58:08 [INFO ]  	leace_weights_dataset_name: null
+2024-04-20 02:58:08 [INFO ]  	leace_weights_dir: null
+2024-04-20 02:58:08 [INFO ]  	log_file: ./results/dev/MTC_age/multilingual/English/opt_acc_mtc_age_unbal/fairlib_bert_no_sn_MTC_age_vanilla_42/output.log
+2024-04-20 02:58:08 [INFO ]  	log_interval: 50
+2024-04-20 02:58:08 [INFO ]  	log_level: INFO
+2024-04-20 02:58:08 [INFO ]  	lr: 1.0e-06
+2024-04-20 02:58:08 [INFO ]  	model_dir: ./results/dev/MTC_age/multilingual/English/opt_acc_mtc_age_unbal/fairlib_bert_no_sn_MTC_age_vanilla_42/models
+2024-04-20 02:58:08 [INFO ]  	model_name: bert-base-multilingual-cased
+2024-04-20 02:58:08 [INFO ]  	multiple_leace: false
+2024-04-20 02:58:08 [INFO ]  	n_bins: 4
+2024-04-20 02:58:08 [INFO ]  	n_freezed_layers: 0
+2024-04-20 02:58:08 [INFO ]  	n_hidden: 2
+2024-04-20 02:58:08 [INFO ]  	n_power_iterations: 1
+2024-04-20 02:58:08 [INFO ]  	no_log: false
+2024-04-20 02:58:08 [INFO ]  	num_classes: 2
+2024-04-20 02:58:08 [INFO ]  	num_clusters: 0
+2024-04-20 02:58:08 [INFO ]  	num_groups: 2
+2024-04-20 02:58:08 [INFO ]  	num_remove_clusters: 0
+2024-04-20 02:58:08 [INFO ]  	num_workers: 0
+2024-04-20 02:58:08 [INFO ]  	performance_metric: accuracy
+2024-04-20 02:58:08 [INFO ]  	project_dir: dev
+2024-04-20 02:58:08 [INFO ]  	protected_task: ethnicity
+2024-04-20 02:58:08 [INFO ]  	rebalance_all: false
+2024-04-20 02:58:08 [INFO ]  	rebalance_power: 1
+2024-04-20 02:58:08 [INFO ]  	reg_lamb: 0.0
+2024-04-20 02:58:08 [INFO ]  	reg_lamb_intra: 0.0
+2024-04-20 02:58:08 [INFO ]  	reg_margin: 0.0
+2024-04-20 02:58:08 [INFO ]  	regression: false
+2024-04-20 02:58:08 [INFO ]  	remove_percent: 0
+2024-04-20 02:58:08 [INFO ]  	results_dir: ./results/
+2024-04-20 02:58:08 [INFO ]  	save_batch_results: false
+2024-04-20 02:58:08 [INFO ]  	start_time: '2024-04-20 02:58:08'
+2024-04-20 02:58:08 [INFO ]  	subsample_all: 1.0
+2024-04-20 02:58:08 [INFO ]  	subsample_classes: null
+2024-04-20 02:58:08 [INFO ]  	subsample_min_size: 20
+2024-04-20 02:58:08 [INFO ]  	subsample_perc: 1.0
+2024-04-20 02:58:08 [INFO ]  	subsample_protected_labels: false
+2024-04-20 02:58:08 [INFO ]  	test_batch_size: 32
+2024-04-20 02:58:08 [INFO ]  	train_idx: null
+2024-04-20 02:58:08 [INFO ]  	ue_regularizer: null
+2024-04-20 02:58:08 [INFO ]  	unbalance_test: false
+2024-04-20 02:58:08 [INFO ]  	unc_thr: 0.0
+2024-04-20 02:58:08 [INFO ]  	use_collator: false
+2024-04-20 02:58:08 [INFO ]  	use_p_tags: 0
+2024-04-20 02:58:08 [INFO ]  	use_skipconnection: false
+2024-04-20 02:58:08 [INFO ]  	use_spectralnorm: false
+2024-04-20 02:58:08 [INFO ]  	weight_decay: 0.0001
+2024-04-20 02:58:08 [INFO ]  	weights_dataset_name: null
+2024-04-20 02:58:08 [INFO ]  	weights_dir: null
+2024-04-20 02:58:08 [INFO ]  	
+2024-04-20 02:58:08 [WARNING]  ./results/dev/MTC_age/multilingual/English/opt_acc_mtc_age_unbal/fairlib_bert_no_sn_MTC_age_vanilla_42/opt.yaml already exists, moved to ./results/dev/MTC_age/multilingual/English/opt_acc_mtc_age_unbal/fairlib_bert_no_sn_MTC_age_vanilla_42/old_opts/opt_2024_04_20__01_31_08.yaml
+Loaded data shapes: (22818, 128), (22818,), (22818,)
+Loaded data shapes: (4512, 128), (4512,), (4512,)
+Loaded data shapes: (5032, 128), (5032,), (5032,)
+2024-04-20 02:58:14 [INFO ]  train dataset size:	22818
+2024-04-20 02:58:14 [INFO ]  validation dataset size: 	4512
+2024-04-20 02:58:14 [INFO ]  test dataset size: 	5032
+2024-04-20 02:58:14 [INFO ]  datasets built!
+2024-04-20 02:59:07 [INFO ]  MLP( 
+2024-04-20 02:59:07 [INFO ]    (output_layer): Linear(in_features=300, out_features=2, bias=True)
+2024-04-20 02:59:07 [INFO ]    (AF): Tanh()
+2024-04-20 02:59:07 [INFO ]    (dropout): Dropout(p=0.05, inplace=False)
+2024-04-20 02:59:07 [INFO ]    (hidden_layers): ModuleList(
+2024-04-20 02:59:07 [INFO ]      (0): Linear(in_features=768, out_features=300, bias=True)
+2024-04-20 02:59:07 [INFO ]      (1): Dropout(p=0.05, inplace=False)
+2024-04-20 02:59:07 [INFO ]      (2): Tanh()
+2024-04-20 02:59:07 [INFO ]      (3): Linear(in_features=300, out_features=300, bias=True)
+2024-04-20 02:59:07 [INFO ]      (4): Dropout(p=0.05, inplace=False)
+2024-04-20 02:59:07 [INFO ]      (5): Tanh()
+2024-04-20 02:59:07 [INFO ]    )
+2024-04-20 02:59:07 [INFO ]    (criterion): CrossEntropyLoss()
+2024-04-20 02:59:07 [INFO ]  )
+2024-04-20 02:59:07 [INFO ]  Total number of parameters: 321602 
+
+2024-04-20 02:59:07 [INFO ]  BERTClassifier( 
+2024-04-20 02:59:07 [INFO ]    (bert): BertModel(
+2024-04-20 02:59:07 [INFO ]      (embeddings): BertEmbeddings(
+2024-04-20 02:59:07 [INFO ]        (word_embeddings): Embedding(119547, 768, padding_idx=0)
+2024-04-20 02:59:07 [INFO ]        (position_embeddings): Embedding(512, 768)
+2024-04-20 02:59:07 [INFO ]        (token_type_embeddings): Embedding(2, 768)
+2024-04-20 02:59:07 [INFO ]        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]        (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]      )
+2024-04-20 02:59:07 [INFO ]      (encoder): BertEncoder(
+2024-04-20 02:59:07 [INFO ]        (layer): ModuleList(
+2024-04-20 02:59:07 [INFO ]          (0): BertLayer(
+2024-04-20 02:59:07 [INFO ]            (attention): BertAttention(
+2024-04-20 02:59:07 [INFO ]              (self): BertSelfAttention(
+2024-04-20 02:59:07 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]              (output): BertSelfOutput(
+2024-04-20 02:59:07 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (intermediate): BertIntermediate(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-20 02:59:07 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (output): BertOutput(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]          )
+2024-04-20 02:59:07 [INFO ]          (1): BertLayer(
+2024-04-20 02:59:07 [INFO ]            (attention): BertAttention(
+2024-04-20 02:59:07 [INFO ]              (self): BertSelfAttention(
+2024-04-20 02:59:07 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]              (output): BertSelfOutput(
+2024-04-20 02:59:07 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (intermediate): BertIntermediate(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-20 02:59:07 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (output): BertOutput(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]          )
+2024-04-20 02:59:07 [INFO ]          (2): BertLayer(
+2024-04-20 02:59:07 [INFO ]            (attention): BertAttention(
+2024-04-20 02:59:07 [INFO ]              (self): BertSelfAttention(
+2024-04-20 02:59:07 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]              (output): BertSelfOutput(
+2024-04-20 02:59:07 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (intermediate): BertIntermediate(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-20 02:59:07 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (output): BertOutput(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]          )
+2024-04-20 02:59:07 [INFO ]          (3): BertLayer(
+2024-04-20 02:59:07 [INFO ]            (attention): BertAttention(
+2024-04-20 02:59:07 [INFO ]              (self): BertSelfAttention(
+2024-04-20 02:59:07 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]              (output): BertSelfOutput(
+2024-04-20 02:59:07 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (intermediate): BertIntermediate(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-20 02:59:07 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (output): BertOutput(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]          )
+2024-04-20 02:59:07 [INFO ]          (4): BertLayer(
+2024-04-20 02:59:07 [INFO ]            (attention): BertAttention(
+2024-04-20 02:59:07 [INFO ]              (self): BertSelfAttention(
+2024-04-20 02:59:07 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]              (output): BertSelfOutput(
+2024-04-20 02:59:07 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (intermediate): BertIntermediate(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-20 02:59:07 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (output): BertOutput(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]          )
+2024-04-20 02:59:07 [INFO ]          (5): BertLayer(
+2024-04-20 02:59:07 [INFO ]            (attention): BertAttention(
+2024-04-20 02:59:07 [INFO ]              (self): BertSelfAttention(
+2024-04-20 02:59:07 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]              (output): BertSelfOutput(
+2024-04-20 02:59:07 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (intermediate): BertIntermediate(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-20 02:59:07 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (output): BertOutput(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]          )
+2024-04-20 02:59:07 [INFO ]          (6): BertLayer(
+2024-04-20 02:59:07 [INFO ]            (attention): BertAttention(
+2024-04-20 02:59:07 [INFO ]              (self): BertSelfAttention(
+2024-04-20 02:59:07 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]              (output): BertSelfOutput(
+2024-04-20 02:59:07 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (intermediate): BertIntermediate(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-20 02:59:07 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (output): BertOutput(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]          )
+2024-04-20 02:59:07 [INFO ]          (7): BertLayer(
+2024-04-20 02:59:07 [INFO ]            (attention): BertAttention(
+2024-04-20 02:59:07 [INFO ]              (self): BertSelfAttention(
+2024-04-20 02:59:07 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]              (output): BertSelfOutput(
+2024-04-20 02:59:07 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (intermediate): BertIntermediate(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-20 02:59:07 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (output): BertOutput(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]          )
+2024-04-20 02:59:07 [INFO ]          (8): BertLayer(
+2024-04-20 02:59:07 [INFO ]            (attention): BertAttention(
+2024-04-20 02:59:07 [INFO ]              (self): BertSelfAttention(
+2024-04-20 02:59:07 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]              (output): BertSelfOutput(
+2024-04-20 02:59:07 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (intermediate): BertIntermediate(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-20 02:59:07 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (output): BertOutput(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]          )
+2024-04-20 02:59:07 [INFO ]          (9): BertLayer(
+2024-04-20 02:59:07 [INFO ]            (attention): BertAttention(
+2024-04-20 02:59:07 [INFO ]              (self): BertSelfAttention(
+2024-04-20 02:59:07 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]              (output): BertSelfOutput(
+2024-04-20 02:59:07 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (intermediate): BertIntermediate(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-20 02:59:07 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (output): BertOutput(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]          )
+2024-04-20 02:59:07 [INFO ]          (10): BertLayer(
+2024-04-20 02:59:07 [INFO ]            (attention): BertAttention(
+2024-04-20 02:59:07 [INFO ]              (self): BertSelfAttention(
+2024-04-20 02:59:07 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]              (output): BertSelfOutput(
+2024-04-20 02:59:07 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (intermediate): BertIntermediate(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-20 02:59:07 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (output): BertOutput(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]          )
+2024-04-20 02:59:07 [INFO ]          (11): BertLayer(
+2024-04-20 02:59:07 [INFO ]            (attention): BertAttention(
+2024-04-20 02:59:07 [INFO ]              (self): BertSelfAttention(
+2024-04-20 02:59:07 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]              (output): BertSelfOutput(
+2024-04-20 02:59:07 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]              )
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (intermediate): BertIntermediate(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-20 02:59:07 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]            (output): BertOutput(
+2024-04-20 02:59:07 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-20 02:59:07 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-20 02:59:07 [INFO ]            )
+2024-04-20 02:59:07 [INFO ]          )
+2024-04-20 02:59:07 [INFO ]        )
+2024-04-20 02:59:07 [INFO ]      )
+2024-04-20 02:59:07 [INFO ]      (pooler): BertPooler(
+2024-04-20 02:59:07 [INFO ]        (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-20 02:59:07 [INFO ]        (activation): Tanh()
+2024-04-20 02:59:07 [INFO ]      )
+2024-04-20 02:59:07 [INFO ]    )
+2024-04-20 02:59:07 [INFO ]    (classifier): MLP(
+2024-04-20 02:59:07 [INFO ]      (output_layer): Linear(in_features=300, out_features=2, bias=True)
+2024-04-20 02:59:07 [INFO ]      (AF): Tanh()
+2024-04-20 02:59:07 [INFO ]      (dropout): Dropout(p=0.05, inplace=False)
+2024-04-20 02:59:07 [INFO ]      (hidden_layers): ModuleList(
+2024-04-20 02:59:07 [INFO ]        (0): Linear(in_features=768, out_features=300, bias=True)
+2024-04-20 02:59:07 [INFO ]        (1): Dropout(p=0.05, inplace=False)
+2024-04-20 02:59:07 [INFO ]        (2): Tanh()
+2024-04-20 02:59:07 [INFO ]        (3): Linear(in_features=300, out_features=300, bias=True)
+2024-04-20 02:59:07 [INFO ]        (4): Dropout(p=0.05, inplace=False)
+2024-04-20 02:59:07 [INFO ]        (5): Tanh()
+2024-04-20 02:59:07 [INFO ]      )
+2024-04-20 02:59:07 [INFO ]      (criterion): CrossEntropyLoss()
+2024-04-20 02:59:07 [INFO ]    )
+2024-04-20 02:59:07 [INFO ]    (criterion): CrossEntropyLoss()
+2024-04-20 02:59:07 [INFO ]  )
+2024-04-20 02:59:07 [INFO ]  Total number of parameters: 178175042 
+
+Number of trainable parameters: 177853440
+2024-04-20 02:59:07 [INFO ]  Model Initialized!
+2024-04-20 02:59:08 [INFO ]  Epoch:    0 [      0/  22818 ( 0%)]	Loss: 0.6921	 Data Time: 0.20s	Train Time: 0.53s
+2024-04-20 02:59:14 [INFO ]  Epoch:    0 [    800/  22818 ( 4%)]	Loss: 0.5445	 Data Time: 0.03s	Train Time: 6.55s
+2024-04-20 02:59:21 [INFO ]  Epoch:    0 [   1600/  22818 ( 7%)]	Loss: 0.4674	 Data Time: 0.03s	Train Time: 6.55s
+2024-04-20 02:59:27 [INFO ]  Epoch:    0 [   2400/  22818 (11%)]	Loss: 0.4299	 Data Time: 0.03s	Train Time: 6.55s
+2024-04-20 02:59:34 [INFO ]  Epoch:    0 [   3200/  22818 (14%)]	Loss: 0.5583	 Data Time: 0.03s	Train Time: 6.56s
+2024-04-20 02:59:41 [INFO ]  Epoch:    0 [   4000/  22818 (18%)]	Loss: 0.6146	 Data Time: 0.03s	Train Time: 6.57s
+2024-04-20 02:59:47 [INFO ]  Epoch:    0 [   4800/  22818 (21%)]	Loss: 0.4994	 Data Time: 0.03s	Train Time: 6.57s
+2024-04-20 02:59:54 [INFO ]  Epoch:    0 [   5600/  22818 (25%)]	Loss: 0.5662	 Data Time: 0.03s	Train Time: 6.58s
+2024-04-20 03:00:01 [INFO ]  Epoch:    0 [   6400/  22818 (28%)]	Loss: 0.5489	 Data Time: 0.03s	Train Time: 6.58s
+2024-04-20 03:00:07 [INFO ]  Epoch:    0 [   7200/  22818 (32%)]	Loss: 0.5996	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:00:14 [INFO ]  Epoch:    0 [   8000/  22818 (35%)]	Loss: 0.6331	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:00:20 [INFO ]  Epoch:    0 [   8800/  22818 (39%)]	Loss: 0.5939	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:00:27 [INFO ]  Epoch:    0 [   9600/  22818 (42%)]	Loss: 0.5966	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:00:34 [INFO ]  Epoch:    0 [  10400/  22818 (46%)]	Loss: 0.5456	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:00:40 [INFO ]  Epoch:    0 [  11200/  22818 (49%)]	Loss: 0.6592	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:00:47 [INFO ]  Epoch:    0 [  12000/  22818 (53%)]	Loss: 0.4217	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:00:54 [INFO ]  Epoch:    0 [  12800/  22818 (56%)]	Loss: 0.4826	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:01:00 [INFO ]  Epoch:    0 [  13600/  22818 (60%)]	Loss: 0.3403	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:01:07 [INFO ]  Epoch:    0 [  14400/  22818 (63%)]	Loss: 0.6244	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:01:13 [INFO ]  Epoch:    0 [  15200/  22818 (67%)]	Loss: 0.3673	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:01:20 [INFO ]  Epoch:    0 [  16000/  22818 (70%)]	Loss: 0.3440	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:01:27 [INFO ]  Epoch:    0 [  16800/  22818 (74%)]	Loss: 0.5031	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:01:33 [INFO ]  Epoch:    0 [  17600/  22818 (77%)]	Loss: 0.2430	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:01:40 [INFO ]  Epoch:    0 [  18400/  22818 (81%)]	Loss: 0.4501	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:01:47 [INFO ]  Epoch:    0 [  19200/  22818 (84%)]	Loss: 0.4546	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:01:53 [INFO ]  Epoch:    0 [  20000/  22818 (88%)]	Loss: 0.4622	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:02:00 [INFO ]  Epoch:    0 [  20800/  22818 (91%)]	Loss: 0.3978	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:02:06 [INFO ]  Epoch:    0 [  21600/  22818 (95%)]	Loss: 0.4686	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:02:13 [INFO ]  Epoch:    0 [  22400/  22818 (98%)]	Loss: 0.4683	 Data Time: 0.03s	Train Time: 6.60s
+  0%|          | 0/141 [00:00<?, ?it/s]  1%|▏         | 2/141 [00:00<00:12, 11.52it/s]  3%|▎         | 4/141 [00:00<00:10, 12.98it/s]  4%|▍         | 6/141 [00:00<00:09, 13.51it/s]  6%|▌         | 8/141 [00:00<00:09, 13.83it/s]  7%|▋         | 10/141 [00:00<00:09, 14.05it/s]  9%|▊         | 12/141 [00:00<00:09, 14.10it/s] 10%|▉         | 14/141 [00:01<00:08, 14.12it/s] 11%|█▏        | 16/141 [00:01<00:08, 14.19it/s] 13%|█▎        | 18/141 [00:01<00:08, 14.21it/s] 14%|█▍        | 20/141 [00:01<00:08, 14.20it/s] 16%|█▌        | 22/141 [00:01<00:08, 14.24it/s] 17%|█▋        | 24/141 [00:01<00:08, 14.25it/s] 18%|█▊        | 26/141 [00:01<00:08, 14.25it/s] 20%|█▉        | 28/141 [00:01<00:07, 14.23it/s] 21%|██▏       | 30/141 [00:02<00:07, 14.25it/s] 23%|██▎       | 32/141 [00:02<00:07, 14.25it/s] 24%|██▍       | 34/141 [00:02<00:07, 14.29it/s] 26%|██▌       | 36/141 [00:02<00:07, 14.29it/s] 27%|██▋       | 38/141 [00:02<00:07, 14.27it/s] 28%|██▊       | 40/141 [00:02<00:07, 14.25it/s] 30%|██▉       | 42/141 [00:02<00:06, 14.24it/s] 31%|███       | 44/141 [00:03<00:06, 14.22it/s] 33%|███▎      | 46/141 [00:03<00:06, 14.21it/s] 34%|███▍      | 48/141 [00:03<00:06, 14.20it/s] 35%|███▌      | 50/141 [00:03<00:06, 14.22it/s] 37%|███▋      | 52/141 [00:03<00:06, 14.25it/s] 38%|███▊      | 54/141 [00:03<00:06, 14.26it/s] 40%|███▉      | 56/141 [00:03<00:05, 14.23it/s] 41%|████      | 58/141 [00:04<00:05, 14.25it/s] 43%|████▎     | 60/141 [00:04<00:05, 14.23it/s] 44%|████▍     | 62/141 [00:04<00:05, 14.23it/s] 45%|████▌     | 64/141 [00:04<00:05, 14.22it/s] 47%|████▋     | 66/141 [00:04<00:05, 14.23it/s] 48%|████▊     | 68/141 [00:04<00:05, 14.25it/s] 50%|████▉     | 70/141 [00:04<00:04, 14.32it/s] 51%|█████     | 72/141 [00:05<00:04, 14.37it/s] 52%|█████▏    | 74/141 [00:05<00:04, 14.42it/s] 54%|█████▍    | 76/141 [00:05<00:04, 14.37it/s] 55%|█████▌    | 78/141 [00:05<00:04, 14.33it/s] 57%|█████▋    | 80/141 [00:05<00:04, 14.32it/s] 58%|█████▊    | 82/141 [00:05<00:04, 14.28it/s] 60%|█████▉    | 84/141 [00:05<00:03, 14.28it/s] 61%|██████    | 86/141 [00:06<00:03, 14.23it/s] 62%|██████▏   | 88/141 [00:06<00:03, 14.21it/s] 64%|██████▍   | 90/141 [00:06<00:03, 14.22it/s] 65%|██████▌   | 92/141 [00:06<00:03, 14.22it/s] 67%|██████▋   | 94/141 [00:06<00:03, 14.23it/s] 68%|██████▊   | 96/141 [00:06<00:03, 14.25it/s] 70%|██████▉   | 98/141 [00:06<00:03, 14.23it/s] 71%|███████   | 100/141 [00:07<00:02, 14.23it/s] 72%|███████▏  | 102/141 [00:07<00:02, 14.25it/s] 74%|███████▍  | 104/141 [00:07<00:02, 14.26it/s] 75%|███████▌  | 106/141 [00:07<00:02, 14.28it/s] 77%|███████▋  | 108/141 [00:07<00:02, 14.27it/s] 78%|███████▊  | 110/141 [00:07<00:02, 14.24it/s] 79%|███████▉  | 112/141 [00:07<00:02, 14.23it/s] 81%|████████  | 114/141 [00:08<00:01, 14.23it/s] 82%|████████▏ | 116/141 [00:08<00:01, 14.21it/s] 84%|████████▎ | 118/141 [00:08<00:01, 14.25it/s] 85%|████████▌ | 120/141 [00:08<00:01, 14.28it/s] 87%|████████▋ | 122/141 [00:08<00:01, 14.26it/s] 88%|████████▊ | 124/141 [00:08<00:01, 14.28it/s] 89%|████████▉ | 126/141 [00:08<00:01, 14.26it/s] 91%|█████████ | 128/141 [00:09<00:00, 14.24it/s] 92%|█████████▏| 130/141 [00:09<00:00, 14.23it/s] 94%|█████████▎| 132/141 [00:09<00:00, 14.24it/s] 95%|█████████▌| 134/141 [00:09<00:00, 14.25it/s] 96%|█████████▋| 136/141 [00:09<00:00, 14.25it/s] 98%|█████████▊| 138/141 [00:09<00:00, 14.23it/s] 99%|█████████▉| 140/141 [00:09<00:00, 14.23it/s]100%|██████████| 141/141 [00:09<00:00, 14.21it/s]
+2024-04-20 03:02:26 [INFO ]  Loss, accuracy, f1_score and DTO: 0.422056 0.816711 0.574239 0.187425
+2024-04-20 03:02:26 [INFO ]  Evaluation at Epoch 0
+  0%|          | 0/158 [00:00<?, ?it/s]  1%|▏         | 2/158 [00:00<00:10, 14.27it/s]  3%|▎         | 4/158 [00:00<00:10, 14.24it/s]  4%|▍         | 6/158 [00:00<00:10, 14.21it/s]  5%|▌         | 8/158 [00:00<00:10, 14.19it/s]  6%|▋         | 10/158 [00:00<00:10, 14.23it/s]  8%|▊         | 12/158 [00:00<00:10, 14.24it/s]  9%|▉         | 14/158 [00:00<00:10, 14.24it/s] 10%|█         | 16/158 [00:01<00:09, 14.23it/s] 11%|█▏        | 18/158 [00:01<00:09, 14.22it/s] 13%|█▎        | 20/158 [00:01<00:09, 14.22it/s] 14%|█▍        | 22/158 [00:01<00:09, 14.21it/s] 15%|█▌        | 24/158 [00:01<00:09, 14.24it/s] 16%|█▋        | 26/158 [00:01<00:09, 14.24it/s] 18%|█▊        | 28/158 [00:01<00:09, 14.23it/s] 19%|█▉        | 30/158 [00:02<00:08, 14.22it/s] 20%|██        | 32/158 [00:02<00:08, 14.22it/s] 22%|██▏       | 34/158 [00:02<00:08, 14.22it/s] 23%|██▎       | 36/158 [00:02<00:08, 14.24it/s] 24%|██▍       | 38/158 [00:02<00:08, 14.24it/s] 25%|██▌       | 40/158 [00:02<00:08, 14.23it/s] 27%|██▋       | 42/158 [00:02<00:08, 14.23it/s] 28%|██▊       | 44/158 [00:03<00:08, 14.22it/s] 29%|██▉       | 46/158 [00:03<00:07, 14.22it/s] 30%|███       | 48/158 [00:03<00:07, 14.24it/s] 32%|███▏      | 50/158 [00:03<00:07, 14.23it/s] 33%|███▎      | 52/158 [00:03<00:07, 14.24it/s] 34%|███▍      | 54/158 [00:03<00:07, 14.25it/s] 35%|███▌      | 56/158 [00:03<00:07, 14.23it/s] 37%|███▋      | 58/158 [00:04<00:07, 14.26it/s] 38%|███▊      | 60/158 [00:04<00:06, 14.28it/s] 39%|███▉      | 62/158 [00:04<00:06, 14.25it/s] 41%|████      | 64/158 [00:04<00:06, 14.21it/s] 42%|████▏     | 66/158 [00:04<00:06, 14.21it/s] 43%|████▎     | 68/158 [00:04<00:06, 14.22it/s] 44%|████▍     | 70/158 [00:04<00:06, 14.24it/s] 46%|████▌     | 72/158 [00:05<00:06, 14.24it/s] 47%|████▋     | 74/158 [00:05<00:05, 14.25it/s] 48%|████▊     | 76/158 [00:05<00:05, 14.26it/s] 49%|████▉     | 78/158 [00:05<00:05, 14.27it/s] 51%|█████     | 80/158 [00:05<00:05, 14.26it/s] 52%|█████▏    | 82/158 [00:05<00:05, 14.24it/s] 53%|█████▎    | 84/158 [00:05<00:05, 14.24it/s] 54%|█████▍    | 86/158 [00:06<00:05, 14.23it/s] 56%|█████▌    | 88/158 [00:06<00:04, 14.25it/s] 57%|█████▋    | 90/158 [00:06<00:04, 14.28it/s] 58%|█████▊    | 92/158 [00:06<00:04, 14.30it/s] 59%|█████▉    | 94/158 [00:06<00:04, 14.26it/s] 61%|██████    | 96/158 [00:06<00:04, 14.26it/s] 62%|██████▏   | 98/158 [00:06<00:04, 14.25it/s] 63%|██████▎   | 100/158 [00:07<00:04, 14.26it/s] 65%|██████▍   | 102/158 [00:07<00:03, 14.22it/s] 66%|██████▌   | 104/158 [00:07<00:03, 14.23it/s] 67%|██████▋   | 106/158 [00:07<00:03, 14.23it/s] 68%|██████▊   | 108/158 [00:07<00:03, 14.23it/s] 70%|██████▉   | 110/158 [00:07<00:03, 14.21it/s] 71%|███████   | 112/158 [00:07<00:03, 14.20it/s] 72%|███████▏  | 114/158 [00:08<00:03, 14.21it/s] 73%|███████▎  | 116/158 [00:08<00:02, 14.23it/s] 75%|███████▍  | 118/158 [00:08<00:02, 14.25it/s] 76%|███████▌  | 120/158 [00:08<00:02, 14.25it/s] 77%|███████▋  | 122/158 [00:08<00:02, 14.25it/s] 78%|███████▊  | 124/158 [00:08<00:02, 14.23it/s] 80%|███████▉  | 126/158 [00:08<00:02, 14.23it/s] 81%|████████  | 128/158 [00:08<00:02, 14.23it/s] 82%|████████▏ | 130/158 [00:09<00:01, 14.23it/s] 84%|████████▎ | 132/158 [00:09<00:01, 14.24it/s] 85%|████████▍ | 134/158 [00:09<00:01, 14.25it/s] 86%|████████▌ | 136/158 [00:09<00:01, 14.23it/s] 87%|████████▋ | 138/158 [00:09<00:01, 14.20it/s] 89%|████████▊ | 140/158 [00:09<00:01, 14.21it/s] 90%|████████▉ | 142/158 [00:09<00:01, 14.22it/s] 91%|█████████ | 144/158 [00:10<00:00, 14.23it/s] 92%|█████████▏| 146/158 [00:10<00:00, 14.26it/s] 94%|█████████▎| 148/158 [00:10<00:00, 14.24it/s] 95%|█████████▍| 150/158 [00:10<00:00, 14.24it/s] 96%|█████████▌| 152/158 [00:10<00:00, 14.29it/s] 97%|█████████▋| 154/158 [00:10<00:00, 14.27it/s] 99%|█████████▊| 156/158 [00:10<00:00, 14.27it/s]100%|██████████| 158/158 [00:11<00:00, 14.30it/s]
+2024-04-20 03:02:39 [INFO ]  Validation accuracy: 81.67	macro_fscore: 57.42	micro_fscore: 81.67	TPR_GAP: 3.92	FPR_GAP: 3.92	PPR_GAP: 1.17	
+2024-04-20 03:02:39 [INFO ]  Test accuracy: 89.67	macro_fscore: 86.94	micro_fscore: 89.67	TPR_GAP: 5.95	FPR_GAP: 5.95	PPR_GAP: 12.35	
+2024-04-20 03:02:40 [INFO ]  Epoch:    1 [      0/  22818 ( 0%)]	Loss: 0.2668	 Data Time: 0.00s	Train Time: 0.14s
+2024-04-20 03:02:46 [INFO ]  Epoch:    1 [    800/  22818 ( 4%)]	Loss: 0.2489	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:02:53 [INFO ]  Epoch:    1 [   1600/  22818 ( 7%)]	Loss: 0.2294	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:02:59 [INFO ]  Epoch:    1 [   2400/  22818 (11%)]	Loss: 0.5553	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:03:06 [INFO ]  Epoch:    1 [   3200/  22818 (14%)]	Loss: 0.2292	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:03:13 [INFO ]  Epoch:    1 [   4000/  22818 (18%)]	Loss: 0.4780	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:03:19 [INFO ]  Epoch:    1 [   4800/  22818 (21%)]	Loss: 0.6203	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:03:26 [INFO ]  Epoch:    1 [   5600/  22818 (25%)]	Loss: 0.3721	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:03:33 [INFO ]  Epoch:    1 [   6400/  22818 (28%)]	Loss: 0.5898	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:03:39 [INFO ]  Epoch:    1 [   7200/  22818 (32%)]	Loss: 0.2067	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:03:46 [INFO ]  Epoch:    1 [   8000/  22818 (35%)]	Loss: 0.4511	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:03:52 [INFO ]  Epoch:    1 [   8800/  22818 (39%)]	Loss: 0.3141	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:03:59 [INFO ]  Epoch:    1 [   9600/  22818 (42%)]	Loss: 0.4834	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:04:06 [INFO ]  Epoch:    1 [  10400/  22818 (46%)]	Loss: 0.4802	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:04:12 [INFO ]  Epoch:    1 [  11200/  22818 (49%)]	Loss: 0.4722	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:04:19 [INFO ]  Epoch:    1 [  12000/  22818 (53%)]	Loss: 0.3399	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:04:26 [INFO ]  Epoch:    1 [  12800/  22818 (56%)]	Loss: 0.4797	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:04:32 [INFO ]  Epoch:    1 [  13600/  22818 (60%)]	Loss: 0.4101	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:04:39 [INFO ]  Epoch:    1 [  14400/  22818 (63%)]	Loss: 0.2882	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:04:45 [INFO ]  Epoch:    1 [  15200/  22818 (67%)]	Loss: 0.4612	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:04:52 [INFO ]  Epoch:    1 [  16000/  22818 (70%)]	Loss: 0.4229	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:04:59 [INFO ]  Epoch:    1 [  16800/  22818 (74%)]	Loss: 0.5945	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:05:05 [INFO ]  Epoch:    1 [  17600/  22818 (77%)]	Loss: 0.4809	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:05:12 [INFO ]  Epoch:    1 [  18400/  22818 (81%)]	Loss: 0.3609	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:05:19 [INFO ]  Epoch:    1 [  19200/  22818 (84%)]	Loss: 0.2881	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:05:25 [INFO ]  Epoch:    1 [  20000/  22818 (88%)]	Loss: 0.4281	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:05:32 [INFO ]  Epoch:    1 [  20800/  22818 (91%)]	Loss: 0.6362	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:05:38 [INFO ]  Epoch:    1 [  21600/  22818 (95%)]	Loss: 0.2690	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:05:45 [INFO ]  Epoch:    1 [  22400/  22818 (98%)]	Loss: 0.3223	 Data Time: 0.03s	Train Time: 6.60s
+  0%|          | 0/141 [00:00<?, ?it/s]  1%|▏         | 2/141 [00:00<00:09, 14.60it/s]  3%|▎         | 4/141 [00:00<00:09, 14.55it/s]  4%|▍         | 6/141 [00:00<00:09, 14.47it/s]  6%|▌         | 8/141 [00:00<00:09, 14.30it/s]  7%|▋         | 10/141 [00:00<00:09, 14.27it/s]  9%|▊         | 12/141 [00:00<00:09, 14.28it/s] 10%|▉         | 14/141 [00:00<00:08, 14.26it/s] 11%|█▏        | 16/141 [00:01<00:08, 14.25it/s] 13%|█▎        | 18/141 [00:01<00:08, 14.24it/s] 14%|█▍        | 20/141 [00:01<00:08, 14.19it/s] 16%|█▌        | 22/141 [00:01<00:08, 14.21it/s] 17%|█▋        | 24/141 [00:01<00:08, 14.20it/s] 18%|█▊        | 26/141 [00:01<00:08, 14.19it/s] 20%|█▉        | 28/141 [00:01<00:07, 14.20it/s] 21%|██▏       | 30/141 [00:02<00:07, 14.20it/s] 23%|██▎       | 32/141 [00:02<00:07, 14.21it/s] 24%|██▍       | 34/141 [00:02<00:07, 14.24it/s] 26%|██▌       | 36/141 [00:02<00:07, 14.25it/s] 27%|██▋       | 38/141 [00:02<00:07, 14.26it/s] 28%|██▊       | 40/141 [00:02<00:07, 14.25it/s] 30%|██▉       | 42/141 [00:02<00:06, 14.22it/s] 31%|███       | 44/141 [00:03<00:06, 14.22it/s] 33%|███▎      | 46/141 [00:03<00:06, 14.23it/s] 34%|███▍      | 48/141 [00:03<00:06, 14.25it/s] 35%|███▌      | 50/141 [00:03<00:06, 14.27it/s] 37%|███▋      | 52/141 [00:03<00:06, 14.27it/s] 38%|███▊      | 54/141 [00:03<00:06, 14.24it/s] 40%|███▉      | 56/141 [00:03<00:05, 14.26it/s] 41%|████      | 58/141 [00:04<00:05, 14.25it/s] 43%|████▎     | 60/141 [00:04<00:05, 14.26it/s] 44%|████▍     | 62/141 [00:04<00:05, 14.26it/s] 45%|████▌     | 64/141 [00:04<00:05, 14.23it/s] 47%|████▋     | 66/141 [00:04<00:05, 14.22it/s] 48%|████▊     | 68/141 [00:04<00:05, 14.23it/s] 50%|████▉     | 70/141 [00:04<00:04, 14.21it/s] 51%|█████     | 72/141 [00:05<00:04, 14.23it/s] 52%|█████▏    | 74/141 [00:05<00:04, 14.26it/s] 54%|█████▍    | 76/141 [00:05<00:04, 14.25it/s] 55%|█████▌    | 78/141 [00:05<00:04, 14.27it/s] 57%|█████▋    | 80/141 [00:05<00:04, 14.24it/s] 58%|█████▊    | 82/141 [00:05<00:04, 14.25it/s] 60%|█████▉    | 84/141 [00:05<00:04, 14.24it/s] 61%|██████    | 86/141 [00:06<00:03, 14.24it/s] 62%|██████▏   | 88/141 [00:06<00:03, 14.23it/s] 64%|██████▍   | 90/141 [00:06<00:03, 14.21it/s] 65%|██████▌   | 92/141 [00:06<00:03, 14.20it/s] 67%|██████▋   | 94/141 [00:06<00:03, 14.20it/s] 68%|██████▊   | 96/141 [00:06<00:03, 14.23it/s] 70%|██████▉   | 98/141 [00:06<00:03, 14.23it/s] 71%|███████   | 100/141 [00:07<00:02, 14.22it/s] 72%|███████▏  | 102/141 [00:07<00:02, 14.21it/s] 74%|███████▍  | 104/141 [00:07<00:02, 14.22it/s] 75%|███████▌  | 106/141 [00:07<00:02, 14.25it/s] 77%|███████▋  | 108/141 [00:07<00:02, 14.24it/s] 78%|███████▊  | 110/141 [00:07<00:02, 14.26it/s] 79%|███████▉  | 112/141 [00:07<00:02, 14.25it/s] 81%|████████  | 114/141 [00:08<00:01, 14.25it/s] 82%|████████▏ | 116/141 [00:08<00:01, 14.23it/s] 84%|████████▎ | 118/141 [00:08<00:01, 14.21it/s] 85%|████████▌ | 120/141 [00:08<00:01, 14.20it/s] 87%|████████▋ | 122/141 [00:08<00:01, 14.18it/s] 88%|████████▊ | 124/141 [00:08<00:01, 14.18it/s] 89%|████████▉ | 126/141 [00:08<00:01, 14.19it/s] 91%|█████████ | 128/141 [00:08<00:00, 14.22it/s] 92%|█████████▏| 130/141 [00:09<00:00, 14.23it/s] 94%|█████████▎| 132/141 [00:09<00:00, 14.22it/s] 95%|█████████▌| 134/141 [00:09<00:00, 14.24it/s] 96%|█████████▋| 136/141 [00:09<00:00, 14.24it/s] 98%|█████████▊| 138/141 [00:09<00:00, 14.26it/s] 99%|█████████▉| 140/141 [00:09<00:00, 14.24it/s]100%|██████████| 141/141 [00:09<00:00, 14.24it/s]
+2024-04-20 03:05:58 [INFO ]  Loss, accuracy, f1_score and DTO: 0.404881 0.819592 0.670692 0.184172
+2024-04-20 03:05:58 [INFO ]  Evaluation at Epoch 1
+  0%|          | 0/158 [00:00<?, ?it/s]  1%|▏         | 2/158 [00:00<00:10, 14.22it/s]  3%|▎         | 4/158 [00:00<00:10, 14.17it/s]  4%|▍         | 6/158 [00:00<00:10, 14.13it/s]  5%|▌         | 8/158 [00:00<00:10, 14.18it/s]  6%|▋         | 10/158 [00:00<00:10, 14.21it/s]  8%|▊         | 12/158 [00:00<00:10, 14.22it/s]  9%|▉         | 14/158 [00:00<00:10, 14.21it/s] 10%|█         | 16/158 [00:01<00:09, 14.20it/s] 11%|█▏        | 18/158 [00:01<00:09, 14.20it/s] 13%|█▎        | 20/158 [00:01<00:09, 14.18it/s] 14%|█▍        | 22/158 [00:01<00:09, 14.17it/s] 15%|█▌        | 24/158 [00:01<00:09, 14.19it/s] 16%|█▋        | 26/158 [00:01<00:09, 14.21it/s] 18%|█▊        | 28/158 [00:01<00:09, 14.20it/s] 19%|█▉        | 30/158 [00:02<00:09, 14.20it/s] 20%|██        | 32/158 [00:02<00:08, 14.20it/s] 22%|██▏       | 34/158 [00:02<00:08, 14.21it/s] 23%|██▎       | 36/158 [00:02<00:08, 14.22it/s] 24%|██▍       | 38/158 [00:02<00:08, 14.24it/s] 25%|██▌       | 40/158 [00:02<00:08, 14.24it/s] 27%|██▋       | 42/158 [00:02<00:08, 14.24it/s] 28%|██▊       | 44/158 [00:03<00:08, 14.24it/s] 29%|██▉       | 46/158 [00:03<00:07, 14.22it/s] 30%|███       | 48/158 [00:03<00:07, 14.22it/s] 32%|███▏      | 50/158 [00:03<00:07, 14.24it/s] 33%|███▎      | 52/158 [00:03<00:07, 14.22it/s] 34%|███▍      | 54/158 [00:03<00:07, 14.22it/s] 35%|███▌      | 56/158 [00:03<00:07, 14.23it/s] 37%|███▋      | 58/158 [00:04<00:07, 14.21it/s] 38%|███▊      | 60/158 [00:04<00:06, 14.23it/s] 39%|███▉      | 62/158 [00:04<00:06, 14.22it/s] 41%|████      | 64/158 [00:04<00:06, 14.22it/s] 42%|████▏     | 66/158 [00:04<00:06, 14.23it/s] 43%|████▎     | 68/158 [00:04<00:06, 14.24it/s] 44%|████▍     | 70/158 [00:04<00:06, 14.23it/s] 46%|████▌     | 72/158 [00:05<00:06, 14.21it/s] 47%|████▋     | 74/158 [00:05<00:05, 14.21it/s] 48%|████▊     | 76/158 [00:05<00:05, 14.17it/s] 49%|████▉     | 78/158 [00:05<00:05, 14.19it/s] 51%|█████     | 80/158 [00:05<00:05, 14.20it/s] 52%|█████▏    | 82/158 [00:05<00:05, 14.22it/s] 53%|█████▎    | 84/158 [00:05<00:05, 14.24it/s] 54%|█████▍    | 86/158 [00:06<00:05, 14.23it/s] 56%|█████▌    | 88/158 [00:06<00:04, 14.26it/s] 57%|█████▋    | 90/158 [00:06<00:04, 14.28it/s] 58%|█████▊    | 92/158 [00:06<00:04, 14.27it/s] 59%|█████▉    | 94/158 [00:06<00:04, 14.29it/s] 61%|██████    | 96/158 [00:06<00:04, 14.26it/s] 62%|██████▏   | 98/158 [00:06<00:04, 14.25it/s] 63%|██████▎   | 100/158 [00:07<00:04, 14.24it/s] 65%|██████▍   | 102/158 [00:07<00:03, 14.27it/s] 66%|██████▌   | 104/158 [00:07<00:03, 14.28it/s] 67%|██████▋   | 106/158 [00:07<00:03, 14.23it/s] 68%|██████▊   | 108/158 [00:07<00:03, 14.25it/s] 70%|██████▉   | 110/158 [00:07<00:03, 14.24it/s] 71%|███████   | 112/158 [00:07<00:03, 14.24it/s] 72%|███████▏  | 114/158 [00:08<00:03, 14.25it/s] 73%|███████▎  | 116/158 [00:08<00:02, 14.23it/s] 75%|███████▍  | 118/158 [00:08<00:02, 14.22it/s] 76%|███████▌  | 120/158 [00:08<00:02, 14.21it/s] 77%|███████▋  | 122/158 [00:08<00:02, 14.22it/s] 78%|███████▊  | 124/158 [00:08<00:02, 14.22it/s] 80%|███████▉  | 126/158 [00:08<00:02, 14.22it/s] 81%|████████  | 128/158 [00:08<00:02, 14.24it/s] 82%|████████▏ | 130/158 [00:09<00:01, 14.23it/s] 84%|████████▎ | 132/158 [00:09<00:01, 14.25it/s] 85%|████████▍ | 134/158 [00:09<00:01, 14.26it/s] 86%|████████▌ | 136/158 [00:09<00:01, 14.23it/s] 87%|████████▋ | 138/158 [00:09<00:01, 14.23it/s] 89%|████████▊ | 140/158 [00:09<00:01, 14.23it/s] 90%|████████▉ | 142/158 [00:09<00:01, 14.24it/s] 91%|█████████ | 144/158 [00:10<00:00, 14.22it/s] 92%|█████████▏| 146/158 [00:10<00:00, 14.22it/s] 94%|█████████▎| 148/158 [00:10<00:00, 14.21it/s] 95%|█████████▍| 150/158 [00:10<00:00, 14.21it/s] 96%|█████████▌| 152/158 [00:10<00:00, 14.21it/s] 97%|█████████▋| 154/158 [00:10<00:00, 14.23it/s] 99%|█████████▊| 156/158 [00:10<00:00, 14.24it/s]100%|██████████| 158/158 [00:11<00:00, 14.29it/s]
+2024-04-20 03:06:11 [INFO ]  Validation accuracy: 81.96	macro_fscore: 67.07	micro_fscore: 81.96	TPR_GAP: 3.70	FPR_GAP: 3.70	PPR_GAP: 0.84	
+2024-04-20 03:06:11 [INFO ]  Test accuracy: 90.12	macro_fscore: 86.97	micro_fscore: 90.12	TPR_GAP: 4.98	FPR_GAP: 4.98	PPR_GAP: 10.79	
+2024-04-20 03:06:12 [INFO ]  Epoch:    2 [      0/  22818 ( 0%)]	Loss: 0.2881	 Data Time: 0.00s	Train Time: 0.13s
+2024-04-20 03:06:18 [INFO ]  Epoch:    2 [    800/  22818 ( 4%)]	Loss: 0.4482	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:06:25 [INFO ]  Epoch:    2 [   1600/  22818 ( 7%)]	Loss: 0.4588	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:06:31 [INFO ]  Epoch:    2 [   2400/  22818 (11%)]	Loss: 0.4916	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:06:38 [INFO ]  Epoch:    2 [   3200/  22818 (14%)]	Loss: 0.3470	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:06:45 [INFO ]  Epoch:    2 [   4000/  22818 (18%)]	Loss: 0.4515	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:06:51 [INFO ]  Epoch:    2 [   4800/  22818 (21%)]	Loss: 0.2511	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:06:58 [INFO ]  Epoch:    2 [   5600/  22818 (25%)]	Loss: 0.5650	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:07:05 [INFO ]  Epoch:    2 [   6400/  22818 (28%)]	Loss: 0.3921	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:07:11 [INFO ]  Epoch:    2 [   7200/  22818 (32%)]	Loss: 0.2222	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:07:18 [INFO ]  Epoch:    2 [   8000/  22818 (35%)]	Loss: 0.3490	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:07:24 [INFO ]  Epoch:    2 [   8800/  22818 (39%)]	Loss: 0.4152	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:07:31 [INFO ]  Epoch:    2 [   9600/  22818 (42%)]	Loss: 0.3684	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:07:38 [INFO ]  Epoch:    2 [  10400/  22818 (46%)]	Loss: 0.6263	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:07:44 [INFO ]  Epoch:    2 [  11200/  22818 (49%)]	Loss: 0.6240	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:07:51 [INFO ]  Epoch:    2 [  12000/  22818 (53%)]	Loss: 0.4702	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:07:58 [INFO ]  Epoch:    2 [  12800/  22818 (56%)]	Loss: 0.5958	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:08:04 [INFO ]  Epoch:    2 [  13600/  22818 (60%)]	Loss: 0.4527	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:08:11 [INFO ]  Epoch:    2 [  14400/  22818 (63%)]	Loss: 0.3161	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:08:17 [INFO ]  Epoch:    2 [  15200/  22818 (67%)]	Loss: 0.2242	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:08:24 [INFO ]  Epoch:    2 [  16000/  22818 (70%)]	Loss: 0.3045	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:08:31 [INFO ]  Epoch:    2 [  16800/  22818 (74%)]	Loss: 0.2967	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:08:37 [INFO ]  Epoch:    2 [  17600/  22818 (77%)]	Loss: 0.2968	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:08:44 [INFO ]  Epoch:    2 [  18400/  22818 (81%)]	Loss: 0.6432	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:08:50 [INFO ]  Epoch:    2 [  19200/  22818 (84%)]	Loss: 0.5597	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:08:57 [INFO ]  Epoch:    2 [  20000/  22818 (88%)]	Loss: 0.4487	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:09:04 [INFO ]  Epoch:    2 [  20800/  22818 (91%)]	Loss: 0.2355	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:09:10 [INFO ]  Epoch:    2 [  21600/  22818 (95%)]	Loss: 0.2194	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:09:17 [INFO ]  Epoch:    2 [  22400/  22818 (98%)]	Loss: 0.4349	 Data Time: 0.03s	Train Time: 6.59s
+  0%|          | 0/141 [00:00<?, ?it/s]  1%|▏         | 2/141 [00:00<00:09, 14.55it/s]  3%|▎         | 4/141 [00:00<00:09, 14.28it/s]  4%|▍         | 6/141 [00:00<00:09, 14.21it/s]  6%|▌         | 8/141 [00:00<00:09, 14.24it/s]  7%|▋         | 10/141 [00:00<00:09, 14.26it/s]  9%|▊         | 12/141 [00:00<00:09, 14.27it/s] 10%|▉         | 14/141 [00:00<00:08, 14.27it/s] 11%|█▏        | 16/141 [00:01<00:08, 14.25it/s] 13%|█▎        | 18/141 [00:01<00:08, 14.25it/s] 14%|█▍        | 20/141 [00:01<00:08, 14.27it/s] 16%|█▌        | 22/141 [00:01<00:08, 14.30it/s] 17%|█▋        | 24/141 [00:01<00:08, 14.27it/s] 18%|█▊        | 26/141 [00:01<00:08, 14.25it/s] 20%|█▉        | 28/141 [00:01<00:07, 14.25it/s] 21%|██▏       | 30/141 [00:02<00:07, 14.25it/s] 23%|██▎       | 32/141 [00:02<00:07, 14.23it/s] 24%|██▍       | 34/141 [00:02<00:07, 14.21it/s] 26%|██▌       | 36/141 [00:02<00:07, 14.19it/s] 27%|██▋       | 38/141 [00:02<00:07, 14.18it/s] 28%|██▊       | 40/141 [00:02<00:07, 14.17it/s] 30%|██▉       | 42/141 [00:02<00:06, 14.19it/s] 31%|███       | 44/141 [00:03<00:06, 14.19it/s] 33%|███▎      | 46/141 [00:03<00:06, 14.20it/s] 34%|███▍      | 48/141 [00:03<00:06, 14.20it/s] 35%|███▌      | 50/141 [00:03<00:06, 14.24it/s] 37%|███▋      | 52/141 [00:03<00:06, 14.25it/s] 38%|███▊      | 54/141 [00:03<00:06, 14.23it/s] 40%|███▉      | 56/141 [00:03<00:05, 14.25it/s] 41%|████      | 58/141 [00:04<00:05, 14.23it/s] 43%|████▎     | 60/141 [00:04<00:05, 14.22it/s] 44%|████▍     | 62/141 [00:04<00:05, 14.24it/s] 45%|████▌     | 64/141 [00:04<00:05, 14.23it/s] 47%|████▋     | 66/141 [00:04<00:05, 14.21it/s] 48%|████▊     | 68/141 [00:04<00:05, 14.21it/s] 50%|████▉     | 70/141 [00:04<00:04, 14.22it/s] 51%|█████     | 72/141 [00:05<00:04, 14.23it/s] 52%|█████▏    | 74/141 [00:05<00:04, 14.27it/s] 54%|█████▍    | 76/141 [00:05<00:04, 14.24it/s] 55%|█████▌    | 78/141 [00:05<00:04, 14.24it/s] 57%|█████▋    | 80/141 [00:05<00:04, 14.26it/s] 58%|█████▊    | 82/141 [00:05<00:04, 14.27it/s] 60%|█████▉    | 84/141 [00:05<00:03, 14.30it/s] 61%|██████    | 86/141 [00:06<00:03, 14.31it/s] 62%|██████▏   | 88/141 [00:06<00:03, 14.29it/s] 64%|██████▍   | 90/141 [00:06<00:03, 14.26it/s] 65%|██████▌   | 92/141 [00:06<00:03, 14.24it/s] 67%|██████▋   | 94/141 [00:06<00:03, 14.22it/s] 68%|██████▊   | 96/141 [00:06<00:03, 14.21it/s] 70%|██████▉   | 98/141 [00:06<00:03, 14.22it/s] 71%|███████   | 100/141 [00:07<00:02, 14.24it/s] 72%|███████▏  | 102/141 [00:07<00:02, 14.21it/s] 74%|███████▍  | 104/141 [00:07<00:02, 14.23it/s] 75%|███████▌  | 106/141 [00:07<00:02, 14.23it/s] 77%|███████▋  | 108/141 [00:07<00:02, 14.24it/s] 78%|███████▊  | 110/141 [00:07<00:02, 14.24it/s] 79%|███████▉  | 112/141 [00:07<00:02, 14.25it/s] 81%|████████  | 114/141 [00:08<00:01, 14.25it/s] 82%|████████▏ | 116/141 [00:08<00:01, 14.25it/s] 84%|████████▎ | 118/141 [00:08<00:01, 14.25it/s] 85%|████████▌ | 120/141 [00:08<00:01, 14.23it/s] 87%|████████▋ | 122/141 [00:08<00:01, 14.21it/s] 88%|████████▊ | 124/141 [00:08<00:01, 14.21it/s] 89%|████████▉ | 126/141 [00:08<00:01, 14.19it/s] 91%|█████████ | 128/141 [00:08<00:00, 14.22it/s] 92%|█████████▏| 130/141 [00:09<00:00, 14.21it/s] 94%|█████████▎| 132/141 [00:09<00:00, 14.19it/s] 95%|█████████▌| 134/141 [00:09<00:00, 14.20it/s] 96%|█████████▋| 136/141 [00:09<00:00, 14.19it/s] 98%|█████████▊| 138/141 [00:09<00:00, 14.21it/s] 99%|█████████▉| 140/141 [00:09<00:00, 14.21it/s]100%|██████████| 141/141 [00:09<00:00, 14.23it/s]
+2024-04-20 03:09:30 [INFO ]  Epochs since last improvement: 1
+2024-04-20 03:09:30 [INFO ]  Loss, accuracy, f1_score and DTO: 0.406121 0.815381 0.675065 0.187341
+2024-04-20 03:09:30 [INFO ]  Evaluation at Epoch 2
+  0%|          | 0/158 [00:00<?, ?it/s]  1%|▏         | 2/158 [00:00<00:10, 14.20it/s]  3%|▎         | 4/158 [00:00<00:10, 14.15it/s]  4%|▍         | 6/158 [00:00<00:10, 14.17it/s]  5%|▌         | 8/158 [00:00<00:10, 14.22it/s]  6%|▋         | 10/158 [00:00<00:10, 14.21it/s]  8%|▊         | 12/158 [00:00<00:10, 14.20it/s]  9%|▉         | 14/158 [00:00<00:10, 14.20it/s] 10%|█         | 16/158 [00:01<00:09, 14.21it/s] 11%|█▏        | 18/158 [00:01<00:09, 14.20it/s] 13%|█▎        | 20/158 [00:01<00:09, 14.21it/s] 14%|█▍        | 22/158 [00:01<00:09, 14.21it/s] 15%|█▌        | 24/158 [00:01<00:09, 14.24it/s] 16%|█▋        | 26/158 [00:01<00:09, 14.25it/s] 18%|█▊        | 28/158 [00:01<00:09, 14.24it/s] 19%|█▉        | 30/158 [00:02<00:08, 14.22it/s] 20%|██        | 32/158 [00:02<00:08, 14.24it/s] 22%|██▏       | 34/158 [00:02<00:08, 14.24it/s] 23%|██▎       | 36/158 [00:02<00:08, 14.23it/s] 24%|██▍       | 38/158 [00:02<00:08, 14.25it/s] 25%|██▌       | 40/158 [00:02<00:08, 14.25it/s] 27%|██▋       | 42/158 [00:02<00:08, 14.22it/s] 28%|██▊       | 44/158 [00:03<00:07, 14.25it/s] 29%|██▉       | 46/158 [00:03<00:07, 14.26it/s] 30%|███       | 48/158 [00:03<00:07, 14.22it/s] 32%|███▏      | 50/158 [00:03<00:07, 14.21it/s] 33%|███▎      | 52/158 [00:03<00:07, 14.20it/s] 34%|███▍      | 54/158 [00:03<00:07, 14.23it/s] 35%|███▌      | 56/158 [00:03<00:07, 14.26it/s] 37%|███▋      | 58/158 [00:04<00:07, 14.27it/s] 38%|███▊      | 60/158 [00:04<00:06, 14.25it/s] 39%|███▉      | 62/158 [00:04<00:06, 14.23it/s] 41%|████      | 64/158 [00:04<00:06, 14.26it/s] 42%|████▏     | 66/158 [00:04<00:06, 14.24it/s] 43%|████▎     | 68/158 [00:04<00:06, 14.25it/s] 44%|████▍     | 70/158 [00:04<00:06, 14.24it/s] 46%|████▌     | 72/158 [00:05<00:06, 14.22it/s] 47%|████▋     | 74/158 [00:05<00:05, 14.21it/s] 48%|████▊     | 76/158 [00:05<00:05, 14.23it/s] 49%|████▉     | 78/158 [00:05<00:05, 14.22it/s] 51%|█████     | 80/158 [00:05<00:05, 14.22it/s] 52%|█████▏    | 82/158 [00:05<00:05, 14.21it/s] 53%|█████▎    | 84/158 [00:05<00:05, 14.21it/s] 54%|█████▍    | 86/158 [00:06<00:05, 14.21it/s] 56%|█████▌    | 88/158 [00:06<00:04, 14.25it/s] 57%|█████▋    | 90/158 [00:06<00:04, 14.22it/s] 58%|█████▊    | 92/158 [00:06<00:04, 14.20it/s] 59%|█████▉    | 94/158 [00:06<00:04, 14.21it/s] 61%|██████    | 96/158 [00:06<00:04, 14.23it/s] 62%|██████▏   | 98/158 [00:06<00:04, 14.22it/s] 63%|██████▎   | 100/158 [00:07<00:04, 14.21it/s] 65%|██████▍   | 102/158 [00:07<00:03, 14.21it/s] 66%|██████▌   | 104/158 [00:07<00:03, 14.24it/s] 67%|██████▋   | 106/158 [00:07<00:03, 14.25it/s] 68%|██████▊   | 108/158 [00:07<00:03, 14.23it/s] 70%|██████▉   | 110/158 [00:07<00:03, 14.20it/s] 71%|███████   | 112/158 [00:07<00:03, 14.18it/s] 72%|███████▏  | 114/158 [00:08<00:03, 14.17it/s] 73%|███████▎  | 116/158 [00:08<00:02, 14.16it/s] 75%|███████▍  | 118/158 [00:08<00:02, 14.17it/s] 76%|███████▌  | 120/158 [00:08<00:02, 14.20it/s] 77%|███████▋  | 122/158 [00:08<00:02, 14.18it/s] 78%|███████▊  | 124/158 [00:08<00:02, 14.17it/s] 80%|███████▉  | 126/158 [00:08<00:02, 14.20it/s] 81%|████████  | 128/158 [00:09<00:02, 14.19it/s] 82%|████████▏ | 130/158 [00:09<00:01, 14.20it/s] 84%|████████▎ | 132/158 [00:09<00:01, 14.20it/s] 85%|████████▍ | 134/158 [00:09<00:01, 14.20it/s] 86%|████████▌ | 136/158 [00:09<00:01, 14.20it/s] 87%|████████▋ | 138/158 [00:09<00:01, 14.23it/s] 89%|████████▊ | 140/158 [00:09<00:01, 14.20it/s] 90%|████████▉ | 142/158 [00:09<00:01, 14.21it/s] 91%|█████████ | 144/158 [00:10<00:00, 14.21it/s] 92%|█████████▏| 146/158 [00:10<00:00, 14.22it/s] 94%|█████████▎| 148/158 [00:10<00:00, 14.25it/s] 95%|█████████▍| 150/158 [00:10<00:00, 14.28it/s] 96%|█████████▌| 152/158 [00:10<00:00, 14.26it/s] 97%|█████████▋| 154/158 [00:10<00:00, 14.25it/s] 99%|█████████▊| 156/158 [00:10<00:00, 14.24it/s]100%|██████████| 158/158 [00:11<00:00, 14.28it/s]
+2024-04-20 03:09:41 [INFO ]  Validation accuracy: 81.54	macro_fscore: 67.51	micro_fscore: 81.54	TPR_GAP: 3.18	FPR_GAP: 3.18	PPR_GAP: 0.36	
+2024-04-20 03:09:41 [INFO ]  Test accuracy: 90.22	macro_fscore: 87.03	micro_fscore: 90.22	TPR_GAP: 4.91	FPR_GAP: 4.91	PPR_GAP: 10.71	
+2024-04-20 03:09:42 [INFO ]  Epoch:    3 [      0/  22818 ( 0%)]	Loss: 0.2227	 Data Time: 0.00s	Train Time: 0.13s
+2024-04-20 03:09:48 [INFO ]  Epoch:    3 [    800/  22818 ( 4%)]	Loss: 0.3397	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:09:55 [INFO ]  Epoch:    3 [   1600/  22818 ( 7%)]	Loss: 0.1848	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:10:01 [INFO ]  Epoch:    3 [   2400/  22818 (11%)]	Loss: 0.3431	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:10:08 [INFO ]  Epoch:    3 [   3200/  22818 (14%)]	Loss: 0.4679	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:10:15 [INFO ]  Epoch:    3 [   4000/  22818 (18%)]	Loss: 0.3344	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:10:21 [INFO ]  Epoch:    3 [   4800/  22818 (21%)]	Loss: 0.3217	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:10:28 [INFO ]  Epoch:    3 [   5600/  22818 (25%)]	Loss: 0.1731	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:10:35 [INFO ]  Epoch:    3 [   6400/  22818 (28%)]	Loss: 0.4372	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:10:41 [INFO ]  Epoch:    3 [   7200/  22818 (32%)]	Loss: 0.3700	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:10:48 [INFO ]  Epoch:    3 [   8000/  22818 (35%)]	Loss: 0.2808	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:10:54 [INFO ]  Epoch:    3 [   8800/  22818 (39%)]	Loss: 0.4176	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:11:01 [INFO ]  Epoch:    3 [   9600/  22818 (42%)]	Loss: 0.1719	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:11:08 [INFO ]  Epoch:    3 [  10400/  22818 (46%)]	Loss: 0.3716	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:11:14 [INFO ]  Epoch:    3 [  11200/  22818 (49%)]	Loss: 0.5367	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:11:21 [INFO ]  Epoch:    3 [  12000/  22818 (53%)]	Loss: 0.4307	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:11:28 [INFO ]  Epoch:    3 [  12800/  22818 (56%)]	Loss: 0.3986	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:11:34 [INFO ]  Epoch:    3 [  13600/  22818 (60%)]	Loss: 0.5313	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:11:41 [INFO ]  Epoch:    3 [  14400/  22818 (63%)]	Loss: 0.1813	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:11:47 [INFO ]  Epoch:    3 [  15200/  22818 (67%)]	Loss: 0.3825	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:11:54 [INFO ]  Epoch:    3 [  16000/  22818 (70%)]	Loss: 0.4146	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:12:01 [INFO ]  Epoch:    3 [  16800/  22818 (74%)]	Loss: 0.3349	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:12:07 [INFO ]  Epoch:    3 [  17600/  22818 (77%)]	Loss: 0.3699	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:12:14 [INFO ]  Epoch:    3 [  18400/  22818 (81%)]	Loss: 0.2441	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:12:21 [INFO ]  Epoch:    3 [  19200/  22818 (84%)]	Loss: 0.1003	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:12:27 [INFO ]  Epoch:    3 [  20000/  22818 (88%)]	Loss: 0.3091	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:12:34 [INFO ]  Epoch:    3 [  20800/  22818 (91%)]	Loss: 0.3913	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:12:40 [INFO ]  Epoch:    3 [  21600/  22818 (95%)]	Loss: 0.4401	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:12:47 [INFO ]  Epoch:    3 [  22400/  22818 (98%)]	Loss: 0.6415	 Data Time: 0.03s	Train Time: 6.58s
+  0%|          | 0/141 [00:00<?, ?it/s]  1%|▏         | 2/141 [00:00<00:09, 14.36it/s]  3%|▎         | 4/141 [00:00<00:09, 14.29it/s]  4%|▍         | 6/141 [00:00<00:09, 14.27it/s]  6%|▌         | 8/141 [00:00<00:09, 14.27it/s]  7%|▋         | 10/141 [00:00<00:09, 14.24it/s]  9%|▊         | 12/141 [00:00<00:09, 14.24it/s] 10%|▉         | 14/141 [00:00<00:08, 14.25it/s] 11%|█▏        | 16/141 [00:01<00:08, 14.22it/s] 13%|█▎        | 18/141 [00:01<00:08, 14.21it/s] 14%|█▍        | 20/141 [00:01<00:08, 14.20it/s] 16%|█▌        | 22/141 [00:01<00:08, 14.21it/s] 17%|█▋        | 24/141 [00:01<00:08, 14.23it/s] 18%|█▊        | 26/141 [00:01<00:08, 14.26it/s] 20%|█▉        | 28/141 [00:01<00:07, 14.22it/s] 21%|██▏       | 30/141 [00:02<00:07, 14.22it/s] 23%|██▎       | 32/141 [00:02<00:07, 14.23it/s] 24%|██▍       | 34/141 [00:02<00:07, 14.26it/s] 26%|██▌       | 36/141 [00:02<00:07, 14.26it/s] 27%|██▋       | 38/141 [00:02<00:07, 14.26it/s] 28%|██▊       | 40/141 [00:02<00:07, 14.23it/s] 30%|██▉       | 42/141 [00:02<00:06, 14.21it/s] 31%|███       | 44/141 [00:03<00:06, 14.24it/s] 33%|███▎      | 46/141 [00:03<00:06, 14.26it/s] 34%|███▍      | 48/141 [00:03<00:06, 14.26it/s] 35%|███▌      | 50/141 [00:03<00:06, 14.26it/s] 37%|███▋      | 52/141 [00:03<00:06, 14.25it/s] 38%|███▊      | 54/141 [00:03<00:06, 14.23it/s] 40%|███▉      | 56/141 [00:03<00:05, 14.25it/s] 41%|████      | 58/141 [00:04<00:05, 14.26it/s] 43%|████▎     | 60/141 [00:04<00:05, 14.23it/s] 44%|████▍     | 62/141 [00:04<00:05, 14.24it/s] 45%|████▌     | 64/141 [00:04<00:05, 14.25it/s] 47%|████▋     | 66/141 [00:04<00:05, 14.22it/s] 48%|████▊     | 68/141 [00:04<00:05, 14.21it/s] 50%|████▉     | 70/141 [00:04<00:04, 14.22it/s] 51%|█████     | 72/141 [00:05<00:04, 14.22it/s] 52%|█████▏    | 74/141 [00:05<00:04, 14.25it/s] 54%|█████▍    | 76/141 [00:05<00:04, 14.22it/s] 55%|█████▌    | 78/141 [00:05<00:04, 14.23it/s] 57%|█████▋    | 80/141 [00:05<00:04, 14.24it/s] 58%|█████▊    | 82/141 [00:05<00:04, 14.23it/s] 60%|█████▉    | 84/141 [00:05<00:04, 14.22it/s] 61%|██████    | 86/141 [00:06<00:03, 14.21it/s] 62%|██████▏   | 88/141 [00:06<00:03, 14.22it/s] 64%|██████▍   | 90/141 [00:06<00:03, 14.23it/s] 65%|██████▌   | 92/141 [00:06<00:03, 14.22it/s] 67%|██████▋   | 94/141 [00:06<00:03, 14.20it/s] 68%|██████▊   | 96/141 [00:06<00:03, 14.20it/s] 70%|██████▉   | 98/141 [00:06<00:03, 14.18it/s] 71%|███████   | 100/141 [00:07<00:02, 14.20it/s] 72%|███████▏  | 102/141 [00:07<00:02, 14.19it/s] 74%|███████▍  | 104/141 [00:07<00:02, 14.19it/s] 75%|███████▌  | 106/141 [00:07<00:02, 14.19it/s] 77%|███████▋  | 108/141 [00:07<00:02, 14.21it/s] 78%|███████▊  | 110/141 [00:07<00:02, 14.20it/s] 79%|███████▉  | 112/141 [00:07<00:02, 14.21it/s] 81%|████████  | 114/141 [00:08<00:01, 14.22it/s] 82%|████████▏ | 116/141 [00:08<00:01, 14.23it/s] 84%|████████▎ | 118/141 [00:08<00:01, 14.23it/s] 85%|████████▌ | 120/141 [00:08<00:01, 14.21it/s] 87%|████████▋ | 122/141 [00:08<00:01, 14.22it/s] 88%|████████▊ | 124/141 [00:08<00:01, 14.23it/s] 89%|████████▉ | 126/141 [00:08<00:01, 14.24it/s] 91%|█████████ | 128/141 [00:08<00:00, 14.23it/s] 92%|█████████▏| 130/141 [00:09<00:00, 14.23it/s] 94%|█████████▎| 132/141 [00:09<00:00, 14.24it/s] 95%|█████████▌| 134/141 [00:09<00:00, 14.20it/s] 96%|█████████▋| 136/141 [00:09<00:00, 14.19it/s] 98%|█████████▊| 138/141 [00:09<00:00, 14.18it/s] 99%|█████████▉| 140/141 [00:09<00:00, 14.18it/s]100%|██████████| 141/141 [00:09<00:00, 14.22it/s]
+2024-04-20 03:13:00 [INFO ]  Loss, accuracy, f1_score and DTO: 0.403040 0.814273 0.677880 0.188185
+2024-04-20 03:13:00 [INFO ]  Evaluation at Epoch 3
+  0%|          | 0/158 [00:00<?, ?it/s]  1%|▏         | 2/158 [00:00<00:10, 14.32it/s]  3%|▎         | 4/158 [00:00<00:10, 14.24it/s]  4%|▍         | 6/158 [00:00<00:10, 14.22it/s]  5%|▌         | 8/158 [00:00<00:10, 14.23it/s]  6%|▋         | 10/158 [00:00<00:10, 14.24it/s]  8%|▊         | 12/158 [00:00<00:10, 14.24it/s]  9%|▉         | 14/158 [00:00<00:10, 14.25it/s] 10%|█         | 16/158 [00:01<00:09, 14.23it/s] 11%|█▏        | 18/158 [00:01<00:09, 14.24it/s] 13%|█▎        | 20/158 [00:01<00:09, 14.22it/s] 14%|█▍        | 22/158 [00:01<00:09, 14.24it/s] 15%|█▌        | 24/158 [00:01<00:09, 14.23it/s] 16%|█▋        | 26/158 [00:01<00:09, 14.25it/s] 18%|█▊        | 28/158 [00:01<00:09, 14.24it/s] 19%|█▉        | 30/158 [00:02<00:09, 14.21it/s] 20%|██        | 32/158 [00:02<00:08, 14.22it/s] 22%|██▏       | 34/158 [00:02<00:08, 14.19it/s] 23%|██▎       | 36/158 [00:02<00:08, 14.20it/s] 24%|██▍       | 38/158 [00:02<00:08, 14.20it/s] 25%|██▌       | 40/158 [00:02<00:08, 14.21it/s] 27%|██▋       | 42/158 [00:02<00:08, 14.21it/s] 28%|██▊       | 44/158 [00:03<00:08, 14.23it/s] 29%|██▉       | 46/158 [00:03<00:07, 14.25it/s] 30%|███       | 48/158 [00:03<00:07, 14.24it/s] 32%|███▏      | 50/158 [00:03<00:07, 14.23it/s] 33%|███▎      | 52/158 [00:03<00:07, 14.23it/s] 34%|███▍      | 54/158 [00:03<00:07, 14.23it/s] 35%|███▌      | 56/158 [00:03<00:07, 14.24it/s] 37%|███▋      | 58/158 [00:04<00:07, 14.25it/s] 38%|███▊      | 60/158 [00:04<00:06, 14.25it/s] 39%|███▉      | 62/158 [00:04<00:06, 14.26it/s] 41%|████      | 64/158 [00:04<00:06, 14.25it/s] 42%|████▏     | 66/158 [00:04<00:06, 14.26it/s] 43%|████▎     | 68/158 [00:04<00:06, 14.28it/s] 44%|████▍     | 70/158 [00:04<00:06, 14.25it/s] 46%|████▌     | 72/158 [00:05<00:06, 14.25it/s] 47%|████▋     | 74/158 [00:05<00:05, 14.26it/s] 48%|████▊     | 76/158 [00:05<00:05, 14.26it/s] 49%|████▉     | 78/158 [00:05<00:05, 14.23it/s] 51%|█████     | 80/158 [00:05<00:05, 14.22it/s] 52%|█████▏    | 82/158 [00:05<00:05, 14.20it/s] 53%|█████▎    | 84/158 [00:05<00:05, 14.21it/s] 54%|█████▍    | 86/158 [00:06<00:05, 14.20it/s] 56%|█████▌    | 88/158 [00:06<00:04, 14.21it/s] 57%|█████▋    | 90/158 [00:06<00:04, 14.24it/s] 58%|█████▊    | 92/158 [00:06<00:04, 14.23it/s] 59%|█████▉    | 94/158 [00:06<00:04, 14.24it/s] 61%|██████    | 96/158 [00:06<00:04, 14.25it/s] 62%|██████▏   | 98/158 [00:06<00:04, 14.23it/s] 63%|██████▎   | 100/158 [00:07<00:04, 14.22it/s] 65%|██████▍   | 102/158 [00:07<00:03, 14.24it/s] 66%|██████▌   | 104/158 [00:07<00:03, 14.24it/s] 67%|██████▋   | 106/158 [00:07<00:03, 14.25it/s] 68%|██████▊   | 108/158 [00:07<00:03, 14.24it/s] 70%|██████▉   | 110/158 [00:07<00:03, 14.24it/s] 71%|███████   | 112/158 [00:07<00:03, 14.25it/s] 72%|███████▏  | 114/158 [00:08<00:03, 14.24it/s] 73%|███████▎  | 116/158 [00:08<00:02, 14.20it/s] 75%|███████▍  | 118/158 [00:08<00:02, 14.21it/s] 76%|███████▌  | 120/158 [00:08<00:02, 14.22it/s] 77%|███████▋  | 122/158 [00:08<00:02, 14.19it/s] 78%|███████▊  | 124/158 [00:08<00:02, 14.19it/s] 80%|███████▉  | 126/158 [00:08<00:02, 14.21it/s] 81%|████████  | 128/158 [00:08<00:02, 14.19it/s] 82%|████████▏ | 130/158 [00:09<00:01, 14.20it/s] 84%|████████▎ | 132/158 [00:09<00:01, 14.20it/s] 85%|████████▍ | 134/158 [00:09<00:01, 14.19it/s] 86%|████████▌ | 136/158 [00:09<00:01, 14.19it/s] 87%|████████▋ | 138/158 [00:09<00:01, 14.18it/s] 89%|████████▊ | 140/158 [00:09<00:01, 14.19it/s] 90%|████████▉ | 142/158 [00:09<00:01, 14.20it/s] 91%|█████████ | 144/158 [00:10<00:00, 14.21it/s] 92%|█████████▏| 146/158 [00:10<00:00, 14.22it/s] 94%|█████████▎| 148/158 [00:10<00:00, 14.21it/s] 95%|█████████▍| 150/158 [00:10<00:00, 14.22it/s] 96%|█████████▌| 152/158 [00:10<00:00, 14.24it/s] 97%|█████████▋| 154/158 [00:10<00:00, 14.19it/s] 99%|█████████▊| 156/158 [00:10<00:00, 14.21it/s]100%|██████████| 158/158 [00:11<00:00, 14.29it/s]
+2024-04-20 03:13:13 [INFO ]  Validation accuracy: 81.43	macro_fscore: 67.79	micro_fscore: 81.43	TPR_GAP: 3.03	FPR_GAP: 3.03	PPR_GAP: 0.31	
+2024-04-20 03:13:13 [INFO ]  Test accuracy: 89.90	macro_fscore: 86.60	micro_fscore: 89.90	TPR_GAP: 4.99	FPR_GAP: 4.99	PPR_GAP: 10.61	
+2024-04-20 03:13:14 [INFO ]  Epoch:    4 [      0/  22818 ( 0%)]	Loss: 0.2266	 Data Time: 0.00s	Train Time: 0.14s
+2024-04-20 03:13:20 [INFO ]  Epoch:    4 [    800/  22818 ( 4%)]	Loss: 0.4478	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:13:27 [INFO ]  Epoch:    4 [   1600/  22818 ( 7%)]	Loss: 0.3423	 Data Time: 0.03s	Train Time: 6.58s
+2024-04-20 03:13:33 [INFO ]  Epoch:    4 [   2400/  22818 (11%)]	Loss: 0.3424	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:13:40 [INFO ]  Epoch:    4 [   3200/  22818 (14%)]	Loss: 0.4575	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:13:47 [INFO ]  Epoch:    4 [   4000/  22818 (18%)]	Loss: 0.7943	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:13:53 [INFO ]  Epoch:    4 [   4800/  22818 (21%)]	Loss: 0.5034	 Data Time: 0.03s	Train Time: 6.58s
+2024-04-20 03:14:00 [INFO ]  Epoch:    4 [   5600/  22818 (25%)]	Loss: 0.0998	 Data Time: 0.03s	Train Time: 6.58s
+2024-04-20 03:14:06 [INFO ]  Epoch:    4 [   6400/  22818 (28%)]	Loss: 0.4051	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:14:13 [INFO ]  Epoch:    4 [   7200/  22818 (32%)]	Loss: 0.2983	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:14:20 [INFO ]  Epoch:    4 [   8000/  22818 (35%)]	Loss: 0.6093	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:14:26 [INFO ]  Epoch:    4 [   8800/  22818 (39%)]	Loss: 0.4301	 Data Time: 0.03s	Train Time: 6.58s
+2024-04-20 03:14:33 [INFO ]  Epoch:    4 [   9600/  22818 (42%)]	Loss: 0.3994	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:14:40 [INFO ]  Epoch:    4 [  10400/  22818 (46%)]	Loss: 0.1635	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:14:46 [INFO ]  Epoch:    4 [  11200/  22818 (49%)]	Loss: 0.2308	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:14:53 [INFO ]  Epoch:    4 [  12000/  22818 (53%)]	Loss: 0.2129	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:14:59 [INFO ]  Epoch:    4 [  12800/  22818 (56%)]	Loss: 0.3898	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:15:06 [INFO ]  Epoch:    4 [  13600/  22818 (60%)]	Loss: 0.2039	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:15:13 [INFO ]  Epoch:    4 [  14400/  22818 (63%)]	Loss: 0.6563	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:15:19 [INFO ]  Epoch:    4 [  15200/  22818 (67%)]	Loss: 0.3265	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:15:26 [INFO ]  Epoch:    4 [  16000/  22818 (70%)]	Loss: 0.2884	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:15:33 [INFO ]  Epoch:    4 [  16800/  22818 (74%)]	Loss: 0.2473	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:15:39 [INFO ]  Epoch:    4 [  17600/  22818 (77%)]	Loss: 0.4540	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:15:46 [INFO ]  Epoch:    4 [  18400/  22818 (81%)]	Loss: 0.1300	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:15:52 [INFO ]  Epoch:    4 [  19200/  22818 (84%)]	Loss: 0.3740	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:15:59 [INFO ]  Epoch:    4 [  20000/  22818 (88%)]	Loss: 0.5493	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:16:06 [INFO ]  Epoch:    4 [  20800/  22818 (91%)]	Loss: 0.2631	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:16:12 [INFO ]  Epoch:    4 [  21600/  22818 (95%)]	Loss: 0.6394	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:16:19 [INFO ]  Epoch:    4 [  22400/  22818 (98%)]	Loss: 0.2448	 Data Time: 0.03s	Train Time: 6.59s
+  0%|          | 0/141 [00:00<?, ?it/s]  1%|▏         | 2/141 [00:00<00:09, 14.55it/s]  3%|▎         | 4/141 [00:00<00:09, 14.52it/s]  4%|▍         | 6/141 [00:00<00:09, 14.38it/s]  6%|▌         | 8/141 [00:00<00:09, 14.33it/s]  7%|▋         | 10/141 [00:00<00:09, 14.26it/s]  9%|▊         | 12/141 [00:00<00:09, 14.23it/s] 10%|▉         | 14/141 [00:00<00:08, 14.21it/s] 11%|█▏        | 16/141 [00:01<00:08, 14.20it/s] 13%|█▎        | 18/141 [00:01<00:08, 14.21it/s] 14%|█▍        | 20/141 [00:01<00:08, 14.18it/s] 16%|█▌        | 22/141 [00:01<00:08, 14.18it/s] 17%|█▋        | 24/141 [00:01<00:08, 14.19it/s] 18%|█▊        | 26/141 [00:01<00:08, 14.22it/s] 20%|█▉        | 28/141 [00:01<00:07, 14.22it/s] 21%|██▏       | 30/141 [00:02<00:07, 14.27it/s] 23%|██▎       | 32/141 [00:02<00:07, 14.23it/s] 24%|██▍       | 34/141 [00:02<00:07, 14.23it/s] 26%|██▌       | 36/141 [00:02<00:07, 14.22it/s] 27%|██▋       | 38/141 [00:02<00:07, 14.22it/s] 28%|██▊       | 40/141 [00:02<00:07, 14.23it/s] 30%|██▉       | 42/141 [00:02<00:06, 14.21it/s] 31%|███       | 44/141 [00:03<00:06, 14.21it/s] 33%|███▎      | 46/141 [00:03<00:06, 14.22it/s] 34%|███▍      | 48/141 [00:03<00:06, 14.22it/s] 35%|███▌      | 50/141 [00:03<00:06, 14.23it/s] 37%|███▋      | 52/141 [00:03<00:06, 14.23it/s] 38%|███▊      | 54/141 [00:03<00:06, 14.23it/s] 40%|███▉      | 56/141 [00:03<00:05, 14.22it/s] 41%|████      | 58/141 [00:04<00:05, 14.24it/s] 43%|████▎     | 60/141 [00:04<00:05, 14.26it/s] 44%|████▍     | 62/141 [00:04<00:05, 14.24it/s] 45%|████▌     | 64/141 [00:04<00:05, 14.24it/s] 47%|████▋     | 66/141 [00:04<00:05, 14.21it/s] 48%|████▊     | 68/141 [00:04<00:05, 14.18it/s] 50%|████▉     | 70/141 [00:04<00:04, 14.20it/s] 51%|█████     | 72/141 [00:05<00:04, 14.24it/s] 52%|█████▏    | 74/141 [00:05<00:04, 14.21it/s] 54%|█████▍    | 76/141 [00:05<00:04, 14.21it/s] 55%|█████▌    | 78/141 [00:05<00:04, 14.19it/s] 57%|█████▋    | 80/141 [00:05<00:04, 14.22it/s] 58%|█████▊    | 82/141 [00:05<00:04, 14.22it/s] 60%|█████▉    | 84/141 [00:05<00:04, 14.21it/s] 61%|██████    | 86/141 [00:06<00:03, 14.20it/s] 62%|██████▏   | 88/141 [00:06<00:03, 14.18it/s] 64%|██████▍   | 90/141 [00:06<00:03, 14.19it/s] 65%|██████▌   | 92/141 [00:06<00:03, 14.21it/s] 67%|██████▋   | 94/141 [00:06<00:03, 14.23it/s] 68%|██████▊   | 96/141 [00:06<00:03, 14.23it/s] 70%|██████▉   | 98/141 [00:06<00:03, 14.21it/s] 71%|███████   | 100/141 [00:07<00:02, 14.21it/s] 72%|███████▏  | 102/141 [00:07<00:02, 14.22it/s] 74%|███████▍  | 104/141 [00:07<00:02, 14.22it/s] 75%|███████▌  | 106/141 [00:07<00:02, 14.19it/s] 77%|███████▋  | 108/141 [00:07<00:02, 14.18it/s] 78%|███████▊  | 110/141 [00:07<00:02, 14.18it/s] 79%|███████▉  | 112/141 [00:07<00:02, 14.19it/s] 81%|████████  | 114/141 [00:08<00:01, 14.20it/s] 82%|████████▏ | 116/141 [00:08<00:01, 14.21it/s] 84%|████████▎ | 118/141 [00:08<00:01, 14.21it/s] 85%|████████▌ | 120/141 [00:08<00:01, 14.17it/s] 87%|████████▋ | 122/141 [00:08<00:01, 14.17it/s] 88%|████████▊ | 124/141 [00:08<00:01, 14.18it/s] 89%|████████▉ | 126/141 [00:08<00:01, 14.19it/s] 91%|█████████ | 128/141 [00:09<00:00, 14.22it/s] 92%|█████████▏| 130/141 [00:09<00:00, 14.22it/s] 94%|█████████▎| 132/141 [00:09<00:00, 14.22it/s] 95%|█████████▌| 134/141 [00:09<00:00, 14.21it/s] 96%|█████████▋| 136/141 [00:09<00:00, 14.22it/s] 98%|█████████▊| 138/141 [00:09<00:00, 14.22it/s] 99%|█████████▉| 140/141 [00:09<00:00, 14.19it/s]100%|██████████| 141/141 [00:09<00:00, 14.22it/s]
+2024-04-20 03:16:32 [INFO ]  Epochs since last improvement: 1
+2024-04-20 03:16:32 [INFO ]  Loss, accuracy, f1_score and DTO: 0.407262 0.813830 0.684319 0.189813
+2024-04-20 03:16:32 [INFO ]  Evaluation at Epoch 4
+  0%|          | 0/158 [00:00<?, ?it/s]  1%|▏         | 2/158 [00:00<00:10, 14.22it/s]  3%|▎         | 4/158 [00:00<00:10, 14.22it/s]  4%|▍         | 6/158 [00:00<00:10, 14.18it/s]  5%|▌         | 8/158 [00:00<00:10, 14.20it/s]  6%|▋         | 10/158 [00:00<00:10, 14.20it/s]  8%|▊         | 12/158 [00:00<00:10, 14.19it/s]  9%|▉         | 14/158 [00:00<00:10, 14.18it/s] 10%|█         | 16/158 [00:01<00:10, 14.18it/s] 11%|█▏        | 18/158 [00:01<00:09, 14.18it/s] 13%|█▎        | 20/158 [00:01<00:09, 14.16it/s] 14%|█▍        | 22/158 [00:01<00:09, 14.17it/s] 15%|█▌        | 24/158 [00:01<00:09, 14.18it/s] 16%|█▋        | 26/158 [00:01<00:09, 14.21it/s] 18%|█▊        | 28/158 [00:01<00:09, 14.21it/s] 19%|█▉        | 30/158 [00:02<00:09, 14.22it/s] 20%|██        | 32/158 [00:02<00:08, 14.23it/s] 22%|██▏       | 34/158 [00:02<00:08, 14.22it/s] 23%|██▎       | 36/158 [00:02<00:08, 14.20it/s] 24%|██▍       | 38/158 [00:02<00:08, 14.21it/s] 25%|██▌       | 40/158 [00:02<00:08, 14.21it/s] 27%|██▋       | 42/158 [00:02<00:08, 14.21it/s] 28%|██▊       | 44/158 [00:03<00:08, 14.20it/s] 29%|██▉       | 46/158 [00:03<00:07, 14.23it/s] 30%|███       | 48/158 [00:03<00:07, 14.22it/s] 32%|███▏      | 50/158 [00:03<00:07, 14.19it/s] 33%|███▎      | 52/158 [00:03<00:07, 14.17it/s] 34%|███▍      | 54/158 [00:03<00:07, 14.19it/s] 35%|███▌      | 56/158 [00:03<00:07, 14.20it/s] 37%|███▋      | 58/158 [00:04<00:07, 14.22it/s] 38%|███▊      | 60/158 [00:04<00:06, 14.23it/s] 39%|███▉      | 62/158 [00:04<00:06, 14.21it/s] 41%|████      | 64/158 [00:04<00:06, 14.20it/s] 42%|████▏     | 66/158 [00:04<00:06, 14.19it/s] 43%|████▎     | 68/158 [00:04<00:06, 14.21it/s] 44%|████▍     | 70/158 [00:04<00:06, 14.22it/s] 46%|████▌     | 72/158 [00:05<00:06, 14.22it/s] 47%|████▋     | 74/158 [00:05<00:05, 14.22it/s] 48%|████▊     | 76/158 [00:05<00:05, 14.25it/s] 49%|████▉     | 78/158 [00:05<00:05, 14.22it/s] 51%|█████     | 80/158 [00:05<00:05, 14.22it/s] 52%|█████▏    | 82/158 [00:05<00:05, 14.21it/s] 53%|█████▎    | 84/158 [00:05<00:05, 14.21it/s] 54%|█████▍    | 86/158 [00:06<00:05, 14.20it/s] 56%|█████▌    | 88/158 [00:06<00:04, 14.22it/s] 57%|█████▋    | 90/158 [00:06<00:04, 14.20it/s] 58%|█████▊    | 92/158 [00:06<00:04, 14.19it/s] 59%|█████▉    | 94/158 [00:06<00:04, 14.19it/s] 61%|██████    | 96/158 [00:06<00:04, 14.19it/s] 62%|██████▏   | 98/158 [00:06<00:04, 14.17it/s] 63%|██████▎   | 100/158 [00:07<00:04, 14.18it/s] 65%|██████▍   | 102/158 [00:07<00:03, 14.20it/s] 66%|██████▌   | 104/158 [00:07<00:03, 14.18it/s] 67%|██████▋   | 106/158 [00:07<00:03, 14.20it/s] 68%|██████▊   | 108/158 [00:07<00:03, 14.18it/s] 70%|██████▉   | 110/158 [00:07<00:03, 14.16it/s] 71%|███████   | 112/158 [00:07<00:03, 14.17it/s] 72%|███████▏  | 114/158 [00:08<00:03, 14.15it/s] 73%|███████▎  | 116/158 [00:08<00:02, 14.16it/s] 75%|███████▍  | 118/158 [00:08<00:02, 14.18it/s] 76%|███████▌  | 120/158 [00:08<00:02, 14.18it/s] 77%|███████▋  | 122/158 [00:08<00:02, 14.17it/s] 78%|███████▊  | 124/158 [00:08<00:02, 14.15it/s] 80%|███████▉  | 126/158 [00:08<00:02, 14.15it/s] 81%|████████  | 128/158 [00:09<00:02, 14.16it/s] 82%|████████▏ | 130/158 [00:09<00:01, 14.16it/s] 84%|████████▎ | 132/158 [00:09<00:01, 14.17it/s] 85%|████████▍ | 134/158 [00:09<00:01, 14.17it/s] 86%|████████▌ | 136/158 [00:09<00:01, 14.17it/s] 87%|████████▋ | 138/158 [00:09<00:01, 14.16it/s] 89%|████████▊ | 140/158 [00:09<00:01, 14.15it/s] 90%|████████▉ | 142/158 [00:10<00:01, 14.17it/s] 91%|█████████ | 144/158 [00:10<00:00, 14.20it/s] 92%|█████████▏| 146/158 [00:10<00:00, 14.20it/s] 94%|█████████▎| 148/158 [00:10<00:00, 14.20it/s] 95%|█████████▍| 150/158 [00:10<00:00, 14.20it/s] 96%|█████████▌| 152/158 [00:10<00:00, 14.21it/s] 97%|█████████▋| 154/158 [00:10<00:00, 14.18it/s] 99%|█████████▊| 156/158 [00:10<00:00, 14.19it/s]100%|██████████| 158/158 [00:11<00:00, 14.25it/s]
+2024-04-20 03:16:43 [INFO ]  Validation accuracy: 81.38	macro_fscore: 68.43	micro_fscore: 81.38	TPR_GAP: 3.70	FPR_GAP: 3.70	PPR_GAP: 0.72	
+2024-04-20 03:16:43 [INFO ]  Test accuracy: 89.88	macro_fscore: 86.50	micro_fscore: 89.88	TPR_GAP: 4.92	FPR_GAP: 4.92	PPR_GAP: 10.28	
+2024-04-20 03:16:44 [INFO ]  Epoch:    5 [      0/  22818 ( 0%)]	Loss: 0.2097	 Data Time: 0.00s	Train Time: 0.13s
+2024-04-20 03:16:50 [INFO ]  Epoch:    5 [    800/  22818 ( 4%)]	Loss: 0.1160	 Data Time: 0.03s	Train Time: 6.61s
+2024-04-20 03:16:57 [INFO ]  Epoch:    5 [   1600/  22818 ( 7%)]	Loss: 0.3499	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:17:03 [INFO ]  Epoch:    5 [   2400/  22818 (11%)]	Loss: 0.3638	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:17:10 [INFO ]  Epoch:    5 [   3200/  22818 (14%)]	Loss: 0.1602	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:17:17 [INFO ]  Epoch:    5 [   4000/  22818 (18%)]	Loss: 0.1803	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:17:23 [INFO ]  Epoch:    5 [   4800/  22818 (21%)]	Loss: 0.1382	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:17:30 [INFO ]  Epoch:    5 [   5600/  22818 (25%)]	Loss: 0.2311	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:17:37 [INFO ]  Epoch:    5 [   6400/  22818 (28%)]	Loss: 0.2980	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:17:43 [INFO ]  Epoch:    5 [   7200/  22818 (32%)]	Loss: 0.7799	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:17:50 [INFO ]  Epoch:    5 [   8000/  22818 (35%)]	Loss: 0.2775	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:17:56 [INFO ]  Epoch:    5 [   8800/  22818 (39%)]	Loss: 0.3634	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:18:03 [INFO ]  Epoch:    5 [   9600/  22818 (42%)]	Loss: 0.3239	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:18:10 [INFO ]  Epoch:    5 [  10400/  22818 (46%)]	Loss: 0.5335	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:18:16 [INFO ]  Epoch:    5 [  11200/  22818 (49%)]	Loss: 0.3342	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:18:23 [INFO ]  Epoch:    5 [  12000/  22818 (53%)]	Loss: 0.5097	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:18:30 [INFO ]  Epoch:    5 [  12800/  22818 (56%)]	Loss: 0.2174	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:18:36 [INFO ]  Epoch:    5 [  13600/  22818 (60%)]	Loss: 0.3889	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:18:43 [INFO ]  Epoch:    5 [  14400/  22818 (63%)]	Loss: 0.3210	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:18:49 [INFO ]  Epoch:    5 [  15200/  22818 (67%)]	Loss: 0.3051	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:18:56 [INFO ]  Epoch:    5 [  16000/  22818 (70%)]	Loss: 0.4739	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:19:03 [INFO ]  Epoch:    5 [  16800/  22818 (74%)]	Loss: 0.3660	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:19:09 [INFO ]  Epoch:    5 [  17600/  22818 (77%)]	Loss: 0.3026	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:19:16 [INFO ]  Epoch:    5 [  18400/  22818 (81%)]	Loss: 0.2128	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:19:23 [INFO ]  Epoch:    5 [  19200/  22818 (84%)]	Loss: 0.3164	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:19:29 [INFO ]  Epoch:    5 [  20000/  22818 (88%)]	Loss: 0.1974	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:19:36 [INFO ]  Epoch:    5 [  20800/  22818 (91%)]	Loss: 0.7361	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:19:42 [INFO ]  Epoch:    5 [  21600/  22818 (95%)]	Loss: 0.2282	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:19:49 [INFO ]  Epoch:    5 [  22400/  22818 (98%)]	Loss: 0.3210	 Data Time: 0.03s	Train Time: 6.59s
+  0%|          | 0/141 [00:00<?, ?it/s]  1%|▏         | 2/141 [00:00<00:09, 14.39it/s]  3%|▎         | 4/141 [00:00<00:09, 14.26it/s]  4%|▍         | 6/141 [00:00<00:09, 14.26it/s]  6%|▌         | 8/141 [00:00<00:09, 14.27it/s]  7%|▋         | 10/141 [00:00<00:09, 14.24it/s]  9%|▊         | 12/141 [00:00<00:09, 14.22it/s] 10%|▉         | 14/141 [00:00<00:08, 14.22it/s] 11%|█▏        | 16/141 [00:01<00:08, 14.22it/s] 13%|█▎        | 18/141 [00:01<00:08, 14.23it/s] 14%|█▍        | 20/141 [00:01<00:08, 14.24it/s] 16%|█▌        | 22/141 [00:01<00:08, 14.23it/s] 17%|█▋        | 24/141 [00:01<00:08, 14.19it/s] 18%|█▊        | 26/141 [00:01<00:08, 14.19it/s] 20%|█▉        | 28/141 [00:01<00:07, 14.18it/s] 21%|██▏       | 30/141 [00:02<00:07, 14.20it/s] 23%|██▎       | 32/141 [00:02<00:07, 14.18it/s] 24%|██▍       | 34/141 [00:02<00:07, 14.20it/s] 26%|██▌       | 36/141 [00:02<00:07, 14.17it/s] 27%|██▋       | 38/141 [00:02<00:07, 14.18it/s] 28%|██▊       | 40/141 [00:02<00:07, 14.19it/s] 30%|██▉       | 42/141 [00:02<00:06, 14.18it/s] 31%|███       | 44/141 [00:03<00:06, 14.17it/s] 33%|███▎      | 46/141 [00:03<00:06, 14.16it/s] 34%|███▍      | 48/141 [00:03<00:06, 14.17it/s] 35%|███▌      | 50/141 [00:03<00:06, 14.19it/s] 37%|███▋      | 52/141 [00:03<00:06, 14.19it/s] 38%|███▊      | 54/141 [00:03<00:06, 14.19it/s] 40%|███▉      | 56/141 [00:03<00:05, 14.22it/s] 41%|████      | 58/141 [00:04<00:05, 14.24it/s] 43%|████▎     | 60/141 [00:04<00:05, 14.20it/s] 44%|████▍     | 62/141 [00:04<00:05, 14.17it/s] 45%|████▌     | 64/141 [00:04<00:05, 14.19it/s] 47%|████▋     | 66/141 [00:04<00:05, 14.20it/s] 48%|████▊     | 68/141 [00:04<00:05, 14.19it/s] 50%|████▉     | 70/141 [00:04<00:05, 14.19it/s] 51%|█████     | 72/141 [00:05<00:04, 14.19it/s] 52%|█████▏    | 74/141 [00:05<00:04, 14.17it/s] 54%|█████▍    | 76/141 [00:05<00:04, 14.15it/s] 55%|█████▌    | 78/141 [00:05<00:04, 14.14it/s] 57%|█████▋    | 80/141 [00:05<00:04, 14.15it/s] 58%|█████▊    | 82/141 [00:05<00:04, 14.15it/s] 60%|█████▉    | 84/141 [00:05<00:04, 14.18it/s] 61%|██████    | 86/141 [00:06<00:03, 14.19it/s] 62%|██████▏   | 88/141 [00:06<00:03, 14.20it/s] 64%|██████▍   | 90/141 [00:06<00:03, 14.21it/s] 65%|██████▌   | 92/141 [00:06<00:03, 14.21it/s] 67%|██████▋   | 94/141 [00:06<00:03, 14.19it/s] 68%|██████▊   | 96/141 [00:06<00:03, 14.23it/s] 70%|██████▉   | 98/141 [00:06<00:03, 14.19it/s] 71%|███████   | 100/141 [00:07<00:02, 14.19it/s] 72%|███████▏  | 102/141 [00:07<00:02, 14.19it/s] 74%|███████▍  | 104/141 [00:07<00:02, 14.18it/s] 75%|███████▌  | 106/141 [00:07<00:02, 14.20it/s] 77%|███████▋  | 108/141 [00:07<00:02, 14.21it/s] 78%|███████▊  | 110/141 [00:07<00:02, 14.18it/s] 79%|███████▉  | 112/141 [00:07<00:02, 14.15it/s] 81%|████████  | 114/141 [00:08<00:01, 14.16it/s] 82%|████████▏ | 116/141 [00:08<00:01, 14.16it/s] 84%|████████▎ | 118/141 [00:08<00:01, 14.18it/s] 85%|████████▌ | 120/141 [00:08<00:01, 14.21it/s] 87%|████████▋ | 122/141 [00:08<00:01, 14.21it/s] 88%|████████▊ | 124/141 [00:08<00:01, 14.20it/s] 89%|████████▉ | 126/141 [00:08<00:01, 14.21it/s] 91%|█████████ | 128/141 [00:09<00:00, 14.21it/s] 92%|█████████▏| 130/141 [00:09<00:00, 14.21it/s] 94%|█████████▎| 132/141 [00:09<00:00, 14.19it/s] 95%|█████████▌| 134/141 [00:09<00:00, 14.20it/s] 96%|█████████▋| 136/141 [00:09<00:00, 14.20it/s] 98%|█████████▊| 138/141 [00:09<00:00, 14.21it/s] 99%|█████████▉| 140/141 [00:09<00:00, 14.19it/s]100%|██████████| 141/141 [00:09<00:00, 14.19it/s]
+2024-04-20 03:20:02 [INFO ]  Epochs since last improvement: 2
+2024-04-20 03:20:02 [INFO ]  Loss, accuracy, f1_score and DTO: 0.405135 0.814051 0.670695 0.189763
+2024-04-20 03:20:02 [INFO ]  Evaluation at Epoch 5
+  0%|          | 0/158 [00:00<?, ?it/s]  1%|▏         | 2/158 [00:00<00:10, 14.22it/s]  3%|▎         | 4/158 [00:00<00:10, 14.18it/s]  4%|▍         | 6/158 [00:00<00:10, 14.21it/s]  5%|▌         | 8/158 [00:00<00:10, 14.23it/s]  6%|▋         | 10/158 [00:00<00:10, 14.22it/s]  8%|▊         | 12/158 [00:00<00:10, 14.22it/s]  9%|▉         | 14/158 [00:00<00:10, 14.21it/s] 10%|█         | 16/158 [00:01<00:09, 14.22it/s] 11%|█▏        | 18/158 [00:01<00:09, 14.22it/s] 13%|█▎        | 20/158 [00:01<00:09, 14.22it/s] 14%|█▍        | 22/158 [00:01<00:09, 14.22it/s] 15%|█▌        | 24/158 [00:01<00:09, 14.19it/s] 16%|█▋        | 26/158 [00:01<00:09, 14.20it/s] 18%|█▊        | 28/158 [00:01<00:09, 14.20it/s] 19%|█▉        | 30/158 [00:02<00:09, 14.20it/s] 20%|██        | 32/158 [00:02<00:08, 14.20it/s] 22%|██▏       | 34/158 [00:02<00:08, 14.21it/s] 23%|██▎       | 36/158 [00:02<00:08, 14.21it/s] 24%|██▍       | 38/158 [00:02<00:08, 14.20it/s] 25%|██▌       | 40/158 [00:02<00:08, 14.17it/s] 27%|██▋       | 42/158 [00:02<00:08, 14.18it/s] 28%|██▊       | 44/158 [00:03<00:08, 14.20it/s] 29%|██▉       | 46/158 [00:03<00:07, 14.19it/s] 30%|███       | 48/158 [00:03<00:07, 14.19it/s] 32%|███▏      | 50/158 [00:03<00:07, 14.20it/s] 33%|███▎      | 52/158 [00:03<00:07, 14.21it/s] 34%|███▍      | 54/158 [00:03<00:07, 14.22it/s] 35%|███▌      | 56/158 [00:03<00:07, 14.21it/s] 37%|███▋      | 58/158 [00:04<00:07, 14.20it/s] 38%|███▊      | 60/158 [00:04<00:06, 14.18it/s] 39%|███▉      | 62/158 [00:04<00:06, 14.20it/s] 41%|████      | 64/158 [00:04<00:06, 14.19it/s] 42%|████▏     | 66/158 [00:04<00:06, 14.20it/s] 43%|████▎     | 68/158 [00:04<00:06, 14.21it/s] 44%|████▍     | 70/158 [00:04<00:06, 14.21it/s] 46%|████▌     | 72/158 [00:05<00:06, 14.21it/s] 47%|████▋     | 74/158 [00:05<00:05, 14.19it/s] 48%|████▊     | 76/158 [00:05<00:05, 14.19it/s] 49%|████▉     | 78/158 [00:05<00:05, 14.20it/s] 51%|█████     | 80/158 [00:05<00:05, 14.22it/s] 52%|█████▏    | 82/158 [00:05<00:05, 14.21it/s] 53%|█████▎    | 84/158 [00:05<00:05, 14.20it/s] 54%|█████▍    | 86/158 [00:06<00:05, 14.21it/s] 56%|█████▌    | 88/158 [00:06<00:04, 14.21it/s] 57%|█████▋    | 90/158 [00:06<00:04, 14.19it/s] 58%|█████▊    | 92/158 [00:06<00:04, 14.20it/s] 59%|█████▉    | 94/158 [00:06<00:04, 14.21it/s] 61%|██████    | 96/158 [00:06<00:04, 14.22it/s] 62%|██████▏   | 98/158 [00:06<00:04, 14.20it/s] 63%|██████▎   | 100/158 [00:07<00:04, 14.18it/s] 65%|██████▍   | 102/158 [00:07<00:03, 14.19it/s] 66%|██████▌   | 104/158 [00:07<00:03, 14.19it/s] 67%|██████▋   | 106/158 [00:07<00:03, 14.18it/s] 68%|██████▊   | 108/158 [00:07<00:03, 14.17it/s] 70%|██████▉   | 110/158 [00:07<00:03, 14.19it/s] 71%|███████   | 112/158 [00:07<00:03, 14.18it/s] 72%|███████▏  | 114/158 [00:08<00:03, 14.16it/s] 73%|███████▎  | 116/158 [00:08<00:02, 14.18it/s] 75%|███████▍  | 118/158 [00:08<00:02, 14.19it/s] 76%|███████▌  | 120/158 [00:08<00:02, 14.19it/s] 77%|███████▋  | 122/158 [00:08<00:02, 14.19it/s] 78%|███████▊  | 124/158 [00:08<00:02, 14.20it/s] 80%|███████▉  | 126/158 [00:08<00:02, 14.17it/s] 81%|████████  | 128/158 [00:09<00:02, 14.15it/s] 82%|████████▏ | 130/158 [00:09<00:01, 14.16it/s] 84%|████████▎ | 132/158 [00:09<00:01, 14.17it/s] 85%|████████▍ | 134/158 [00:09<00:01, 14.19it/s] 86%|████████▌ | 136/158 [00:09<00:01, 14.16it/s] 87%|████████▋ | 138/158 [00:09<00:01, 14.16it/s] 89%|████████▊ | 140/158 [00:09<00:01, 14.17it/s] 90%|████████▉ | 142/158 [00:10<00:01, 14.18it/s] 91%|█████████ | 144/158 [00:10<00:00, 14.17it/s] 92%|█████████▏| 146/158 [00:10<00:00, 14.18it/s] 94%|█████████▎| 148/158 [00:10<00:00, 14.16it/s] 95%|█████████▍| 150/158 [00:10<00:00, 14.15it/s] 96%|█████████▌| 152/158 [00:10<00:00, 14.17it/s] 97%|█████████▋| 154/158 [00:10<00:00, 14.18it/s] 99%|█████████▊| 156/158 [00:10<00:00, 14.19it/s]100%|██████████| 158/158 [00:11<00:00, 14.26it/s]
+2024-04-20 03:20:14 [INFO ]  Validation accuracy: 81.41	macro_fscore: 67.07	micro_fscore: 81.41	TPR_GAP: 3.79	FPR_GAP: 3.79	PPR_GAP: 0.95	
+2024-04-20 03:20:14 [INFO ]  Test accuracy: 89.27	macro_fscore: 86.00	micro_fscore: 89.27	TPR_GAP: 4.82	FPR_GAP: 4.82	PPR_GAP: 10.65	
+2024-04-20 03:20:14 [INFO ]  Epoch:    6 [      0/  22818 ( 0%)]	Loss: 0.2296	 Data Time: 0.00s	Train Time: 0.13s
+2024-04-20 03:20:20 [INFO ]  Epoch:    6 [    800/  22818 ( 4%)]	Loss: 0.3006	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:20:27 [INFO ]  Epoch:    6 [   1600/  22818 ( 7%)]	Loss: 0.1881	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:20:34 [INFO ]  Epoch:    6 [   2400/  22818 (11%)]	Loss: 0.2552	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:20:40 [INFO ]  Epoch:    6 [   3200/  22818 (14%)]	Loss: 0.4277	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:20:47 [INFO ]  Epoch:    6 [   4000/  22818 (18%)]	Loss: 0.2398	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:20:53 [INFO ]  Epoch:    6 [   4800/  22818 (21%)]	Loss: 0.1282	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:21:00 [INFO ]  Epoch:    6 [   5600/  22818 (25%)]	Loss: 0.1942	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:21:07 [INFO ]  Epoch:    6 [   6400/  22818 (28%)]	Loss: 0.3573	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:21:13 [INFO ]  Epoch:    6 [   7200/  22818 (32%)]	Loss: 0.0950	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:21:20 [INFO ]  Epoch:    6 [   8000/  22818 (35%)]	Loss: 0.1353	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:21:27 [INFO ]  Epoch:    6 [   8800/  22818 (39%)]	Loss: 0.4588	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:21:33 [INFO ]  Epoch:    6 [   9600/  22818 (42%)]	Loss: 0.3610	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:21:40 [INFO ]  Epoch:    6 [  10400/  22818 (46%)]	Loss: 0.2769	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:21:46 [INFO ]  Epoch:    6 [  11200/  22818 (49%)]	Loss: 0.5165	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:21:53 [INFO ]  Epoch:    6 [  12000/  22818 (53%)]	Loss: 0.3158	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:22:00 [INFO ]  Epoch:    6 [  12800/  22818 (56%)]	Loss: 0.7048	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:22:06 [INFO ]  Epoch:    6 [  13600/  22818 (60%)]	Loss: 0.3483	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:22:13 [INFO ]  Epoch:    6 [  14400/  22818 (63%)]	Loss: 0.2369	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:22:20 [INFO ]  Epoch:    6 [  15200/  22818 (67%)]	Loss: 0.2598	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:22:26 [INFO ]  Epoch:    6 [  16000/  22818 (70%)]	Loss: 0.2500	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:22:33 [INFO ]  Epoch:    6 [  16800/  22818 (74%)]	Loss: 0.3565	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:22:39 [INFO ]  Epoch:    6 [  17600/  22818 (77%)]	Loss: 0.3810	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:22:46 [INFO ]  Epoch:    6 [  18400/  22818 (81%)]	Loss: 0.5369	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:22:53 [INFO ]  Epoch:    6 [  19200/  22818 (84%)]	Loss: 0.1556	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:22:59 [INFO ]  Epoch:    6 [  20000/  22818 (88%)]	Loss: 0.4214	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:23:06 [INFO ]  Epoch:    6 [  20800/  22818 (91%)]	Loss: 0.2272	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:23:13 [INFO ]  Epoch:    6 [  21600/  22818 (95%)]	Loss: 0.3882	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:23:19 [INFO ]  Epoch:    6 [  22400/  22818 (98%)]	Loss: 0.1610	 Data Time: 0.03s	Train Time: 6.59s
+  0%|          | 0/141 [00:00<?, ?it/s]  1%|▏         | 2/141 [00:00<00:09, 14.46it/s]  3%|▎         | 4/141 [00:00<00:09, 14.29it/s]  4%|▍         | 6/141 [00:00<00:09, 14.26it/s]  6%|▌         | 8/141 [00:00<00:09, 14.25it/s]  7%|▋         | 10/141 [00:00<00:09, 14.23it/s]  9%|▊         | 12/141 [00:00<00:09, 14.22it/s] 10%|▉         | 14/141 [00:00<00:08, 14.21it/s] 11%|█▏        | 16/141 [00:01<00:08, 14.21it/s] 13%|█▎        | 18/141 [00:01<00:08, 14.21it/s] 14%|█▍        | 20/141 [00:01<00:08, 14.21it/s] 16%|█▌        | 22/141 [00:01<00:08, 14.21it/s] 17%|█▋        | 24/141 [00:01<00:08, 14.19it/s] 18%|█▊        | 26/141 [00:01<00:08, 14.20it/s] 20%|█▉        | 28/141 [00:01<00:07, 14.20it/s] 21%|██▏       | 30/141 [00:02<00:07, 14.19it/s] 23%|██▎       | 32/141 [00:02<00:07, 14.19it/s] 24%|██▍       | 34/141 [00:02<00:07, 14.19it/s] 26%|██▌       | 36/141 [00:02<00:07, 14.20it/s] 27%|██▋       | 38/141 [00:02<00:07, 14.20it/s] 28%|██▊       | 40/141 [00:02<00:07, 14.20it/s] 30%|██▉       | 42/141 [00:02<00:06, 14.20it/s] 31%|███       | 44/141 [00:03<00:06, 14.21it/s] 33%|███▎      | 46/141 [00:03<00:06, 14.19it/s] 34%|███▍      | 48/141 [00:03<00:06, 14.19it/s] 35%|███▌      | 50/141 [00:03<00:06, 14.19it/s] 37%|███▋      | 52/141 [00:03<00:06, 14.19it/s] 38%|███▊      | 54/141 [00:03<00:06, 14.21it/s] 40%|███▉      | 56/141 [00:03<00:05, 14.18it/s] 41%|████      | 58/141 [00:04<00:05, 14.16it/s] 43%|████▎     | 60/141 [00:04<00:05, 14.18it/s] 44%|████▍     | 62/141 [00:04<00:05, 14.18it/s] 45%|████▌     | 64/141 [00:04<00:05, 14.18it/s] 47%|████▋     | 66/141 [00:04<00:05, 14.19it/s] 48%|████▊     | 68/141 [00:04<00:05, 14.20it/s] 50%|████▉     | 70/141 [00:04<00:05, 14.19it/s] 51%|█████     | 72/141 [00:05<00:04, 14.16it/s] 52%|█████▏    | 74/141 [00:05<00:04, 14.20it/s] 54%|█████▍    | 76/141 [00:05<00:04, 14.20it/s] 55%|█████▌    | 78/141 [00:05<00:04, 14.18it/s] 57%|█████▋    | 80/141 [00:05<00:04, 14.17it/s] 58%|█████▊    | 82/141 [00:05<00:04, 14.16it/s] 60%|█████▉    | 84/141 [00:05<00:04, 14.18it/s] 61%|██████    | 86/141 [00:06<00:03, 14.20it/s] 62%|██████▏   | 88/141 [00:06<00:03, 14.20it/s] 64%|██████▍   | 90/141 [00:06<00:03, 14.20it/s] 65%|██████▌   | 92/141 [00:06<00:03, 14.20it/s] 67%|██████▋   | 94/141 [00:06<00:03, 14.20it/s] 68%|██████▊   | 96/141 [00:06<00:03, 14.11it/s] 70%|██████▉   | 98/141 [00:06<00:03, 14.15it/s] 71%|███████   | 100/141 [00:07<00:02, 14.17it/s] 72%|███████▏  | 102/141 [00:07<00:02, 14.19it/s] 74%|███████▍  | 104/141 [00:07<00:02, 14.21it/s] 75%|███████▌  | 106/141 [00:07<00:02, 14.22it/s] 77%|███████▋  | 108/141 [00:07<00:02, 14.22it/s] 78%|███████▊  | 110/141 [00:07<00:02, 14.22it/s] 79%|███████▉  | 112/141 [00:07<00:02, 14.21it/s] 81%|████████  | 114/141 [00:08<00:01, 14.19it/s] 82%|████████▏ | 116/141 [00:08<00:01, 14.18it/s] 84%|████████▎ | 118/141 [00:08<00:01, 14.19it/s] 85%|████████▌ | 120/141 [00:08<00:01, 14.19it/s] 87%|████████▋ | 122/141 [00:08<00:01, 14.21it/s] 88%|████████▊ | 124/141 [00:08<00:01, 14.23it/s] 89%|████████▉ | 126/141 [00:08<00:01, 14.23it/s] 91%|█████████ | 128/141 [00:09<00:00, 14.20it/s] 92%|█████████▏| 130/141 [00:09<00:00, 14.20it/s] 94%|█████████▎| 132/141 [00:09<00:00, 14.18it/s] 95%|█████████▌| 134/141 [00:09<00:00, 14.19it/s] 96%|█████████▋| 136/141 [00:09<00:00, 14.20it/s] 98%|█████████▊| 138/141 [00:09<00:00, 14.20it/s] 99%|█████████▉| 140/141 [00:09<00:00, 14.19it/s]100%|██████████| 141/141 [00:09<00:00, 14.20it/s]
+2024-04-20 03:23:33 [INFO ]  Epochs since last improvement: 3
+2024-04-20 03:23:33 [INFO ]  Loss, accuracy, f1_score and DTO: 0.414842 0.826906 0.664146 0.176357
+2024-04-20 03:23:33 [INFO ]  Evaluation at Epoch 6
+  0%|          | 0/158 [00:00<?, ?it/s]  1%|▏         | 2/158 [00:00<00:10, 14.37it/s]  3%|▎         | 4/158 [00:00<00:10, 14.27it/s]  4%|▍         | 6/158 [00:00<00:10, 14.23it/s]  5%|▌         | 8/158 [00:00<00:10, 14.23it/s]  6%|▋         | 10/158 [00:00<00:10, 14.24it/s]  8%|▊         | 12/158 [00:00<00:10, 14.19it/s]  9%|▉         | 14/158 [00:00<00:10, 14.16it/s] 10%|█         | 16/158 [00:01<00:10, 14.18it/s] 11%|█▏        | 18/158 [00:01<00:09, 14.17it/s] 13%|█▎        | 20/158 [00:01<00:09, 14.15it/s] 14%|█▍        | 22/158 [00:01<00:09, 14.14it/s] 15%|█▌        | 24/158 [00:01<00:09, 14.16it/s] 16%|█▋        | 26/158 [00:01<00:09, 14.18it/s] 18%|█▊        | 28/158 [00:01<00:09, 14.20it/s] 19%|█▉        | 30/158 [00:02<00:09, 14.21it/s] 20%|██        | 32/158 [00:02<00:08, 14.21it/s] 22%|██▏       | 34/158 [00:02<00:08, 14.18it/s] 23%|██▎       | 36/158 [00:02<00:08, 14.20it/s] 24%|██▍       | 38/158 [00:02<00:08, 14.17it/s] 25%|██▌       | 40/158 [00:02<00:08, 14.18it/s] 27%|██▋       | 42/158 [00:02<00:08, 14.17it/s] 28%|██▊       | 44/158 [00:03<00:08, 14.19it/s] 29%|██▉       | 46/158 [00:03<00:07, 14.21it/s] 30%|███       | 48/158 [00:03<00:07, 14.21it/s] 32%|███▏      | 50/158 [00:03<00:07, 14.21it/s] 33%|███▎      | 52/158 [00:03<00:07, 14.22it/s] 34%|███▍      | 54/158 [00:03<00:07, 14.21it/s] 35%|███▌      | 56/158 [00:03<00:07, 14.23it/s] 37%|███▋      | 58/158 [00:04<00:07, 14.24it/s] 38%|███▊      | 60/158 [00:04<00:06, 14.24it/s] 39%|███▉      | 62/158 [00:04<00:06, 14.20it/s] 41%|████      | 64/158 [00:04<00:06, 14.17it/s] 42%|████▏     | 66/158 [00:04<00:06, 14.17it/s] 43%|████▎     | 68/158 [00:04<00:06, 14.17it/s] 44%|████▍     | 70/158 [00:04<00:06, 14.15it/s] 46%|████▌     | 72/158 [00:05<00:06, 14.17it/s] 47%|████▋     | 74/158 [00:05<00:05, 14.18it/s] 48%|████▊     | 76/158 [00:05<00:05, 14.19it/s] 49%|████▉     | 78/158 [00:05<00:05, 14.20it/s] 51%|█████     | 80/158 [00:05<00:05, 14.21it/s] 52%|█████▏    | 82/158 [00:05<00:05, 14.22it/s] 53%|█████▎    | 84/158 [00:05<00:05, 14.22it/s] 54%|█████▍    | 86/158 [00:06<00:05, 14.19it/s] 56%|█████▌    | 88/158 [00:06<00:04, 14.19it/s] 57%|█████▋    | 90/158 [00:06<00:04, 14.20it/s] 58%|█████▊    | 92/158 [00:06<00:04, 14.21it/s] 59%|█████▉    | 94/158 [00:06<00:04, 14.18it/s] 61%|██████    | 96/158 [00:06<00:04, 14.18it/s] 62%|██████▏   | 98/158 [00:06<00:04, 14.15it/s] 63%|██████▎   | 100/158 [00:07<00:04, 14.16it/s] 65%|██████▍   | 102/158 [00:07<00:03, 14.17it/s] 66%|██████▌   | 104/158 [00:07<00:03, 14.17it/s] 67%|██████▋   | 106/158 [00:07<00:03, 14.16it/s] 68%|██████▊   | 108/158 [00:07<00:03, 14.16it/s] 70%|██████▉   | 110/158 [00:07<00:03, 14.14it/s] 71%|███████   | 112/158 [00:07<00:03, 14.17it/s] 72%|███████▏  | 114/158 [00:08<00:03, 14.18it/s] 73%|███████▎  | 116/158 [00:08<00:02, 14.17it/s] 75%|███████▍  | 118/158 [00:08<00:02, 14.17it/s] 76%|███████▌  | 120/158 [00:08<00:02, 14.18it/s] 77%|███████▋  | 122/158 [00:08<00:02, 14.19it/s] 78%|███████▊  | 124/158 [00:08<00:02, 14.16it/s] 80%|███████▉  | 126/158 [00:08<00:02, 14.17it/s] 81%|████████  | 128/158 [00:09<00:02, 14.18it/s] 82%|████████▏ | 130/158 [00:09<00:01, 14.19it/s] 84%|████████▎ | 132/158 [00:09<00:01, 14.19it/s] 85%|████████▍ | 134/158 [00:09<00:01, 14.19it/s] 86%|████████▌ | 136/158 [00:09<00:01, 14.17it/s] 87%|████████▋ | 138/158 [00:09<00:01, 14.15it/s] 89%|████████▊ | 140/158 [00:09<00:01, 14.17it/s] 90%|████████▉ | 142/158 [00:10<00:01, 14.15it/s] 91%|█████████ | 144/158 [00:10<00:00, 14.16it/s] 92%|█████████▏| 146/158 [00:10<00:00, 14.18it/s] 94%|█████████▎| 148/158 [00:10<00:00, 14.15it/s] 95%|█████████▍| 150/158 [00:10<00:00, 14.14it/s] 96%|█████████▌| 152/158 [00:10<00:00, 14.15it/s] 97%|█████████▋| 154/158 [00:10<00:00, 14.16it/s] 99%|█████████▊| 156/158 [00:10<00:00, 14.16it/s]100%|██████████| 158/158 [00:11<00:00, 14.24it/s]
+2024-04-20 03:23:44 [INFO ]  Validation accuracy: 82.69	macro_fscore: 66.41	micro_fscore: 82.69	TPR_GAP: 3.38	FPR_GAP: 3.38	PPR_GAP: 0.75	
+2024-04-20 03:23:44 [INFO ]  Test accuracy: 89.67	macro_fscore: 86.71	micro_fscore: 89.67	TPR_GAP: 5.30	FPR_GAP: 5.30	PPR_GAP: 11.26	
+2024-04-20 03:23:44 [INFO ]  Epoch:    7 [      0/  22818 ( 0%)]	Loss: 0.4769	 Data Time: 0.00s	Train Time: 0.13s
+2024-04-20 03:23:50 [INFO ]  Epoch:    7 [    800/  22818 ( 4%)]	Loss: 0.1073	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:23:57 [INFO ]  Epoch:    7 [   1600/  22818 ( 7%)]	Loss: 0.1484	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:24:04 [INFO ]  Epoch:    7 [   2400/  22818 (11%)]	Loss: 0.1319	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:24:10 [INFO ]  Epoch:    7 [   3200/  22818 (14%)]	Loss: 0.2577	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:24:17 [INFO ]  Epoch:    7 [   4000/  22818 (18%)]	Loss: 0.3961	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:24:24 [INFO ]  Epoch:    7 [   4800/  22818 (21%)]	Loss: 0.1949	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:24:30 [INFO ]  Epoch:    7 [   5600/  22818 (25%)]	Loss: 0.0863	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:24:37 [INFO ]  Epoch:    7 [   6400/  22818 (28%)]	Loss: 0.2625	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:24:44 [INFO ]  Epoch:    7 [   7200/  22818 (32%)]	Loss: 0.1547	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:24:50 [INFO ]  Epoch:    7 [   8000/  22818 (35%)]	Loss: 0.7585	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:24:57 [INFO ]  Epoch:    7 [   8800/  22818 (39%)]	Loss: 0.1933	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:25:03 [INFO ]  Epoch:    7 [   9600/  22818 (42%)]	Loss: 0.3848	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:25:10 [INFO ]  Epoch:    7 [  10400/  22818 (46%)]	Loss: 0.1446	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:25:17 [INFO ]  Epoch:    7 [  11200/  22818 (49%)]	Loss: 0.4720	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:25:23 [INFO ]  Epoch:    7 [  12000/  22818 (53%)]	Loss: 0.2779	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:25:30 [INFO ]  Epoch:    7 [  12800/  22818 (56%)]	Loss: 0.3017	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:25:37 [INFO ]  Epoch:    7 [  13600/  22818 (60%)]	Loss: 0.4410	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:25:43 [INFO ]  Epoch:    7 [  14400/  22818 (63%)]	Loss: 0.6759	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:25:50 [INFO ]  Epoch:    7 [  15200/  22818 (67%)]	Loss: 0.4510	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:25:56 [INFO ]  Epoch:    7 [  16000/  22818 (70%)]	Loss: 0.3402	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:26:03 [INFO ]  Epoch:    7 [  16800/  22818 (74%)]	Loss: 0.3718	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:26:10 [INFO ]  Epoch:    7 [  17600/  22818 (77%)]	Loss: 0.3087	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:26:16 [INFO ]  Epoch:    7 [  18400/  22818 (81%)]	Loss: 0.2746	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:26:23 [INFO ]  Epoch:    7 [  19200/  22818 (84%)]	Loss: 0.4703	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:26:30 [INFO ]  Epoch:    7 [  20000/  22818 (88%)]	Loss: 0.1446	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:26:36 [INFO ]  Epoch:    7 [  20800/  22818 (91%)]	Loss: 0.3033	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:26:43 [INFO ]  Epoch:    7 [  21600/  22818 (95%)]	Loss: 0.3269	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:26:49 [INFO ]  Epoch:    7 [  22400/  22818 (98%)]	Loss: 0.3102	 Data Time: 0.03s	Train Time: 6.59s
+  0%|          | 0/141 [00:00<?, ?it/s]  1%|▏         | 2/141 [00:00<00:09, 14.38it/s]  3%|▎         | 4/141 [00:00<00:09, 14.20it/s]  4%|▍         | 6/141 [00:00<00:09, 14.21it/s]  6%|▌         | 8/141 [00:00<00:09, 14.25it/s]  7%|▋         | 10/141 [00:00<00:09, 14.23it/s]  9%|▊         | 12/141 [00:00<00:09, 14.22it/s] 10%|▉         | 14/141 [00:00<00:08, 14.22it/s] 11%|█▏        | 16/141 [00:01<00:08, 14.22it/s] 13%|█▎        | 18/141 [00:01<00:08, 14.21it/s] 14%|█▍        | 20/141 [00:01<00:08, 14.23it/s] 16%|█▌        | 22/141 [00:01<00:08, 14.23it/s] 17%|█▋        | 24/141 [00:01<00:08, 14.21it/s] 18%|█▊        | 26/141 [00:01<00:08, 14.21it/s] 20%|█▉        | 28/141 [00:01<00:07, 14.21it/s] 21%|██▏       | 30/141 [00:02<00:07, 14.21it/s] 23%|██▎       | 32/141 [00:02<00:07, 14.21it/s] 24%|██▍       | 34/141 [00:02<00:07, 14.20it/s] 26%|██▌       | 36/141 [00:02<00:07, 14.19it/s] 27%|██▋       | 38/141 [00:02<00:07, 14.20it/s] 28%|██▊       | 40/141 [00:02<00:07, 14.19it/s] 30%|██▉       | 42/141 [00:02<00:06, 14.21it/s] 31%|███       | 44/141 [00:03<00:06, 14.22it/s] 33%|███▎      | 46/141 [00:03<00:06, 14.21it/s] 34%|███▍      | 48/141 [00:03<00:06, 14.20it/s] 35%|███▌      | 50/141 [00:03<00:06, 14.20it/s] 37%|███▋      | 52/141 [00:03<00:06, 14.18it/s] 38%|███▊      | 54/141 [00:03<00:06, 14.17it/s] 40%|███▉      | 56/141 [00:03<00:05, 14.18it/s] 41%|████      | 58/141 [00:04<00:05, 14.19it/s] 43%|████▎     | 60/141 [00:04<00:05, 14.19it/s] 44%|████▍     | 62/141 [00:04<00:05, 14.18it/s] 45%|████▌     | 64/141 [00:04<00:05, 14.20it/s] 47%|████▋     | 66/141 [00:04<00:05, 14.17it/s] 48%|████▊     | 68/141 [00:04<00:05, 14.18it/s] 50%|████▉     | 70/141 [00:04<00:05, 14.18it/s] 51%|█████     | 72/141 [00:05<00:04, 14.19it/s] 52%|█████▏    | 74/141 [00:05<00:04, 14.20it/s] 54%|█████▍    | 76/141 [00:05<00:04, 14.21it/s] 55%|█████▌    | 78/141 [00:05<00:04, 14.20it/s] 57%|█████▋    | 80/141 [00:05<00:04, 14.19it/s] 58%|█████▊    | 82/141 [00:05<00:04, 14.19it/s] 60%|█████▉    | 84/141 [00:05<00:04, 14.18it/s] 61%|██████    | 86/141 [00:06<00:03, 14.18it/s] 62%|██████▏   | 88/141 [00:06<00:03, 14.19it/s] 64%|██████▍   | 90/141 [00:06<00:03, 14.17it/s] 65%|██████▌   | 92/141 [00:06<00:03, 14.17it/s] 67%|██████▋   | 94/141 [00:06<00:03, 14.19it/s] 68%|██████▊   | 96/141 [00:06<00:03, 14.19it/s] 70%|██████▉   | 98/141 [00:06<00:03, 14.17it/s] 71%|███████   | 100/141 [00:07<00:02, 14.16it/s] 72%|███████▏  | 102/141 [00:07<00:02, 14.17it/s] 74%|███████▍  | 104/141 [00:07<00:02, 14.16it/s] 75%|███████▌  | 106/141 [00:07<00:02, 14.17it/s] 77%|███████▋  | 108/141 [00:07<00:02, 14.16it/s] 78%|███████▊  | 110/141 [00:07<00:02, 14.15it/s] 79%|███████▉  | 112/141 [00:07<00:02, 14.15it/s] 81%|████████  | 114/141 [00:08<00:01, 14.16it/s] 82%|████████▏ | 116/141 [00:08<00:01, 14.14it/s] 84%|████████▎ | 118/141 [00:08<00:01, 14.16it/s] 85%|████████▌ | 120/141 [00:08<00:01, 14.17it/s] 87%|████████▋ | 122/141 [00:08<00:01, 14.17it/s] 88%|████████▊ | 124/141 [00:08<00:01, 14.18it/s] 89%|████████▉ | 126/141 [00:08<00:01, 14.19it/s] 91%|█████████ | 128/141 [00:09<00:00, 14.19it/s] 92%|█████████▏| 130/141 [00:09<00:00, 14.20it/s] 94%|█████████▎| 132/141 [00:09<00:00, 14.20it/s] 95%|█████████▌| 134/141 [00:09<00:00, 14.18it/s] 96%|█████████▋| 136/141 [00:09<00:00, 14.18it/s] 98%|█████████▊| 138/141 [00:09<00:00, 14.19it/s] 99%|█████████▉| 140/141 [00:09<00:00, 14.18it/s]100%|██████████| 141/141 [00:09<00:00, 14.19it/s]
+2024-04-20 03:27:03 [INFO ]  Epochs since last improvement: 4
+2024-04-20 03:27:03 [INFO ]  Loss, accuracy, f1_score and DTO: 0.417808 0.808067 0.682133 0.195184
+2024-04-20 03:27:03 [INFO ]  Evaluation at Epoch 7
+  0%|          | 0/158 [00:00<?, ?it/s]  1%|▏         | 2/158 [00:00<00:10, 14.20it/s]  3%|▎         | 4/158 [00:00<00:10, 14.19it/s]  4%|▍         | 6/158 [00:00<00:10, 14.15it/s]  5%|▌         | 8/158 [00:00<00:10, 14.14it/s]  6%|▋         | 10/158 [00:00<00:10, 14.15it/s]  8%|▊         | 12/158 [00:00<00:10, 14.15it/s]  9%|▉         | 14/158 [00:00<00:10, 14.14it/s] 10%|█         | 16/158 [00:01<00:10, 14.14it/s] 11%|█▏        | 18/158 [00:01<00:09, 14.16it/s] 13%|█▎        | 20/158 [00:01<00:09, 14.17it/s] 14%|█▍        | 22/158 [00:01<00:09, 14.19it/s] 15%|█▌        | 24/158 [00:01<00:09, 14.19it/s] 16%|█▋        | 26/158 [00:01<00:09, 14.19it/s] 18%|█▊        | 28/158 [00:01<00:09, 14.19it/s] 19%|█▉        | 30/158 [00:02<00:09, 14.22it/s] 20%|██        | 32/158 [00:02<00:08, 14.21it/s] 22%|██▏       | 34/158 [00:02<00:08, 14.22it/s] 23%|██▎       | 36/158 [00:02<00:08, 14.21it/s] 24%|██▍       | 38/158 [00:02<00:08, 14.20it/s] 25%|██▌       | 40/158 [00:02<00:08, 14.20it/s] 27%|██▋       | 42/158 [00:02<00:08, 14.20it/s] 28%|██▊       | 44/158 [00:03<00:08, 14.20it/s] 29%|██▉       | 46/158 [00:03<00:07, 14.20it/s] 30%|███       | 48/158 [00:03<00:07, 14.19it/s] 32%|███▏      | 50/158 [00:03<00:07, 14.21it/s] 33%|███▎      | 52/158 [00:03<00:07, 14.20it/s] 34%|███▍      | 54/158 [00:03<00:07, 14.19it/s] 35%|███▌      | 56/158 [00:03<00:07, 14.16it/s] 37%|███▋      | 58/158 [00:04<00:07, 14.18it/s] 38%|███▊      | 60/158 [00:04<00:06, 14.19it/s] 39%|███▉      | 62/158 [00:04<00:06, 14.18it/s] 41%|████      | 64/158 [00:04<00:06, 14.18it/s] 42%|████▏     | 66/158 [00:04<00:06, 14.17it/s] 43%|████▎     | 68/158 [00:04<00:06, 14.18it/s] 44%|████▍     | 70/158 [00:04<00:06, 14.15it/s] 46%|████▌     | 72/158 [00:05<00:06, 14.16it/s] 47%|████▋     | 74/158 [00:05<00:05, 14.18it/s] 48%|████▊     | 76/158 [00:05<00:05, 14.18it/s] 49%|████▉     | 78/158 [00:05<00:05, 14.17it/s] 51%|█████     | 80/158 [00:05<00:05, 14.19it/s] 52%|█████▏    | 82/158 [00:05<00:05, 14.19it/s] 53%|█████▎    | 84/158 [00:05<00:05, 14.19it/s] 54%|█████▍    | 86/158 [00:06<00:05, 14.19it/s] 56%|█████▌    | 88/158 [00:06<00:04, 14.20it/s] 57%|█████▋    | 90/158 [00:06<00:04, 14.20it/s] 58%|█████▊    | 92/158 [00:06<00:04, 14.20it/s] 59%|█████▉    | 94/158 [00:06<00:04, 14.20it/s] 61%|██████    | 96/158 [00:06<00:04, 14.21it/s] 62%|██████▏   | 98/158 [00:06<00:04, 14.22it/s] 63%|██████▎   | 100/158 [00:07<00:04, 14.20it/s] 65%|██████▍   | 102/158 [00:07<00:03, 14.20it/s] 66%|██████▌   | 104/158 [00:07<00:03, 14.20it/s] 67%|██████▋   | 106/158 [00:07<00:03, 14.17it/s] 68%|██████▊   | 108/158 [00:07<00:03, 14.17it/s] 70%|██████▉   | 110/158 [00:07<00:03, 14.17it/s] 71%|███████   | 112/158 [00:07<00:03, 14.16it/s] 72%|███████▏  | 114/158 [00:08<00:03, 14.15it/s] 73%|███████▎  | 116/158 [00:08<00:02, 14.16it/s] 75%|███████▍  | 118/158 [00:08<00:02, 14.17it/s] 76%|███████▌  | 120/158 [00:08<00:02, 14.17it/s] 77%|███████▋  | 122/158 [00:08<00:02, 14.20it/s] 78%|███████▊  | 124/158 [00:08<00:02, 14.20it/s] 80%|███████▉  | 126/158 [00:08<00:02, 14.18it/s] 81%|████████  | 128/158 [00:09<00:02, 14.17it/s] 82%|████████▏ | 130/158 [00:09<00:01, 14.18it/s] 84%|████████▎ | 132/158 [00:09<00:01, 14.17it/s] 85%|████████▍ | 134/158 [00:09<00:01, 14.18it/s] 86%|████████▌ | 136/158 [00:09<00:01, 14.17it/s] 87%|████████▋ | 138/158 [00:09<00:01, 14.15it/s] 89%|████████▊ | 140/158 [00:09<00:01, 14.14it/s] 90%|████████▉ | 142/158 [00:10<00:01, 14.16it/s] 91%|█████████ | 144/158 [00:10<00:00, 14.16it/s] 92%|█████████▏| 146/158 [00:10<00:00, 14.17it/s] 94%|█████████▎| 148/158 [00:10<00:00, 14.17it/s] 95%|█████████▍| 150/158 [00:10<00:00, 14.15it/s] 96%|█████████▌| 152/158 [00:10<00:00, 14.15it/s] 97%|█████████▋| 154/158 [00:10<00:00, 14.17it/s] 99%|█████████▊| 156/158 [00:11<00:00, 14.18it/s]100%|██████████| 158/158 [00:11<00:00, 14.24it/s]
+2024-04-20 03:27:14 [INFO ]  Validation accuracy: 80.81	macro_fscore: 68.21	micro_fscore: 80.81	TPR_GAP: 3.55	FPR_GAP: 3.55	PPR_GAP: 1.01	
+2024-04-20 03:27:14 [INFO ]  Test accuracy: 89.45	macro_fscore: 85.94	micro_fscore: 89.45	TPR_GAP: 4.02	FPR_GAP: 4.02	PPR_GAP: 9.60	
+2024-04-20 03:27:14 [INFO ]  Epoch:    8 [      0/  22818 ( 0%)]	Loss: 0.4127	 Data Time: 0.00s	Train Time: 0.13s
+2024-04-20 03:27:21 [INFO ]  Epoch:    8 [    800/  22818 ( 4%)]	Loss: 0.1049	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:27:27 [INFO ]  Epoch:    8 [   1600/  22818 ( 7%)]	Loss: 0.3520	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:27:34 [INFO ]  Epoch:    8 [   2400/  22818 (11%)]	Loss: 0.2348	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:27:41 [INFO ]  Epoch:    8 [   3200/  22818 (14%)]	Loss: 0.2679	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:27:47 [INFO ]  Epoch:    8 [   4000/  22818 (18%)]	Loss: 0.5429	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:27:54 [INFO ]  Epoch:    8 [   4800/  22818 (21%)]	Loss: 0.4152	 Data Time: 0.03s	Train Time: 6.61s
+2024-04-20 03:28:01 [INFO ]  Epoch:    8 [   5600/  22818 (25%)]	Loss: 0.2542	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:28:07 [INFO ]  Epoch:    8 [   6400/  22818 (28%)]	Loss: 0.5318	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:28:14 [INFO ]  Epoch:    8 [   7200/  22818 (32%)]	Loss: 0.4262	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:28:20 [INFO ]  Epoch:    8 [   8000/  22818 (35%)]	Loss: 0.0921	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:28:27 [INFO ]  Epoch:    8 [   8800/  22818 (39%)]	Loss: 0.3165	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:28:34 [INFO ]  Epoch:    8 [   9600/  22818 (42%)]	Loss: 0.3440	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:28:40 [INFO ]  Epoch:    8 [  10400/  22818 (46%)]	Loss: 0.3060	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:28:47 [INFO ]  Epoch:    8 [  11200/  22818 (49%)]	Loss: 0.1772	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:28:54 [INFO ]  Epoch:    8 [  12000/  22818 (53%)]	Loss: 0.5767	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:29:00 [INFO ]  Epoch:    8 [  12800/  22818 (56%)]	Loss: 0.2669	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:29:07 [INFO ]  Epoch:    8 [  13600/  22818 (60%)]	Loss: 0.3980	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:29:13 [INFO ]  Epoch:    8 [  14400/  22818 (63%)]	Loss: 0.3443	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:29:20 [INFO ]  Epoch:    8 [  15200/  22818 (67%)]	Loss: 0.2571	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:29:27 [INFO ]  Epoch:    8 [  16000/  22818 (70%)]	Loss: 0.2372	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:29:33 [INFO ]  Epoch:    8 [  16800/  22818 (74%)]	Loss: 0.5037	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:29:40 [INFO ]  Epoch:    8 [  17600/  22818 (77%)]	Loss: 0.1191	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:29:47 [INFO ]  Epoch:    8 [  18400/  22818 (81%)]	Loss: 0.1118	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:29:53 [INFO ]  Epoch:    8 [  19200/  22818 (84%)]	Loss: 0.3912	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:30:00 [INFO ]  Epoch:    8 [  20000/  22818 (88%)]	Loss: 0.2605	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:30:06 [INFO ]  Epoch:    8 [  20800/  22818 (91%)]	Loss: 0.2543	 Data Time: 0.03s	Train Time: 6.59s
+2024-04-20 03:30:13 [INFO ]  Epoch:    8 [  21600/  22818 (95%)]	Loss: 0.2258	 Data Time: 0.03s	Train Time: 6.60s
+2024-04-20 03:30:20 [INFO ]  Epoch:    8 [  22400/  22818 (98%)]	Loss: 0.2147	 Data Time: 0.03s	Train Time: 6.60s
+  0%|          | 0/141 [00:00<?, ?it/s]  1%|▏         | 2/141 [00:00<00:09, 14.38it/s]  3%|▎         | 4/141 [00:00<00:09, 14.26it/s]  4%|▍         | 6/141 [00:00<00:09, 14.25it/s]  6%|▌         | 8/141 [00:00<00:09, 14.22it/s]  7%|▋         | 10/141 [00:00<00:09, 14.22it/s]  9%|▊         | 12/141 [00:00<00:09, 14.18it/s] 10%|▉         | 14/141 [00:00<00:08, 14.18it/s] 11%|█▏        | 16/141 [00:01<00:08, 14.19it/s] 13%|█▎        | 18/141 [00:01<00:08, 14.19it/s] 14%|█▍        | 20/141 [00:01<00:08, 14.21it/s] 16%|█▌        | 22/141 [00:01<00:08, 14.22it/s] 17%|█▋        | 24/141 [00:01<00:08, 14.21it/s] 18%|█▊        | 26/141 [00:01<00:08, 14.20it/s] 20%|█▉        | 28/141 [00:01<00:07, 14.20it/s] 21%|██▏       | 30/141 [00:02<00:07, 14.21it/s] 23%|██▎       | 32/141 [00:02<00:07, 14.22it/s] 24%|██▍       | 34/141 [00:02<00:07, 14.22it/s] 26%|██▌       | 36/141 [00:02<00:07, 14.22it/s] 27%|██▋       | 38/141 [00:02<00:07, 14.22it/s] 28%|██▊       | 40/141 [00:02<00:07, 14.23it/s] 30%|██▉       | 42/141 [00:02<00:06, 14.22it/s] 31%|███       | 44/141 [00:03<00:06, 14.20it/s] 33%|███▎      | 46/141 [00:03<00:06, 14.18it/s] 34%|███▍      | 48/141 [00:03<00:06, 14.18it/s] 35%|███▌      | 50/141 [00:03<00:06, 14.18it/s] 37%|███▋      | 52/141 [00:03<00:06, 14.19it/s] 38%|███▊      | 54/141 [00:03<00:06, 14.21it/s] 40%|███▉      | 56/141 [00:03<00:05, 14.22it/s] 41%|████      | 58/141 [00:04<00:05, 14.18it/s] 43%|████▎     | 60/141 [00:04<00:05, 14.16it/s] 44%|████▍     | 62/141 [00:04<00:05, 14.18it/s] 45%|████▌     | 64/141 [00:04<00:05, 14.19it/s] 47%|████▋     | 66/141 [00:04<00:05, 14.19it/s] 48%|████▊     | 68/141 [00:04<00:05, 14.18it/s] 50%|████▉     | 70/141 [00:04<00:05, 14.19it/s] 51%|█████     | 72/141 [00:05<00:04, 14.20it/s] 52%|█████▏    | 74/141 [00:05<00:04, 14.21it/s] 54%|█████▍    | 76/141 [00:05<00:04, 14.19it/s] 55%|█████▌    | 78/141 [00:05<00:04, 14.19it/s] 57%|█████▋    | 80/141 [00:05<00:04, 14.20it/s] 58%|█████▊    | 82/141 [00:05<00:04, 14.19it/s] 60%|█████▉    | 84/141 [00:05<00:04, 14.19it/s] 61%|██████    | 86/141 [00:06<00:03, 14.20it/s] 62%|██████▏   | 88/141 [00:06<00:03, 14.19it/s] 64%|██████▍   | 90/141 [00:06<00:03, 14.20it/s] 65%|██████▌   | 92/141 [00:06<00:03, 14.19it/s] 67%|██████▋   | 94/141 [00:06<00:03, 14.18it/s] 68%|██████▊   | 96/141 [00:06<00:03, 14.17it/s] 70%|██████▉   | 98/141 [00:06<00:03, 14.18it/s] 71%|███████   | 100/141 [00:07<00:02, 14.19it/s] 72%|███████▏  | 102/141 [00:07<00:02, 14.16it/s] 74%|███████▍  | 104/141 [00:07<00:02, 14.18it/s] 75%|███████▌  | 106/141 [00:07<00:02, 14.17it/s] 77%|███████▋  | 108/141 [00:07<00:02, 14.16it/s] 78%|███████▊  | 110/141 [00:07<00:02, 14.18it/s] 79%|███████▉  | 112/141 [00:07<00:02, 14.19it/s] 81%|████████  | 114/141 [00:08<00:01, 14.17it/s] 82%|████████▏ | 116/141 [00:08<00:01, 14.17it/s] 84%|████████▎ | 118/141 [00:08<00:01, 14.17it/s] 85%|████████▌ | 120/141 [00:08<00:01, 14.17it/s] 87%|████████▋ | 122/141 [00:08<00:01, 14.18it/s] 88%|████████▊ | 124/141 [00:08<00:01, 14.19it/s] 89%|████████▉ | 126/141 [00:08<00:01, 14.16it/s] 91%|█████████ | 128/141 [00:09<00:00, 14.17it/s] 92%|█████████▏| 130/141 [00:09<00:00, 14.16it/s] 94%|█████████▎| 132/141 [00:09<00:00, 14.16it/s] 95%|█████████▌| 134/141 [00:09<00:00, 14.17it/s] 96%|█████████▋| 136/141 [00:09<00:00, 14.18it/s] 98%|█████████▊| 138/141 [00:09<00:00, 14.19it/s] 99%|█████████▉| 140/141 [00:09<00:00, 14.19it/s]100%|██████████| 141/141 [00:09<00:00, 14.19it/s]
+2024-04-20 03:30:33 [INFO ]  Epochs since last improvement: 5
+2024-04-20 03:30:33 [INFO ]  Loss, accuracy, f1_score and DTO: 0.420037 0.811170 0.682250 0.191552
+2024-04-20 03:30:33 [INFO ]  Evaluation at Epoch 8
+  0%|          | 0/158 [00:00<?, ?it/s]  1%|▏         | 2/158 [00:00<00:11, 14.12it/s]  3%|▎         | 4/158 [00:00<00:10, 14.15it/s]  4%|▍         | 6/158 [00:00<00:10, 14.17it/s]  5%|▌         | 8/158 [00:00<00:10, 14.18it/s]  6%|▋         | 10/158 [00:00<00:10, 14.16it/s]  8%|▊         | 12/158 [00:00<00:10, 14.19it/s]  9%|▉         | 14/158 [00:00<00:10, 14.20it/s] 10%|█         | 16/158 [00:01<00:10, 14.18it/s] 11%|█▏        | 18/158 [00:01<00:09, 14.18it/s] 13%|█▎        | 20/158 [00:01<00:09, 14.19it/s] 14%|█▍        | 22/158 [00:01<00:09, 14.18it/s] 15%|█▌        | 24/158 [00:01<00:09, 14.17it/s] 16%|█▋        | 26/158 [00:01<00:09, 14.17it/s] 18%|█▊        | 28/158 [00:01<00:09, 14.21it/s] 19%|█▉        | 30/158 [00:02<00:09, 14.21it/s] 20%|██        | 32/158 [00:02<00:08, 14.21it/s] 22%|██▏       | 34/158 [00:02<00:08, 14.22it/s] 23%|██▎       | 36/158 [00:02<00:08, 14.23it/s] 24%|██▍       | 38/158 [00:02<00:08, 14.22it/s] 25%|██▌       | 40/158 [00:02<00:08, 14.22it/s] 27%|██▋       | 42/158 [00:02<00:08, 14.18it/s] 28%|██▊       | 44/158 [00:03<00:08, 14.18it/s] 29%|██▉       | 46/158 [00:03<00:07, 14.18it/s] 30%|███       | 48/158 [00:03<00:07, 14.16it/s] 32%|███▏      | 50/158 [00:03<00:07, 14.15it/s] 33%|███▎      | 52/158 [00:03<00:07, 14.14it/s] 34%|███▍      | 54/158 [00:03<00:07, 14.15it/s] 35%|███▌      | 56/158 [00:03<00:07, 14.17it/s] 37%|███▋      | 58/158 [00:04<00:07, 14.19it/s] 38%|███▊      | 60/158 [00:04<00:06, 14.20it/s] 39%|███▉      | 62/158 [00:04<00:06, 14.19it/s] 41%|████      | 64/158 [00:04<00:06, 14.19it/s] 42%|████▏     | 66/158 [00:04<00:06, 14.17it/s] 43%|████▎     | 68/158 [00:04<00:06, 14.18it/s] 44%|████▍     | 70/158 [00:04<00:06, 14.18it/s] 46%|████▌     | 72/158 [00:05<00:06, 14.18it/s] 47%|████▋     | 74/158 [00:05<00:05, 14.17it/s] 48%|████▊     | 76/158 [00:05<00:05, 14.18it/s] 49%|████▉     | 78/158 [00:05<00:05, 14.16it/s] 51%|█████     | 80/158 [00:05<00:05, 14.14it/s] 52%|█████▏    | 82/158 [00:05<00:05, 14.15it/s] 53%|█████▎    | 84/158 [00:05<00:05, 14.16it/s] 54%|█████▍    | 86/158 [00:06<00:05, 14.16it/s] 56%|█████▌    | 88/158 [00:06<00:04, 14.15it/s] 57%|█████▋    | 90/158 [00:06<00:04, 14.18it/s] 58%|█████▊    | 92/158 [00:06<00:04, 14.19it/s] 59%|█████▉    | 94/158 [00:06<00:04, 14.18it/s] 61%|██████    | 96/158 [00:06<00:04, 14.17it/s] 62%|██████▏   | 98/158 [00:06<00:04, 14.16it/s] 63%|██████▎   | 100/158 [00:07<00:04, 14.15it/s] 65%|██████▍   | 102/158 [00:07<00:03, 14.17it/s] 66%|██████▌   | 104/158 [00:07<00:03, 14.17it/s] 67%|██████▋   | 106/158 [00:07<00:03, 14.17it/s] 68%|██████▊   | 108/158 [00:07<00:03, 14.17it/s] 70%|██████▉   | 110/158 [00:07<00:03, 14.17it/s] 71%|███████   | 112/158 [00:07<00:03, 14.16it/s] 72%|███████▏  | 114/158 [00:08<00:03, 14.15it/s] 73%|███████▎  | 116/158 [00:08<00:02, 14.15it/s] 75%|███████▍  | 118/158 [00:08<00:02, 14.16it/s] 76%|███████▌  | 120/158 [00:08<00:02, 14.15it/s] 77%|███████▋  | 122/158 [00:08<00:02, 14.16it/s] 78%|███████▊  | 124/158 [00:08<00:02, 14.20it/s] 80%|███████▉  | 126/158 [00:08<00:02, 14.20it/s] 81%|████████  | 128/158 [00:09<00:02, 14.17it/s] 82%|████████▏ | 130/158 [00:09<00:01, 14.15it/s] 84%|████████▎ | 132/158 [00:09<00:01, 14.16it/s] 85%|████████▍ | 134/158 [00:09<00:01, 14.15it/s] 86%|████████▌ | 136/158 [00:09<00:01, 14.14it/s] 87%|████████▋ | 138/158 [00:09<00:01, 14.16it/s] 89%|████████▊ | 140/158 [00:09<00:01, 14.17it/s] 90%|████████▉ | 142/158 [00:10<00:01, 14.15it/s] 91%|█████████ | 144/158 [00:10<00:00, 14.16it/s] 92%|█████████▏| 146/158 [00:10<00:00, 14.15it/s] 94%|█████████▎| 148/158 [00:10<00:00, 14.15it/s] 95%|█████████▍| 150/158 [00:10<00:00, 14.15it/s] 96%|█████████▌| 152/158 [00:10<00:00, 14.13it/s] 97%|█████████▋| 154/158 [00:10<00:00, 14.12it/s] 99%|█████████▊| 156/158 [00:11<00:00, 14.14it/s]100%|██████████| 158/158 [00:11<00:00, 14.23it/s]
+2024-04-20 03:30:44 [INFO ]  Validation accuracy: 81.12	macro_fscore: 68.23	micro_fscore: 81.12	TPR_GAP: 3.22	FPR_GAP: 3.22	PPR_GAP: 0.69	
+2024-04-20 03:30:44 [INFO ]  Test accuracy: 89.63	macro_fscore: 86.24	micro_fscore: 89.63	TPR_GAP: 4.21	FPR_GAP: 4.21	PPR_GAP: 9.91	
+2024-04-20 03:30:44 [INFO ]  Model Trained!
+2024-04-20 03:30:44 [INFO ]  Finished!

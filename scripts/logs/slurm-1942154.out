@@ -1,0 +1,1500 @@
+INFO:root:Unexpected args: ['base_seed', '18']
+INFO:root:Logging to ./results/dev/MTC_joint/multilingual/English/opt_acc_mtc_joint_unbal/fairlib_bert_no_sn_MTC_joint_eval_vanilla_18/output.log
+Some weights of the model checkpoint at bert-base-cased were not used when initializing BertModel: ['cls.seq_relationship.bias', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.weight']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+2024-04-26 01:36:36 [INFO ]  ======================================== 2024-04-26 01:36:36 ========================================
+2024-04-26 01:36:36 [INFO ]  Base directory is ./results/dev/MTC_joint/multilingual/English/opt_acc_mtc_joint_unbal/fairlib_bert_no_sn_MTC_joint_eval_vanilla_18
+2024-04-26 01:36:36 [INFO ]  Options: 
+2024-04-26 01:36:36 [INFO ]  	BT: null
+2024-04-26 01:36:36 [INFO ]  	BTObj: null
+2024-04-26 01:36:36 [INFO ]  	DyBT: null
+2024-04-26 01:36:36 [INFO ]  	DyBTObj: null
+2024-04-26 01:36:36 [INFO ]  	DyBTalpha: 0.1
+2024-04-26 01:36:36 [INFO ]  	DyBTinit: original
+2024-04-26 01:36:36 [INFO ]  	FCL: false
+2024-04-26 01:36:36 [INFO ]  	FCLObj: g
+2024-04-26 01:36:36 [INFO ]  	GBT: false
+2024-04-26 01:36:36 [INFO ]  	GBTObj: null
+2024-04-26 01:36:36 [INFO ]  	GBT_N: null
+2024-04-26 01:36:36 [INFO ]  	GBT_alpha: 1
+2024-04-26 01:36:36 [INFO ]  	INLP: false
+2024-04-26 01:36:36 [INFO ]  	INLP_by_class: false
+2024-04-26 01:36:36 [INFO ]  	INLP_discriminator_reweighting: null
+2024-04-26 01:36:36 [INFO ]  	INLP_min_acc: 0.0
+2024-04-26 01:36:36 [INFO ]  	INLP_n: 190
+2024-04-26 01:36:36 [INFO ]  	LEACE: false
+2024-04-26 01:36:36 [INFO ]  	activation_function: Tanh
+2024-04-26 01:36:36 [INFO ]  	adv_BT: null
+2024-04-26 01:36:36 [INFO ]  	adv_BTObj: null
+2024-04-26 01:36:36 [INFO ]  	adv_activation_function: ReLu
+2024-04-26 01:36:36 [INFO ]  	adv_batch_norm: false
+2024-04-26 01:36:36 [INFO ]  	adv_batch_size: 1024
+2024-04-26 01:36:36 [INFO ]  	adv_checkpoint_interval: 1
+2024-04-26 01:36:36 [INFO ]  	adv_debiasing: false
+2024-04-26 01:36:36 [INFO ]  	adv_decoupling: false
+2024-04-26 01:36:36 [INFO ]  	adv_decoupling_labelled_proportion: 1.0
+2024-04-26 01:36:36 [INFO ]  	adv_diverse_lambda: 0.0
+2024-04-26 01:36:36 [INFO ]  	adv_dropout: 0
+2024-04-26 01:36:36 [INFO ]  	adv_epochs: 100
+2024-04-26 01:36:36 [INFO ]  	adv_epochs_since_improvement: 5
+2024-04-26 01:36:36 [INFO ]  	adv_gated: false
+2024-04-26 01:36:36 [INFO ]  	adv_gated_mapping: null
+2024-04-26 01:36:36 [INFO ]  	adv_hidden_size: 300
+2024-04-26 01:36:36 [INFO ]  	adv_lambda: 1
+2024-04-26 01:36:36 [INFO ]  	adv_level: last_hidden
+2024-04-26 01:36:36 [INFO ]  	adv_lr: 0.001
+2024-04-26 01:36:36 [INFO ]  	adv_n_hidden: 2
+2024-04-26 01:36:36 [INFO ]  	adv_num_subDiscriminator: 1
+2024-04-26 01:36:36 [INFO ]  	adv_test_batch_size: 1024
+2024-04-26 01:36:36 [INFO ]  	adv_uniform_label: false
+2024-04-26 01:36:36 [INFO ]  	adv_update_frequency: Batch
+2024-04-26 01:36:36 [INFO ]  	balance_test: false
+2024-04-26 01:36:36 [INFO ]  	base_seed: 1
+2024-04-26 01:36:36 [INFO ]  	batch_norm: false
+2024-04-26 01:36:36 [INFO ]  	batch_size: 16
+2024-04-26 01:36:36 [INFO ]  	checkpoint_interval: 1
+2024-04-26 01:36:36 [INFO ]  	classification_head_update_frequency: 1
+2024-04-26 01:36:36 [INFO ]  	conf_file: null
+2024-04-26 01:36:36 [INFO ]  	cross_val: false
+2024-04-26 01:36:36 [INFO ]  	cross_val_fold: null
+2024-04-26 01:36:36 [INFO ]  	cross_val_n_splits: 5
+2024-04-26 01:36:36 [INFO ]  	data_dir: /home/dalapko/MTC_English
+2024-04-26 01:36:36 [INFO ]  	dataset: MTC_joint
+2024-04-26 01:36:36 [INFO ]  	deemojify: 0
+2024-04-26 01:36:36 [INFO ]  	dev_idx: null
+2024-04-26 01:36:36 [INFO ]  	device_id: 0
+2024-04-26 01:36:36 [INFO ]  	dropout: 0.1
+2024-04-26 01:36:36 [INFO ]  	early_stopping_criterion: loss
+2024-04-26 01:36:36 [INFO ]  	early_stopping_weights:
+2024-04-26 01:36:36 [INFO ]  	- 1.0
+2024-04-26 01:36:36 [INFO ]  	- 1.0
+2024-04-26 01:36:36 [INFO ]  	emb_size: 768
+2024-04-26 01:36:36 [INFO ]  	encoder_architecture: BERT
+2024-04-26 01:36:36 [INFO ]  	epochs: 20
+2024-04-26 01:36:36 [INFO ]  	epochs_since_improvement: 5
+2024-04-26 01:36:36 [INFO ]  	eval: true
+2024-04-26 01:36:36 [INFO ]  	exp_id: multilingual/English/opt_acc_mtc_joint_unbal/fairlib_bert_no_sn_MTC_joint_eval_vanilla_18
+2024-04-26 01:36:36 [INFO ]  	f: null
+2024-04-26 01:36:36 [INFO ]  	fcl_base_temperature_g: 0.01
+2024-04-26 01:36:36 [INFO ]  	fcl_base_temperature_y: 0.01
+2024-04-26 01:36:36 [INFO ]  	fcl_lambda_g: 0.1
+2024-04-26 01:36:36 [INFO ]  	fcl_lambda_y: 0.1
+2024-04-26 01:36:36 [INFO ]  	fcl_temperature_g: 0.01
+2024-04-26 01:36:36 [INFO ]  	fcl_temperature_y: 0.01
+2024-04-26 01:36:36 [INFO ]  	full_label: true
+2024-04-26 01:36:36 [INFO ]  	full_splits: []
+2024-04-26 01:36:36 [INFO ]  	gated: false
+2024-04-26 01:36:36 [INFO ]  	gated_mapping: null
+2024-04-26 01:36:36 [INFO ]  	group_agg_power: -1
+2024-04-26 01:36:36 [INFO ]  	hidden_size: 300
+2024-04-26 01:36:36 [INFO ]  	joint_protected_attrs:
+2024-04-26 01:36:36 [INFO ]  	- age
+2024-04-26 01:36:36 [INFO ]  	- gender
+2024-04-26 01:36:36 [INFO ]  	- country
+2024-04-26 01:36:36 [INFO ]  	leace_load_model: 0
+2024-04-26 01:36:36 [INFO ]  	leace_mode: last
+2024-04-26 01:36:36 [INFO ]  	leace_weights_dataset_name: null
+2024-04-26 01:36:36 [INFO ]  	leace_weights_dir: null
+2024-04-26 01:36:36 [INFO ]  	log_file: ./results/dev/MTC_joint/multilingual/English/opt_acc_mtc_joint_unbal/fairlib_bert_no_sn_MTC_joint_eval_vanilla_18/output.log
+2024-04-26 01:36:36 [INFO ]  	log_interval: 50
+2024-04-26 01:36:36 [INFO ]  	log_level: INFO
+2024-04-26 01:36:36 [INFO ]  	lr: 1.0e-06
+2024-04-26 01:36:36 [INFO ]  	model_dir: ./results/dev/MTC_joint/multilingual/English/opt_acc_mtc_joint_unbal/fairlib_bert_no_sn_MTC_joint_eval_vanilla_18/models
+2024-04-26 01:36:36 [INFO ]  	model_name: bert-base-cased
+2024-04-26 01:36:36 [INFO ]  	multiple_leace: false
+2024-04-26 01:36:36 [INFO ]  	n_bins: 4
+2024-04-26 01:36:36 [INFO ]  	n_freezed_layers: 0
+2024-04-26 01:36:36 [INFO ]  	n_hidden: 2
+2024-04-26 01:36:36 [INFO ]  	n_power_iterations: 1
+2024-04-26 01:36:36 [INFO ]  	no_log: false
+2024-04-26 01:36:36 [INFO ]  	num_classes: 2
+2024-04-26 01:36:36 [INFO ]  	num_clusters: 0
+2024-04-26 01:36:36 [INFO ]  	num_groups: 2
+2024-04-26 01:36:36 [INFO ]  	num_remove_clusters: 0
+2024-04-26 01:36:36 [INFO ]  	num_workers: 0
+2024-04-26 01:36:36 [INFO ]  	performance_metric: accuracy
+2024-04-26 01:36:36 [INFO ]  	project_dir: dev
+2024-04-26 01:36:36 [INFO ]  	protected_task: ethnicity
+2024-04-26 01:36:36 [INFO ]  	rebalance_all: false
+2024-04-26 01:36:36 [INFO ]  	rebalance_power: 1
+2024-04-26 01:36:36 [INFO ]  	reg_lamb: 0.0
+2024-04-26 01:36:36 [INFO ]  	reg_lamb_intra: 0.0
+2024-04-26 01:36:36 [INFO ]  	reg_margin: 0.0
+2024-04-26 01:36:36 [INFO ]  	regression: false
+2024-04-26 01:36:36 [INFO ]  	remove_percent: 0
+2024-04-26 01:36:36 [INFO ]  	results_dir: ./results/
+2024-04-26 01:36:36 [INFO ]  	save_batch_results: false
+2024-04-26 01:36:36 [INFO ]  	start_time: '2024-04-26 01:36:36'
+2024-04-26 01:36:36 [INFO ]  	subsample_all: 1.0
+2024-04-26 01:36:36 [INFO ]  	subsample_classes: null
+2024-04-26 01:36:36 [INFO ]  	subsample_min_size: 20
+2024-04-26 01:36:36 [INFO ]  	subsample_perc: 1.0
+2024-04-26 01:36:36 [INFO ]  	subsample_protected_labels: false
+2024-04-26 01:36:36 [INFO ]  	test_batch_size: 32
+2024-04-26 01:36:36 [INFO ]  	train_idx: null
+2024-04-26 01:36:36 [INFO ]  	ue_regularizer: null
+2024-04-26 01:36:36 [INFO ]  	unbalance_test: false
+2024-04-26 01:36:36 [INFO ]  	unc_thr: 0.0
+2024-04-26 01:36:36 [INFO ]  	use_collator: false
+2024-04-26 01:36:36 [INFO ]  	use_p_tags: 0
+2024-04-26 01:36:36 [INFO ]  	use_skipconnection: false
+2024-04-26 01:36:36 [INFO ]  	use_spectralnorm: false
+2024-04-26 01:36:36 [INFO ]  	weight_decay: 0.01
+2024-04-26 01:36:36 [INFO ]  	weights_dataset_name: MTC_joint
+2024-04-26 01:36:36 [INFO ]  	weights_dir: ./results/dev/MTC_joint/multilingual/English/opt_acc_mtc_joint_unbal/fairlib_bert_no_sn_MTC_joint_vanilla_18/models
+2024-04-26 01:36:36 [INFO ]  	
+Loaded data shapes: (22818, 128), (22818,), (22818,)
+Loaded data shapes: (4512, 128), (4512,), (4512,)
+Loaded data shapes: (5032, 128), (5032,), (5032,)
+2024-04-26 01:36:43 [INFO ]  train dataset size:	22818
+2024-04-26 01:36:43 [INFO ]  validation dataset size: 	4512
+2024-04-26 01:36:43 [INFO ]  test dataset size: 	5032
+2024-04-26 01:36:43 [INFO ]  datasets built!
+2024-04-26 01:37:43 [INFO ]  MLP( 
+2024-04-26 01:37:43 [INFO ]    (output_layer): Linear(in_features=300, out_features=2, bias=True)
+2024-04-26 01:37:43 [INFO ]    (AF): Tanh()
+2024-04-26 01:37:43 [INFO ]    (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]    (hidden_layers): ModuleList(
+2024-04-26 01:37:43 [INFO ]      (0): Linear(in_features=768, out_features=300, bias=True)
+2024-04-26 01:37:43 [INFO ]      (1): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]      (2): Tanh()
+2024-04-26 01:37:43 [INFO ]      (3): Linear(in_features=300, out_features=300, bias=True)
+2024-04-26 01:37:43 [INFO ]      (4): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]      (5): Tanh()
+2024-04-26 01:37:43 [INFO ]    )
+2024-04-26 01:37:43 [INFO ]    (criterion): CrossEntropyLoss()
+2024-04-26 01:37:43 [INFO ]  )
+2024-04-26 01:37:43 [INFO ]  Total number of parameters: 321602 
+
+2024-04-26 01:37:43 [INFO ]  BERTClassifier( 
+2024-04-26 01:37:43 [INFO ]    (bert): BertModel(
+2024-04-26 01:37:43 [INFO ]      (embeddings): BertEmbeddings(
+2024-04-26 01:37:43 [INFO ]        (word_embeddings): Embedding(28996, 768, padding_idx=0)
+2024-04-26 01:37:43 [INFO ]        (position_embeddings): Embedding(512, 768)
+2024-04-26 01:37:43 [INFO ]        (token_type_embeddings): Embedding(2, 768)
+2024-04-26 01:37:43 [INFO ]        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]        (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]      )
+2024-04-26 01:37:43 [INFO ]      (encoder): BertEncoder(
+2024-04-26 01:37:43 [INFO ]        (layer): ModuleList(
+2024-04-26 01:37:43 [INFO ]          (0): BertLayer(
+2024-04-26 01:37:43 [INFO ]            (attention): BertAttention(
+2024-04-26 01:37:43 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:37:43 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:37:43 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:37:43 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (output): BertOutput(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]          )
+2024-04-26 01:37:43 [INFO ]          (1): BertLayer(
+2024-04-26 01:37:43 [INFO ]            (attention): BertAttention(
+2024-04-26 01:37:43 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:37:43 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:37:43 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:37:43 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (output): BertOutput(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]          )
+2024-04-26 01:37:43 [INFO ]          (2): BertLayer(
+2024-04-26 01:37:43 [INFO ]            (attention): BertAttention(
+2024-04-26 01:37:43 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:37:43 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:37:43 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:37:43 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (output): BertOutput(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]          )
+2024-04-26 01:37:43 [INFO ]          (3): BertLayer(
+2024-04-26 01:37:43 [INFO ]            (attention): BertAttention(
+2024-04-26 01:37:43 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:37:43 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:37:43 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:37:43 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (output): BertOutput(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]          )
+2024-04-26 01:37:43 [INFO ]          (4): BertLayer(
+2024-04-26 01:37:43 [INFO ]            (attention): BertAttention(
+2024-04-26 01:37:43 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:37:43 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:37:43 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:37:43 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (output): BertOutput(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]          )
+2024-04-26 01:37:43 [INFO ]          (5): BertLayer(
+2024-04-26 01:37:43 [INFO ]            (attention): BertAttention(
+2024-04-26 01:37:43 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:37:43 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:37:43 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:37:43 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (output): BertOutput(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]          )
+2024-04-26 01:37:43 [INFO ]          (6): BertLayer(
+2024-04-26 01:37:43 [INFO ]            (attention): BertAttention(
+2024-04-26 01:37:43 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:37:43 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:37:43 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:37:43 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (output): BertOutput(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]          )
+2024-04-26 01:37:43 [INFO ]          (7): BertLayer(
+2024-04-26 01:37:43 [INFO ]            (attention): BertAttention(
+2024-04-26 01:37:43 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:37:43 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:37:43 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:37:43 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (output): BertOutput(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]          )
+2024-04-26 01:37:43 [INFO ]          (8): BertLayer(
+2024-04-26 01:37:43 [INFO ]            (attention): BertAttention(
+2024-04-26 01:37:43 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:37:43 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:37:43 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:37:43 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (output): BertOutput(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]          )
+2024-04-26 01:37:43 [INFO ]          (9): BertLayer(
+2024-04-26 01:37:43 [INFO ]            (attention): BertAttention(
+2024-04-26 01:37:43 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:37:43 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:37:43 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:37:43 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (output): BertOutput(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]          )
+2024-04-26 01:37:43 [INFO ]          (10): BertLayer(
+2024-04-26 01:37:43 [INFO ]            (attention): BertAttention(
+2024-04-26 01:37:43 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:37:43 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:37:43 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:37:43 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (output): BertOutput(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]          )
+2024-04-26 01:37:43 [INFO ]          (11): BertLayer(
+2024-04-26 01:37:43 [INFO ]            (attention): BertAttention(
+2024-04-26 01:37:43 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:37:43 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:37:43 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]              )
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:37:43 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]            (output): BertOutput(
+2024-04-26 01:37:43 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:37:43 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]            )
+2024-04-26 01:37:43 [INFO ]          )
+2024-04-26 01:37:43 [INFO ]        )
+2024-04-26 01:37:43 [INFO ]      )
+2024-04-26 01:37:43 [INFO ]      (pooler): BertPooler(
+2024-04-26 01:37:43 [INFO ]        (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:37:43 [INFO ]        (activation): Tanh()
+2024-04-26 01:37:43 [INFO ]      )
+2024-04-26 01:37:43 [INFO ]    )
+2024-04-26 01:37:43 [INFO ]    (classifier): MLP(
+2024-04-26 01:37:43 [INFO ]      (output_layer): Linear(in_features=300, out_features=2, bias=True)
+2024-04-26 01:37:43 [INFO ]      (AF): Tanh()
+2024-04-26 01:37:43 [INFO ]      (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]      (hidden_layers): ModuleList(
+2024-04-26 01:37:43 [INFO ]        (0): Linear(in_features=768, out_features=300, bias=True)
+2024-04-26 01:37:43 [INFO ]        (1): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]        (2): Tanh()
+2024-04-26 01:37:43 [INFO ]        (3): Linear(in_features=300, out_features=300, bias=True)
+2024-04-26 01:37:43 [INFO ]        (4): Dropout(p=0.1, inplace=False)
+2024-04-26 01:37:43 [INFO ]        (5): Tanh()
+2024-04-26 01:37:43 [INFO ]      )
+2024-04-26 01:37:43 [INFO ]      (criterion): CrossEntropyLoss()
+2024-04-26 01:37:43 [INFO ]    )
+2024-04-26 01:37:43 [INFO ]    (criterion): CrossEntropyLoss()
+2024-04-26 01:37:43 [INFO ]  )
+2024-04-26 01:37:43 [INFO ]  Total number of parameters: 108631874 
+
+Number of trainable parameters: 108310272
+2024-04-26 01:37:46 [INFO ]  Evaluating model...
+  0%|          | 0/141 [00:00<?, ?it/s]  1%|          | 1/141 [00:02<06:52,  2.95s/it]  1%|▏         | 2/141 [00:03<02:59,  1.29s/it]  3%|▎         | 4/141 [00:03<01:11,  1.91it/s]  4%|▍         | 6/141 [00:03<00:41,  3.24it/s]  6%|▌         | 8/141 [00:03<00:28,  4.72it/s]  7%|▋         | 10/141 [00:03<00:20,  6.27it/s]  9%|▊         | 12/141 [00:03<00:16,  7.80it/s] 10%|▉         | 14/141 [00:03<00:13,  9.21it/s] 11%|█▏        | 16/141 [00:04<00:11, 10.44it/s] 13%|█▎        | 18/141 [00:04<00:10, 11.45it/s] 14%|█▍        | 20/141 [00:04<00:09, 12.27it/s] 16%|█▌        | 22/141 [00:04<00:09, 12.89it/s] 17%|█▋        | 24/141 [00:04<00:08, 13.38it/s] 18%|█▊        | 26/141 [00:04<00:08, 13.72it/s] 20%|█▉        | 28/141 [00:04<00:08, 13.98it/s] 21%|██▏       | 30/141 [00:04<00:07, 14.17it/s] 23%|██▎       | 32/141 [00:05<00:07, 14.31it/s] 24%|██▍       | 34/141 [00:05<00:07, 14.42it/s] 26%|██▌       | 36/141 [00:05<00:07, 14.47it/s] 27%|██▋       | 38/141 [00:05<00:07, 14.52it/s] 28%|██▊       | 40/141 [00:05<00:06, 14.56it/s] 30%|██▉       | 42/141 [00:05<00:06, 14.59it/s] 31%|███       | 44/141 [00:05<00:06, 14.58it/s] 33%|███▎      | 46/141 [00:06<00:06, 14.58it/s] 34%|███▍      | 48/141 [00:06<00:06, 14.57it/s] 35%|███▌      | 50/141 [00:06<00:06, 14.60it/s] 37%|███▋      | 52/141 [00:06<00:06, 14.61it/s] 38%|███▊      | 54/141 [00:06<00:05, 14.62it/s] 40%|███▉      | 56/141 [00:06<00:05, 14.61it/s] 41%|████      | 58/141 [00:06<00:05, 14.61it/s] 43%|████▎     | 60/141 [00:07<00:05, 14.62it/s] 44%|████▍     | 62/141 [00:07<00:05, 14.64it/s] 45%|████▌     | 64/141 [00:07<00:05, 14.64it/s] 47%|████▋     | 66/141 [00:07<00:05, 14.60it/s] 48%|████▊     | 68/141 [00:07<00:05, 14.58it/s] 50%|████▉     | 70/141 [00:07<00:04, 14.62it/s] 51%|█████     | 72/141 [00:07<00:04, 14.63it/s] 52%|█████▏    | 74/141 [00:08<00:04, 14.59it/s] 54%|█████▍    | 76/141 [00:08<00:04, 14.58it/s] 55%|█████▌    | 78/141 [00:08<00:04, 14.60it/s] 57%|█████▋    | 80/141 [00:08<00:04, 14.58it/s] 58%|█████▊    | 82/141 [00:08<00:04, 14.58it/s] 60%|█████▉    | 84/141 [00:08<00:03, 14.58it/s] 61%|██████    | 86/141 [00:08<00:03, 14.57it/s] 62%|██████▏   | 88/141 [00:08<00:03, 14.58it/s] 64%|██████▍   | 90/141 [00:09<00:03, 14.58it/s] 65%|██████▌   | 92/141 [00:09<00:03, 14.60it/s] 67%|██████▋   | 94/141 [00:09<00:03, 14.60it/s] 68%|██████▊   | 96/141 [00:09<00:03, 14.58it/s] 70%|██████▉   | 98/141 [00:09<00:02, 14.58it/s] 71%|███████   | 100/141 [00:09<00:02, 14.56it/s] 72%|███████▏  | 102/141 [00:09<00:02, 14.58it/s] 74%|███████▍  | 104/141 [00:10<00:02, 14.56it/s] 75%|███████▌  | 106/141 [00:10<00:02, 14.57it/s] 77%|███████▋  | 108/141 [00:10<00:02, 14.57it/s] 78%|███████▊  | 110/141 [00:10<00:02, 14.57it/s] 79%|███████▉  | 112/141 [00:10<00:01, 14.56it/s] 81%|████████  | 114/141 [00:10<00:01, 14.59it/s] 82%|████████▏ | 116/141 [00:10<00:01, 14.59it/s] 84%|████████▎ | 118/141 [00:11<00:01, 14.59it/s] 85%|████████▌ | 120/141 [00:11<00:01, 14.58it/s] 87%|████████▋ | 122/141 [00:11<00:01, 14.60it/s] 88%|████████▊ | 124/141 [00:11<00:01, 14.58it/s] 89%|████████▉ | 126/141 [00:11<00:01, 14.56it/s] 91%|█████████ | 128/141 [00:11<00:00, 14.55it/s] 92%|█████████▏| 130/141 [00:11<00:00, 14.56it/s] 94%|█████████▎| 132/141 [00:11<00:00, 14.56it/s] 95%|█████████▌| 134/141 [00:12<00:00, 14.56it/s] 96%|█████████▋| 136/141 [00:12<00:00, 14.57it/s] 98%|█████████▊| 138/141 [00:12<00:00, 14.60it/s] 99%|█████████▉| 140/141 [00:12<00:00, 14.60it/s]100%|██████████| 141/141 [00:12<00:00, 11.19it/s]
+  0%|          | 0/158 [00:00<?, ?it/s]  1%|▏         | 2/158 [00:00<00:10, 14.70it/s]  3%|▎         | 4/158 [00:00<00:10, 14.62it/s]  4%|▍         | 6/158 [00:00<00:10, 14.55it/s]  5%|▌         | 8/158 [00:00<00:10, 14.50it/s]  6%|▋         | 10/158 [00:00<00:10, 14.47it/s]  8%|▊         | 12/158 [00:00<00:10, 14.44it/s]  9%|▉         | 14/158 [00:00<00:09, 14.44it/s] 10%|█         | 16/158 [00:01<00:09, 14.43it/s] 11%|█▏        | 18/158 [00:01<00:09, 14.46it/s] 13%|█▎        | 20/158 [00:01<00:09, 14.52it/s] 14%|█▍        | 22/158 [00:01<00:09, 14.50it/s] 15%|█▌        | 24/158 [00:01<00:09, 14.48it/s] 16%|█▋        | 26/158 [00:01<00:09, 14.49it/s] 18%|█▊        | 28/158 [00:01<00:08, 14.51it/s] 19%|█▉        | 30/158 [00:02<00:08, 14.53it/s] 20%|██        | 32/158 [00:02<00:08, 14.52it/s] 22%|██▏       | 34/158 [00:02<00:08, 14.50it/s] 23%|██▎       | 36/158 [00:02<00:08, 14.53it/s] 24%|██▍       | 38/158 [00:02<00:08, 14.52it/s] 25%|██▌       | 40/158 [00:02<00:08, 14.53it/s] 27%|██▋       | 42/158 [00:02<00:07, 14.52it/s] 28%|██▊       | 44/158 [00:03<00:07, 14.49it/s] 29%|██▉       | 46/158 [00:03<00:07, 14.47it/s] 30%|███       | 48/158 [00:03<00:07, 14.48it/s] 32%|███▏      | 50/158 [00:03<00:07, 14.49it/s] 33%|███▎      | 52/158 [00:03<00:07, 14.50it/s] 34%|███▍      | 54/158 [00:03<00:07, 14.52it/s] 35%|███▌      | 56/158 [00:03<00:07, 14.53it/s] 37%|███▋      | 58/158 [00:03<00:06, 14.51it/s] 38%|███▊      | 60/158 [00:04<00:06, 14.53it/s] 39%|███▉      | 62/158 [00:04<00:06, 14.55it/s] 41%|████      | 64/158 [00:04<00:06, 14.55it/s] 42%|████▏     | 66/158 [00:04<00:06, 14.51it/s] 43%|████▎     | 68/158 [00:04<00:06, 14.50it/s] 44%|████▍     | 70/158 [00:04<00:06, 14.53it/s] 46%|████▌     | 72/158 [00:04<00:05, 14.50it/s] 47%|████▋     | 74/158 [00:05<00:05, 14.47it/s] 48%|████▊     | 76/158 [00:05<00:05, 14.47it/s] 49%|████▉     | 78/158 [00:05<00:05, 14.51it/s] 51%|█████     | 80/158 [00:05<00:05, 14.53it/s] 52%|█████▏    | 82/158 [00:05<00:05, 14.53it/s] 53%|█████▎    | 84/158 [00:05<00:05, 14.52it/s] 54%|█████▍    | 86/158 [00:05<00:04, 14.54it/s] 56%|█████▌    | 88/158 [00:06<00:04, 14.54it/s] 57%|█████▋    | 90/158 [00:06<00:04, 14.55it/s] 58%|█████▊    | 92/158 [00:06<00:04, 14.58it/s] 59%|█████▉    | 94/158 [00:06<00:04, 14.56it/s] 61%|██████    | 96/158 [00:06<00:04, 14.54it/s] 62%|██████▏   | 98/158 [00:06<00:04, 14.53it/s] 63%|██████▎   | 100/158 [00:06<00:03, 14.53it/s] 65%|██████▍   | 102/158 [00:07<00:03, 14.50it/s] 66%|██████▌   | 104/158 [00:07<00:03, 14.49it/s] 67%|██████▋   | 106/158 [00:07<00:03, 14.50it/s] 68%|██████▊   | 108/158 [00:07<00:03, 14.52it/s] 70%|██████▉   | 110/158 [00:07<00:03, 14.52it/s] 71%|███████   | 112/158 [00:07<00:03, 14.50it/s] 72%|███████▏  | 114/158 [00:07<00:03, 14.53it/s] 73%|███████▎  | 116/158 [00:07<00:02, 14.54it/s] 75%|███████▍  | 118/158 [00:08<00:02, 14.54it/s] 76%|███████▌  | 120/158 [00:08<00:02, 14.55it/s] 77%|███████▋  | 122/158 [00:08<00:02, 14.54it/s] 78%|███████▊  | 124/158 [00:08<00:02, 14.52it/s] 80%|███████▉  | 126/158 [00:08<00:02, 14.53it/s] 81%|████████  | 128/158 [00:08<00:02, 14.52it/s] 82%|████████▏ | 130/158 [00:08<00:01, 14.54it/s] 84%|████████▎ | 132/158 [00:09<00:01, 14.51it/s] 85%|████████▍ | 134/158 [00:09<00:01, 14.49it/s] 86%|████████▌ | 136/158 [00:09<00:01, 14.47it/s] 87%|████████▋ | 138/158 [00:09<00:01, 14.47it/s] 89%|████████▊ | 140/158 [00:09<00:01, 14.44it/s] 90%|████████▉ | 142/158 [00:09<00:01, 14.41it/s] 91%|█████████ | 144/158 [00:09<00:00, 14.42it/s] 92%|█████████▏| 146/158 [00:10<00:00, 14.42it/s] 94%|█████████▎| 148/158 [00:10<00:00, 14.45it/s] 95%|█████████▍| 150/158 [00:10<00:00, 14.48it/s] 96%|█████████▌| 152/158 [00:10<00:00, 14.48it/s] 97%|█████████▋| 154/158 [00:10<00:00, 14.49it/s] 99%|█████████▊| 156/158 [00:10<00:00, 14.47it/s]100%|██████████| 158/158 [00:10<00:00, 12.10it/s]100%|██████████| 158/158 [00:10<00:00, 14.39it/s]
+2024-04-26 01:38:10 [INFO ]  Validation accuracy: 82.23	macro_fscore: 67.41	micro_fscore: 82.23	TPR_GAP: 5.82	FPR_GAP: 5.82	PPR_GAP: 1.96	
+2024-04-26 01:38:10 [INFO ]  Test accuracy: 89.71	macro_fscore: 86.62	micro_fscore: 89.71	TPR_GAP: 5.75	FPR_GAP: 5.75	PPR_GAP: 10.55	
+2024-04-26 01:38:10 [INFO ]  Finished!
+INFO:root:Unexpected args: ['base_seed', '19']
+INFO:root:Logging to ./results/dev/MTC_joint/multilingual/English/opt_acc_mtc_joint_unbal/fairlib_bert_no_sn_MTC_joint_eval_vanilla_19/output.log
+Some weights of the model checkpoint at bert-base-cased were not used when initializing BertModel: ['cls.predictions.decoder.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.bias', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.weight']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+2024-04-26 01:38:20 [INFO ]  ======================================== 2024-04-26 01:38:20 ========================================
+2024-04-26 01:38:20 [INFO ]  Base directory is ./results/dev/MTC_joint/multilingual/English/opt_acc_mtc_joint_unbal/fairlib_bert_no_sn_MTC_joint_eval_vanilla_19
+2024-04-26 01:38:20 [INFO ]  Options: 
+2024-04-26 01:38:20 [INFO ]  	BT: null
+2024-04-26 01:38:20 [INFO ]  	BTObj: null
+2024-04-26 01:38:20 [INFO ]  	DyBT: null
+2024-04-26 01:38:20 [INFO ]  	DyBTObj: null
+2024-04-26 01:38:20 [INFO ]  	DyBTalpha: 0.1
+2024-04-26 01:38:20 [INFO ]  	DyBTinit: original
+2024-04-26 01:38:20 [INFO ]  	FCL: false
+2024-04-26 01:38:20 [INFO ]  	FCLObj: g
+2024-04-26 01:38:20 [INFO ]  	GBT: false
+2024-04-26 01:38:20 [INFO ]  	GBTObj: null
+2024-04-26 01:38:20 [INFO ]  	GBT_N: null
+2024-04-26 01:38:20 [INFO ]  	GBT_alpha: 1
+2024-04-26 01:38:20 [INFO ]  	INLP: false
+2024-04-26 01:38:20 [INFO ]  	INLP_by_class: false
+2024-04-26 01:38:20 [INFO ]  	INLP_discriminator_reweighting: null
+2024-04-26 01:38:20 [INFO ]  	INLP_min_acc: 0.0
+2024-04-26 01:38:20 [INFO ]  	INLP_n: 190
+2024-04-26 01:38:20 [INFO ]  	LEACE: false
+2024-04-26 01:38:20 [INFO ]  	activation_function: Tanh
+2024-04-26 01:38:20 [INFO ]  	adv_BT: null
+2024-04-26 01:38:20 [INFO ]  	adv_BTObj: null
+2024-04-26 01:38:20 [INFO ]  	adv_activation_function: ReLu
+2024-04-26 01:38:20 [INFO ]  	adv_batch_norm: false
+2024-04-26 01:38:20 [INFO ]  	adv_batch_size: 1024
+2024-04-26 01:38:20 [INFO ]  	adv_checkpoint_interval: 1
+2024-04-26 01:38:20 [INFO ]  	adv_debiasing: false
+2024-04-26 01:38:20 [INFO ]  	adv_decoupling: false
+2024-04-26 01:38:20 [INFO ]  	adv_decoupling_labelled_proportion: 1.0
+2024-04-26 01:38:20 [INFO ]  	adv_diverse_lambda: 0.0
+2024-04-26 01:38:20 [INFO ]  	adv_dropout: 0
+2024-04-26 01:38:20 [INFO ]  	adv_epochs: 100
+2024-04-26 01:38:20 [INFO ]  	adv_epochs_since_improvement: 5
+2024-04-26 01:38:20 [INFO ]  	adv_gated: false
+2024-04-26 01:38:20 [INFO ]  	adv_gated_mapping: null
+2024-04-26 01:38:20 [INFO ]  	adv_hidden_size: 300
+2024-04-26 01:38:20 [INFO ]  	adv_lambda: 1
+2024-04-26 01:38:20 [INFO ]  	adv_level: last_hidden
+2024-04-26 01:38:20 [INFO ]  	adv_lr: 0.001
+2024-04-26 01:38:20 [INFO ]  	adv_n_hidden: 2
+2024-04-26 01:38:20 [INFO ]  	adv_num_subDiscriminator: 1
+2024-04-26 01:38:20 [INFO ]  	adv_test_batch_size: 1024
+2024-04-26 01:38:20 [INFO ]  	adv_uniform_label: false
+2024-04-26 01:38:20 [INFO ]  	adv_update_frequency: Batch
+2024-04-26 01:38:20 [INFO ]  	balance_test: false
+2024-04-26 01:38:20 [INFO ]  	base_seed: 1
+2024-04-26 01:38:20 [INFO ]  	batch_norm: false
+2024-04-26 01:38:20 [INFO ]  	batch_size: 16
+2024-04-26 01:38:20 [INFO ]  	checkpoint_interval: 1
+2024-04-26 01:38:20 [INFO ]  	classification_head_update_frequency: 1
+2024-04-26 01:38:20 [INFO ]  	conf_file: null
+2024-04-26 01:38:20 [INFO ]  	cross_val: false
+2024-04-26 01:38:20 [INFO ]  	cross_val_fold: null
+2024-04-26 01:38:20 [INFO ]  	cross_val_n_splits: 5
+2024-04-26 01:38:20 [INFO ]  	data_dir: /home/dalapko/MTC_English
+2024-04-26 01:38:20 [INFO ]  	dataset: MTC_joint
+2024-04-26 01:38:20 [INFO ]  	deemojify: 0
+2024-04-26 01:38:20 [INFO ]  	dev_idx: null
+2024-04-26 01:38:20 [INFO ]  	device_id: 0
+2024-04-26 01:38:20 [INFO ]  	dropout: 0.1
+2024-04-26 01:38:20 [INFO ]  	early_stopping_criterion: loss
+2024-04-26 01:38:20 [INFO ]  	early_stopping_weights:
+2024-04-26 01:38:20 [INFO ]  	- 1.0
+2024-04-26 01:38:20 [INFO ]  	- 1.0
+2024-04-26 01:38:20 [INFO ]  	emb_size: 768
+2024-04-26 01:38:20 [INFO ]  	encoder_architecture: BERT
+2024-04-26 01:38:20 [INFO ]  	epochs: 20
+2024-04-26 01:38:20 [INFO ]  	epochs_since_improvement: 5
+2024-04-26 01:38:20 [INFO ]  	eval: true
+2024-04-26 01:38:20 [INFO ]  	exp_id: multilingual/English/opt_acc_mtc_joint_unbal/fairlib_bert_no_sn_MTC_joint_eval_vanilla_19
+2024-04-26 01:38:20 [INFO ]  	f: null
+2024-04-26 01:38:20 [INFO ]  	fcl_base_temperature_g: 0.01
+2024-04-26 01:38:20 [INFO ]  	fcl_base_temperature_y: 0.01
+2024-04-26 01:38:20 [INFO ]  	fcl_lambda_g: 0.1
+2024-04-26 01:38:20 [INFO ]  	fcl_lambda_y: 0.1
+2024-04-26 01:38:20 [INFO ]  	fcl_temperature_g: 0.01
+2024-04-26 01:38:20 [INFO ]  	fcl_temperature_y: 0.01
+2024-04-26 01:38:20 [INFO ]  	full_label: true
+2024-04-26 01:38:20 [INFO ]  	full_splits: []
+2024-04-26 01:38:20 [INFO ]  	gated: false
+2024-04-26 01:38:20 [INFO ]  	gated_mapping: null
+2024-04-26 01:38:20 [INFO ]  	group_agg_power: -1
+2024-04-26 01:38:20 [INFO ]  	hidden_size: 300
+2024-04-26 01:38:20 [INFO ]  	joint_protected_attrs:
+2024-04-26 01:38:20 [INFO ]  	- age
+2024-04-26 01:38:20 [INFO ]  	- gender
+2024-04-26 01:38:20 [INFO ]  	- country
+2024-04-26 01:38:20 [INFO ]  	leace_load_model: 0
+2024-04-26 01:38:20 [INFO ]  	leace_mode: last
+2024-04-26 01:38:20 [INFO ]  	leace_weights_dataset_name: null
+2024-04-26 01:38:20 [INFO ]  	leace_weights_dir: null
+2024-04-26 01:38:20 [INFO ]  	log_file: ./results/dev/MTC_joint/multilingual/English/opt_acc_mtc_joint_unbal/fairlib_bert_no_sn_MTC_joint_eval_vanilla_19/output.log
+2024-04-26 01:38:20 [INFO ]  	log_interval: 50
+2024-04-26 01:38:20 [INFO ]  	log_level: INFO
+2024-04-26 01:38:20 [INFO ]  	lr: 1.0e-06
+2024-04-26 01:38:20 [INFO ]  	model_dir: ./results/dev/MTC_joint/multilingual/English/opt_acc_mtc_joint_unbal/fairlib_bert_no_sn_MTC_joint_eval_vanilla_19/models
+2024-04-26 01:38:20 [INFO ]  	model_name: bert-base-cased
+2024-04-26 01:38:20 [INFO ]  	multiple_leace: false
+2024-04-26 01:38:20 [INFO ]  	n_bins: 4
+2024-04-26 01:38:20 [INFO ]  	n_freezed_layers: 0
+2024-04-26 01:38:20 [INFO ]  	n_hidden: 2
+2024-04-26 01:38:20 [INFO ]  	n_power_iterations: 1
+2024-04-26 01:38:20 [INFO ]  	no_log: false
+2024-04-26 01:38:20 [INFO ]  	num_classes: 2
+2024-04-26 01:38:20 [INFO ]  	num_clusters: 0
+2024-04-26 01:38:20 [INFO ]  	num_groups: 2
+2024-04-26 01:38:20 [INFO ]  	num_remove_clusters: 0
+2024-04-26 01:38:20 [INFO ]  	num_workers: 0
+2024-04-26 01:38:20 [INFO ]  	performance_metric: accuracy
+2024-04-26 01:38:20 [INFO ]  	project_dir: dev
+2024-04-26 01:38:20 [INFO ]  	protected_task: ethnicity
+2024-04-26 01:38:20 [INFO ]  	rebalance_all: false
+2024-04-26 01:38:20 [INFO ]  	rebalance_power: 1
+2024-04-26 01:38:20 [INFO ]  	reg_lamb: 0.0
+2024-04-26 01:38:20 [INFO ]  	reg_lamb_intra: 0.0
+2024-04-26 01:38:20 [INFO ]  	reg_margin: 0.0
+2024-04-26 01:38:20 [INFO ]  	regression: false
+2024-04-26 01:38:20 [INFO ]  	remove_percent: 0
+2024-04-26 01:38:20 [INFO ]  	results_dir: ./results/
+2024-04-26 01:38:20 [INFO ]  	save_batch_results: false
+2024-04-26 01:38:20 [INFO ]  	start_time: '2024-04-26 01:38:20'
+2024-04-26 01:38:20 [INFO ]  	subsample_all: 1.0
+2024-04-26 01:38:20 [INFO ]  	subsample_classes: null
+2024-04-26 01:38:20 [INFO ]  	subsample_min_size: 20
+2024-04-26 01:38:20 [INFO ]  	subsample_perc: 1.0
+2024-04-26 01:38:20 [INFO ]  	subsample_protected_labels: false
+2024-04-26 01:38:20 [INFO ]  	test_batch_size: 32
+2024-04-26 01:38:20 [INFO ]  	train_idx: null
+2024-04-26 01:38:20 [INFO ]  	ue_regularizer: null
+2024-04-26 01:38:20 [INFO ]  	unbalance_test: false
+2024-04-26 01:38:20 [INFO ]  	unc_thr: 0.0
+2024-04-26 01:38:20 [INFO ]  	use_collator: false
+2024-04-26 01:38:20 [INFO ]  	use_p_tags: 0
+2024-04-26 01:38:20 [INFO ]  	use_skipconnection: false
+2024-04-26 01:38:20 [INFO ]  	use_spectralnorm: false
+2024-04-26 01:38:20 [INFO ]  	weight_decay: 0.01
+2024-04-26 01:38:20 [INFO ]  	weights_dataset_name: MTC_joint
+2024-04-26 01:38:20 [INFO ]  	weights_dir: ./results/dev/MTC_joint/multilingual/English/opt_acc_mtc_joint_unbal/fairlib_bert_no_sn_MTC_joint_vanilla_19/models
+2024-04-26 01:38:20 [INFO ]  	
+Loaded data shapes: (22818, 128), (22818,), (22818,)
+Loaded data shapes: (4512, 128), (4512,), (4512,)
+Loaded data shapes: (5032, 128), (5032,), (5032,)
+2024-04-26 01:38:24 [INFO ]  train dataset size:	22818
+2024-04-26 01:38:24 [INFO ]  validation dataset size: 	4512
+2024-04-26 01:38:24 [INFO ]  test dataset size: 	5032
+2024-04-26 01:38:24 [INFO ]  datasets built!
+2024-04-26 01:38:29 [INFO ]  MLP( 
+2024-04-26 01:38:29 [INFO ]    (output_layer): Linear(in_features=300, out_features=2, bias=True)
+2024-04-26 01:38:29 [INFO ]    (AF): Tanh()
+2024-04-26 01:38:29 [INFO ]    (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]    (hidden_layers): ModuleList(
+2024-04-26 01:38:29 [INFO ]      (0): Linear(in_features=768, out_features=300, bias=True)
+2024-04-26 01:38:29 [INFO ]      (1): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]      (2): Tanh()
+2024-04-26 01:38:29 [INFO ]      (3): Linear(in_features=300, out_features=300, bias=True)
+2024-04-26 01:38:29 [INFO ]      (4): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]      (5): Tanh()
+2024-04-26 01:38:29 [INFO ]    )
+2024-04-26 01:38:29 [INFO ]    (criterion): CrossEntropyLoss()
+2024-04-26 01:38:29 [INFO ]  )
+2024-04-26 01:38:29 [INFO ]  Total number of parameters: 321602 
+
+2024-04-26 01:38:29 [INFO ]  BERTClassifier( 
+2024-04-26 01:38:29 [INFO ]    (bert): BertModel(
+2024-04-26 01:38:29 [INFO ]      (embeddings): BertEmbeddings(
+2024-04-26 01:38:29 [INFO ]        (word_embeddings): Embedding(28996, 768, padding_idx=0)
+2024-04-26 01:38:29 [INFO ]        (position_embeddings): Embedding(512, 768)
+2024-04-26 01:38:29 [INFO ]        (token_type_embeddings): Embedding(2, 768)
+2024-04-26 01:38:29 [INFO ]        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]        (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]      )
+2024-04-26 01:38:29 [INFO ]      (encoder): BertEncoder(
+2024-04-26 01:38:29 [INFO ]        (layer): ModuleList(
+2024-04-26 01:38:29 [INFO ]          (0): BertLayer(
+2024-04-26 01:38:29 [INFO ]            (attention): BertAttention(
+2024-04-26 01:38:29 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:38:29 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:38:29 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:38:29 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (output): BertOutput(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]          )
+2024-04-26 01:38:29 [INFO ]          (1): BertLayer(
+2024-04-26 01:38:29 [INFO ]            (attention): BertAttention(
+2024-04-26 01:38:29 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:38:29 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:38:29 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:38:29 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (output): BertOutput(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]          )
+2024-04-26 01:38:29 [INFO ]          (2): BertLayer(
+2024-04-26 01:38:29 [INFO ]            (attention): BertAttention(
+2024-04-26 01:38:29 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:38:29 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:38:29 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:38:29 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (output): BertOutput(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]          )
+2024-04-26 01:38:29 [INFO ]          (3): BertLayer(
+2024-04-26 01:38:29 [INFO ]            (attention): BertAttention(
+2024-04-26 01:38:29 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:38:29 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:38:29 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:38:29 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (output): BertOutput(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]          )
+2024-04-26 01:38:29 [INFO ]          (4): BertLayer(
+2024-04-26 01:38:29 [INFO ]            (attention): BertAttention(
+2024-04-26 01:38:29 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:38:29 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:38:29 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:38:29 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (output): BertOutput(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]          )
+2024-04-26 01:38:29 [INFO ]          (5): BertLayer(
+2024-04-26 01:38:29 [INFO ]            (attention): BertAttention(
+2024-04-26 01:38:29 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:38:29 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:38:29 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:38:29 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (output): BertOutput(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]          )
+2024-04-26 01:38:29 [INFO ]          (6): BertLayer(
+2024-04-26 01:38:29 [INFO ]            (attention): BertAttention(
+2024-04-26 01:38:29 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:38:29 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:38:29 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:38:29 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (output): BertOutput(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]          )
+2024-04-26 01:38:29 [INFO ]          (7): BertLayer(
+2024-04-26 01:38:29 [INFO ]            (attention): BertAttention(
+2024-04-26 01:38:29 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:38:29 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:38:29 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:38:29 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (output): BertOutput(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]          )
+2024-04-26 01:38:29 [INFO ]          (8): BertLayer(
+2024-04-26 01:38:29 [INFO ]            (attention): BertAttention(
+2024-04-26 01:38:29 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:38:29 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:38:29 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:38:29 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (output): BertOutput(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]          )
+2024-04-26 01:38:29 [INFO ]          (9): BertLayer(
+2024-04-26 01:38:29 [INFO ]            (attention): BertAttention(
+2024-04-26 01:38:29 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:38:29 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:38:29 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:38:29 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (output): BertOutput(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]          )
+2024-04-26 01:38:29 [INFO ]          (10): BertLayer(
+2024-04-26 01:38:29 [INFO ]            (attention): BertAttention(
+2024-04-26 01:38:29 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:38:29 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:38:29 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:38:29 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (output): BertOutput(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]          )
+2024-04-26 01:38:29 [INFO ]          (11): BertLayer(
+2024-04-26 01:38:29 [INFO ]            (attention): BertAttention(
+2024-04-26 01:38:29 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:38:29 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:38:29 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]              )
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:38:29 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]            (output): BertOutput(
+2024-04-26 01:38:29 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:38:29 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]            )
+2024-04-26 01:38:29 [INFO ]          )
+2024-04-26 01:38:29 [INFO ]        )
+2024-04-26 01:38:29 [INFO ]      )
+2024-04-26 01:38:29 [INFO ]      (pooler): BertPooler(
+2024-04-26 01:38:29 [INFO ]        (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:38:29 [INFO ]        (activation): Tanh()
+2024-04-26 01:38:29 [INFO ]      )
+2024-04-26 01:38:29 [INFO ]    )
+2024-04-26 01:38:29 [INFO ]    (classifier): MLP(
+2024-04-26 01:38:29 [INFO ]      (output_layer): Linear(in_features=300, out_features=2, bias=True)
+2024-04-26 01:38:29 [INFO ]      (AF): Tanh()
+2024-04-26 01:38:29 [INFO ]      (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]      (hidden_layers): ModuleList(
+2024-04-26 01:38:29 [INFO ]        (0): Linear(in_features=768, out_features=300, bias=True)
+2024-04-26 01:38:29 [INFO ]        (1): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]        (2): Tanh()
+2024-04-26 01:38:29 [INFO ]        (3): Linear(in_features=300, out_features=300, bias=True)
+2024-04-26 01:38:29 [INFO ]        (4): Dropout(p=0.1, inplace=False)
+2024-04-26 01:38:29 [INFO ]        (5): Tanh()
+2024-04-26 01:38:29 [INFO ]      )
+2024-04-26 01:38:29 [INFO ]      (criterion): CrossEntropyLoss()
+2024-04-26 01:38:29 [INFO ]    )
+2024-04-26 01:38:29 [INFO ]    (criterion): CrossEntropyLoss()
+2024-04-26 01:38:29 [INFO ]  )
+2024-04-26 01:38:29 [INFO ]  Total number of parameters: 108631874 
+
+Number of trainable parameters: 108310272
+2024-04-26 01:38:31 [INFO ]  Evaluating model...
+  0%|          | 0/141 [00:00<?, ?it/s]  1%|▏         | 2/141 [00:00<00:10, 13.54it/s]  3%|▎         | 4/141 [00:00<00:09, 14.16it/s]  4%|▍         | 6/141 [00:00<00:09, 14.38it/s]  6%|▌         | 8/141 [00:00<00:09, 14.49it/s]  7%|▋         | 10/141 [00:00<00:09, 14.55it/s]  9%|▊         | 12/141 [00:00<00:08, 14.58it/s] 10%|▉         | 14/141 [00:00<00:08, 14.60it/s] 11%|█▏        | 16/141 [00:01<00:08, 14.59it/s] 13%|█▎        | 18/141 [00:01<00:08, 14.60it/s] 14%|█▍        | 20/141 [00:01<00:08, 14.61it/s] 16%|█▌        | 22/141 [00:01<00:08, 14.60it/s] 17%|█▋        | 24/141 [00:01<00:08, 14.59it/s] 18%|█▊        | 26/141 [00:01<00:07, 14.58it/s] 20%|█▉        | 28/141 [00:01<00:07, 14.60it/s] 21%|██▏       | 30/141 [00:02<00:07, 14.60it/s] 23%|██▎       | 32/141 [00:02<00:07, 14.60it/s] 24%|██▍       | 34/141 [00:02<00:07, 14.62it/s] 26%|██▌       | 36/141 [00:02<00:07, 14.62it/s] 27%|██▋       | 38/141 [00:02<00:07, 14.63it/s] 28%|██▊       | 40/141 [00:02<00:06, 14.64it/s] 30%|██▉       | 42/141 [00:02<00:06, 14.62it/s] 31%|███       | 44/141 [00:03<00:06, 14.60it/s] 33%|███▎      | 46/141 [00:03<00:06, 14.60it/s] 34%|███▍      | 48/141 [00:03<00:06, 14.62it/s] 35%|███▌      | 50/141 [00:03<00:06, 14.58it/s] 37%|███▋      | 52/141 [00:03<00:06, 14.56it/s] 38%|███▊      | 54/141 [00:03<00:05, 14.55it/s] 40%|███▉      | 56/141 [00:03<00:05, 14.55it/s] 41%|████      | 58/141 [00:03<00:05, 14.55it/s] 43%|████▎     | 60/141 [00:04<00:07, 11.56it/s] 44%|████▍     | 62/141 [00:04<00:06, 12.31it/s] 45%|████▌     | 64/141 [00:04<00:05, 12.90it/s] 47%|████▋     | 66/141 [00:04<00:05, 13.37it/s] 48%|████▊     | 68/141 [00:04<00:05, 13.71it/s] 50%|████▉     | 70/141 [00:04<00:05, 13.94it/s] 51%|█████     | 72/141 [00:05<00:04, 14.09it/s] 52%|█████▏    | 74/141 [00:05<00:04, 14.24it/s] 54%|█████▍    | 76/141 [00:05<00:04, 14.33it/s] 55%|█████▌    | 78/141 [00:05<00:04, 14.40it/s] 57%|█████▋    | 80/141 [00:05<00:04, 14.44it/s] 58%|█████▊    | 82/141 [00:05<00:04, 14.51it/s] 60%|█████▉    | 84/141 [00:05<00:03, 14.54it/s] 61%|██████    | 86/141 [00:06<00:03, 14.54it/s] 62%|██████▏   | 88/141 [00:06<00:03, 14.55it/s] 64%|██████▍   | 90/141 [00:06<00:03, 14.54it/s] 65%|██████▌   | 92/141 [00:06<00:03, 14.54it/s] 67%|██████▋   | 94/141 [00:06<00:03, 14.53it/s] 68%|██████▊   | 96/141 [00:06<00:03, 14.52it/s] 70%|██████▉   | 98/141 [00:06<00:02, 14.52it/s] 71%|███████   | 100/141 [00:06<00:02, 14.54it/s] 72%|███████▏  | 102/141 [00:07<00:02, 14.54it/s] 74%|███████▍  | 104/141 [00:07<00:02, 14.53it/s] 75%|███████▌  | 106/141 [00:07<00:02, 14.52it/s] 77%|███████▋  | 108/141 [00:07<00:02, 14.50it/s] 78%|███████▊  | 110/141 [00:07<00:02, 14.51it/s] 79%|███████▉  | 112/141 [00:07<00:01, 14.51it/s] 81%|████████  | 114/141 [00:07<00:01, 14.48it/s] 82%|████████▏ | 116/141 [00:08<00:01, 14.48it/s] 84%|████████▎ | 118/141 [00:08<00:01, 14.49it/s] 85%|████████▌ | 120/141 [00:08<00:01, 14.48it/s] 87%|████████▋ | 122/141 [00:08<00:01, 14.45it/s] 88%|████████▊ | 124/141 [00:08<00:01, 14.47it/s] 89%|████████▉ | 126/141 [00:08<00:01, 14.46it/s] 91%|█████████ | 128/141 [00:08<00:00, 14.45it/s] 92%|█████████▏| 130/141 [00:09<00:00, 14.46it/s] 94%|█████████▎| 132/141 [00:09<00:00, 14.50it/s] 95%|█████████▌| 134/141 [00:09<00:00, 14.47it/s] 96%|█████████▋| 136/141 [00:09<00:00, 14.42it/s] 98%|█████████▊| 138/141 [00:09<00:00, 14.43it/s] 99%|█████████▉| 140/141 [00:09<00:00, 14.46it/s]100%|██████████| 141/141 [00:09<00:00, 14.36it/s]
+  0%|          | 0/158 [00:00<?, ?it/s]  1%|▏         | 2/158 [00:00<00:10, 14.63it/s]  3%|▎         | 4/158 [00:00<00:10, 14.60it/s]  4%|▍         | 6/158 [00:00<00:10, 14.54it/s]  5%|▌         | 8/158 [00:00<00:10, 14.51it/s]  6%|▋         | 10/158 [00:00<00:10, 14.45it/s]  8%|▊         | 12/158 [00:00<00:10, 14.39it/s]  9%|▉         | 14/158 [00:00<00:09, 14.43it/s] 10%|█         | 16/158 [00:01<00:09, 14.46it/s] 11%|█▏        | 18/158 [00:01<00:09, 14.47it/s] 13%|█▎        | 20/158 [00:01<00:09, 14.50it/s] 14%|█▍        | 22/158 [00:01<00:09, 14.52it/s] 15%|█▌        | 24/158 [00:01<00:09, 14.54it/s] 16%|█▋        | 26/158 [00:01<00:09, 14.53it/s] 18%|█▊        | 28/158 [00:01<00:08, 14.49it/s] 19%|█▉        | 30/158 [00:02<00:08, 14.50it/s] 20%|██        | 32/158 [00:02<00:08, 14.53it/s] 22%|██▏       | 34/158 [00:02<00:08, 14.53it/s] 23%|██▎       | 36/158 [00:02<00:08, 14.53it/s] 24%|██▍       | 38/158 [00:02<00:08, 14.56it/s] 25%|██▌       | 40/158 [00:02<00:08, 14.53it/s] 27%|██▋       | 42/158 [00:02<00:08, 14.50it/s] 28%|██▊       | 44/158 [00:03<00:07, 14.48it/s] 29%|██▉       | 46/158 [00:03<00:07, 14.46it/s] 30%|███       | 48/158 [00:03<00:07, 14.45it/s] 32%|███▏      | 50/158 [00:03<00:07, 14.47it/s] 33%|███▎      | 52/158 [00:03<00:07, 14.47it/s] 34%|███▍      | 54/158 [00:03<00:07, 14.48it/s] 35%|███▌      | 56/158 [00:03<00:07, 14.46it/s] 37%|███▋      | 58/158 [00:04<00:06, 14.50it/s] 38%|███▊      | 60/158 [00:04<00:06, 14.51it/s] 39%|███▉      | 62/158 [00:04<00:06, 14.50it/s] 41%|████      | 64/158 [00:04<00:06, 14.49it/s] 42%|████▏     | 66/158 [00:04<00:06, 14.50it/s] 43%|████▎     | 68/158 [00:04<00:06, 14.48it/s] 44%|████▍     | 70/158 [00:04<00:06, 14.46it/s] 46%|████▌     | 72/158 [00:04<00:05, 14.44it/s] 47%|████▋     | 74/158 [00:05<00:05, 14.43it/s] 48%|████▊     | 76/158 [00:05<00:05, 14.44it/s] 49%|████▉     | 78/158 [00:05<00:05, 14.45it/s] 51%|█████     | 80/158 [00:05<00:05, 14.42it/s] 52%|█████▏    | 82/158 [00:05<00:05, 14.46it/s] 53%|█████▎    | 84/158 [00:05<00:05, 14.52it/s] 54%|█████▍    | 86/158 [00:05<00:04, 14.53it/s] 56%|█████▌    | 88/158 [00:06<00:04, 14.54it/s] 57%|█████▋    | 90/158 [00:06<00:04, 14.52it/s] 58%|█████▊    | 92/158 [00:06<00:04, 14.53it/s] 59%|█████▉    | 94/158 [00:06<00:04, 14.48it/s] 61%|██████    | 96/158 [00:06<00:04, 14.48it/s] 62%|██████▏   | 98/158 [00:06<00:04, 14.49it/s] 63%|██████▎   | 100/158 [00:06<00:04, 14.50it/s] 65%|██████▍   | 102/158 [00:07<00:03, 14.48it/s] 66%|██████▌   | 104/158 [00:07<00:03, 14.48it/s] 67%|██████▋   | 106/158 [00:07<00:03, 14.51it/s] 68%|██████▊   | 108/158 [00:07<00:03, 14.49it/s] 70%|██████▉   | 110/158 [00:07<00:03, 14.51it/s] 71%|███████   | 112/158 [00:07<00:03, 14.51it/s] 72%|███████▏  | 114/158 [00:07<00:03, 14.53it/s] 73%|███████▎  | 116/158 [00:08<00:02, 14.52it/s] 75%|███████▍  | 118/158 [00:08<00:02, 14.49it/s] 76%|███████▌  | 120/158 [00:08<00:02, 14.49it/s] 77%|███████▋  | 122/158 [00:08<00:02, 14.51it/s] 78%|███████▊  | 124/158 [00:08<00:02, 14.50it/s] 80%|███████▉  | 126/158 [00:08<00:02, 14.49it/s] 81%|████████  | 128/158 [00:08<00:02, 14.49it/s] 82%|████████▏ | 130/158 [00:08<00:01, 14.50it/s] 84%|████████▎ | 132/158 [00:09<00:01, 14.46it/s] 85%|████████▍ | 134/158 [00:09<00:01, 14.46it/s] 86%|████████▌ | 136/158 [00:09<00:01, 14.48it/s] 87%|████████▋ | 138/158 [00:09<00:01, 14.46it/s] 89%|████████▊ | 140/158 [00:09<00:01, 14.45it/s] 90%|████████▉ | 142/158 [00:09<00:01, 14.44it/s] 91%|█████████ | 144/158 [00:09<00:00, 14.42it/s] 92%|█████████▏| 146/158 [00:10<00:00, 14.41it/s] 94%|█████████▎| 148/158 [00:10<00:00, 14.38it/s] 95%|█████████▍| 150/158 [00:10<00:00, 14.39it/s] 96%|█████████▌| 152/158 [00:10<00:00, 14.40it/s] 97%|█████████▋| 154/158 [00:10<00:00, 14.41it/s] 99%|█████████▊| 156/158 [00:10<00:00, 14.40it/s]100%|██████████| 158/158 [00:10<00:00, 14.54it/s]
+2024-04-26 01:38:52 [INFO ]  Validation accuracy: 83.09	macro_fscore: 68.13	micro_fscore: 83.09	TPR_GAP: 5.66	FPR_GAP: 5.66	PPR_GAP: 2.53	
+2024-04-26 01:38:52 [INFO ]  Test accuracy: 90.20	macro_fscore: 87.52	micro_fscore: 90.20	TPR_GAP: 5.33	FPR_GAP: 5.33	PPR_GAP: 10.60	
+2024-04-26 01:38:52 [INFO ]  Finished!
+INFO:root:Unexpected args: ['base_seed', '20']
+INFO:root:Logging to ./results/dev/MTC_joint/multilingual/English/opt_acc_mtc_joint_unbal/fairlib_bert_no_sn_MTC_joint_eval_vanilla_20/output.log
+Some weights of the model checkpoint at bert-base-cased were not used when initializing BertModel: ['cls.seq_relationship.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.bias', 'cls.predictions.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+2024-04-26 01:38:55 [INFO ]  ======================================== 2024-04-26 01:38:55 ========================================
+2024-04-26 01:38:55 [INFO ]  Base directory is ./results/dev/MTC_joint/multilingual/English/opt_acc_mtc_joint_unbal/fairlib_bert_no_sn_MTC_joint_eval_vanilla_20
+2024-04-26 01:38:55 [INFO ]  Options: 
+2024-04-26 01:38:55 [INFO ]  	BT: null
+2024-04-26 01:38:55 [INFO ]  	BTObj: null
+2024-04-26 01:38:55 [INFO ]  	DyBT: null
+2024-04-26 01:38:55 [INFO ]  	DyBTObj: null
+2024-04-26 01:38:55 [INFO ]  	DyBTalpha: 0.1
+2024-04-26 01:38:55 [INFO ]  	DyBTinit: original
+2024-04-26 01:38:55 [INFO ]  	FCL: false
+2024-04-26 01:38:55 [INFO ]  	FCLObj: g
+2024-04-26 01:38:55 [INFO ]  	GBT: false
+2024-04-26 01:38:55 [INFO ]  	GBTObj: null
+2024-04-26 01:38:55 [INFO ]  	GBT_N: null
+2024-04-26 01:38:55 [INFO ]  	GBT_alpha: 1
+2024-04-26 01:38:55 [INFO ]  	INLP: false
+2024-04-26 01:38:55 [INFO ]  	INLP_by_class: false
+2024-04-26 01:38:55 [INFO ]  	INLP_discriminator_reweighting: null
+2024-04-26 01:38:55 [INFO ]  	INLP_min_acc: 0.0
+2024-04-26 01:38:55 [INFO ]  	INLP_n: 190
+2024-04-26 01:38:55 [INFO ]  	LEACE: false
+2024-04-26 01:38:55 [INFO ]  	activation_function: Tanh
+2024-04-26 01:38:55 [INFO ]  	adv_BT: null
+2024-04-26 01:38:55 [INFO ]  	adv_BTObj: null
+2024-04-26 01:38:55 [INFO ]  	adv_activation_function: ReLu
+2024-04-26 01:38:55 [INFO ]  	adv_batch_norm: false
+2024-04-26 01:38:55 [INFO ]  	adv_batch_size: 1024
+2024-04-26 01:38:55 [INFO ]  	adv_checkpoint_interval: 1
+2024-04-26 01:38:55 [INFO ]  	adv_debiasing: false
+2024-04-26 01:38:55 [INFO ]  	adv_decoupling: false
+2024-04-26 01:38:55 [INFO ]  	adv_decoupling_labelled_proportion: 1.0
+2024-04-26 01:38:55 [INFO ]  	adv_diverse_lambda: 0.0
+2024-04-26 01:38:55 [INFO ]  	adv_dropout: 0
+2024-04-26 01:38:55 [INFO ]  	adv_epochs: 100
+2024-04-26 01:38:55 [INFO ]  	adv_epochs_since_improvement: 5
+2024-04-26 01:38:55 [INFO ]  	adv_gated: false
+2024-04-26 01:38:55 [INFO ]  	adv_gated_mapping: null
+2024-04-26 01:38:55 [INFO ]  	adv_hidden_size: 300
+2024-04-26 01:38:55 [INFO ]  	adv_lambda: 1
+2024-04-26 01:38:55 [INFO ]  	adv_level: last_hidden
+2024-04-26 01:38:55 [INFO ]  	adv_lr: 0.001
+2024-04-26 01:38:55 [INFO ]  	adv_n_hidden: 2
+2024-04-26 01:38:55 [INFO ]  	adv_num_subDiscriminator: 1
+2024-04-26 01:38:55 [INFO ]  	adv_test_batch_size: 1024
+2024-04-26 01:38:55 [INFO ]  	adv_uniform_label: false
+2024-04-26 01:38:55 [INFO ]  	adv_update_frequency: Batch
+2024-04-26 01:38:55 [INFO ]  	balance_test: false
+2024-04-26 01:38:55 [INFO ]  	base_seed: 1
+2024-04-26 01:38:55 [INFO ]  	batch_norm: false
+2024-04-26 01:38:55 [INFO ]  	batch_size: 16
+2024-04-26 01:38:55 [INFO ]  	checkpoint_interval: 1
+2024-04-26 01:38:55 [INFO ]  	classification_head_update_frequency: 1
+2024-04-26 01:38:55 [INFO ]  	conf_file: null
+2024-04-26 01:38:55 [INFO ]  	cross_val: false
+2024-04-26 01:38:55 [INFO ]  	cross_val_fold: null
+2024-04-26 01:38:55 [INFO ]  	cross_val_n_splits: 5
+2024-04-26 01:38:55 [INFO ]  	data_dir: /home/dalapko/MTC_English
+2024-04-26 01:38:55 [INFO ]  	dataset: MTC_joint
+2024-04-26 01:38:55 [INFO ]  	deemojify: 0
+2024-04-26 01:38:55 [INFO ]  	dev_idx: null
+2024-04-26 01:38:55 [INFO ]  	device_id: 0
+2024-04-26 01:38:55 [INFO ]  	dropout: 0.1
+2024-04-26 01:38:55 [INFO ]  	early_stopping_criterion: loss
+2024-04-26 01:38:55 [INFO ]  	early_stopping_weights:
+2024-04-26 01:38:55 [INFO ]  	- 1.0
+2024-04-26 01:38:55 [INFO ]  	- 1.0
+2024-04-26 01:38:55 [INFO ]  	emb_size: 768
+2024-04-26 01:38:55 [INFO ]  	encoder_architecture: BERT
+2024-04-26 01:38:55 [INFO ]  	epochs: 20
+2024-04-26 01:38:55 [INFO ]  	epochs_since_improvement: 5
+2024-04-26 01:38:55 [INFO ]  	eval: true
+2024-04-26 01:38:55 [INFO ]  	exp_id: multilingual/English/opt_acc_mtc_joint_unbal/fairlib_bert_no_sn_MTC_joint_eval_vanilla_20
+2024-04-26 01:38:55 [INFO ]  	f: null
+2024-04-26 01:38:55 [INFO ]  	fcl_base_temperature_g: 0.01
+2024-04-26 01:38:55 [INFO ]  	fcl_base_temperature_y: 0.01
+2024-04-26 01:38:55 [INFO ]  	fcl_lambda_g: 0.1
+2024-04-26 01:38:55 [INFO ]  	fcl_lambda_y: 0.1
+2024-04-26 01:38:55 [INFO ]  	fcl_temperature_g: 0.01
+2024-04-26 01:38:55 [INFO ]  	fcl_temperature_y: 0.01
+2024-04-26 01:38:55 [INFO ]  	full_label: true
+2024-04-26 01:38:55 [INFO ]  	full_splits: []
+2024-04-26 01:38:55 [INFO ]  	gated: false
+2024-04-26 01:38:55 [INFO ]  	gated_mapping: null
+2024-04-26 01:38:55 [INFO ]  	group_agg_power: -1
+2024-04-26 01:38:55 [INFO ]  	hidden_size: 300
+2024-04-26 01:38:55 [INFO ]  	joint_protected_attrs:
+2024-04-26 01:38:55 [INFO ]  	- age
+2024-04-26 01:38:55 [INFO ]  	- gender
+2024-04-26 01:38:55 [INFO ]  	- country
+2024-04-26 01:38:55 [INFO ]  	leace_load_model: 0
+2024-04-26 01:38:55 [INFO ]  	leace_mode: last
+2024-04-26 01:38:55 [INFO ]  	leace_weights_dataset_name: null
+2024-04-26 01:38:55 [INFO ]  	leace_weights_dir: null
+2024-04-26 01:38:55 [INFO ]  	log_file: ./results/dev/MTC_joint/multilingual/English/opt_acc_mtc_joint_unbal/fairlib_bert_no_sn_MTC_joint_eval_vanilla_20/output.log
+2024-04-26 01:38:55 [INFO ]  	log_interval: 50
+2024-04-26 01:38:55 [INFO ]  	log_level: INFO
+2024-04-26 01:38:55 [INFO ]  	lr: 1.0e-06
+2024-04-26 01:38:55 [INFO ]  	model_dir: ./results/dev/MTC_joint/multilingual/English/opt_acc_mtc_joint_unbal/fairlib_bert_no_sn_MTC_joint_eval_vanilla_20/models
+2024-04-26 01:38:55 [INFO ]  	model_name: bert-base-cased
+2024-04-26 01:38:55 [INFO ]  	multiple_leace: false
+2024-04-26 01:38:55 [INFO ]  	n_bins: 4
+2024-04-26 01:38:55 [INFO ]  	n_freezed_layers: 0
+2024-04-26 01:38:55 [INFO ]  	n_hidden: 2
+2024-04-26 01:38:55 [INFO ]  	n_power_iterations: 1
+2024-04-26 01:38:55 [INFO ]  	no_log: false
+2024-04-26 01:38:55 [INFO ]  	num_classes: 2
+2024-04-26 01:38:55 [INFO ]  	num_clusters: 0
+2024-04-26 01:38:55 [INFO ]  	num_groups: 2
+2024-04-26 01:38:55 [INFO ]  	num_remove_clusters: 0
+2024-04-26 01:38:55 [INFO ]  	num_workers: 0
+2024-04-26 01:38:55 [INFO ]  	performance_metric: accuracy
+2024-04-26 01:38:55 [INFO ]  	project_dir: dev
+2024-04-26 01:38:55 [INFO ]  	protected_task: ethnicity
+2024-04-26 01:38:55 [INFO ]  	rebalance_all: false
+2024-04-26 01:38:55 [INFO ]  	rebalance_power: 1
+2024-04-26 01:38:55 [INFO ]  	reg_lamb: 0.0
+2024-04-26 01:38:55 [INFO ]  	reg_lamb_intra: 0.0
+2024-04-26 01:38:55 [INFO ]  	reg_margin: 0.0
+2024-04-26 01:38:55 [INFO ]  	regression: false
+2024-04-26 01:38:55 [INFO ]  	remove_percent: 0
+2024-04-26 01:38:55 [INFO ]  	results_dir: ./results/
+2024-04-26 01:38:55 [INFO ]  	save_batch_results: false
+2024-04-26 01:38:55 [INFO ]  	start_time: '2024-04-26 01:38:55'
+2024-04-26 01:38:55 [INFO ]  	subsample_all: 1.0
+2024-04-26 01:38:55 [INFO ]  	subsample_classes: null
+2024-04-26 01:38:55 [INFO ]  	subsample_min_size: 20
+2024-04-26 01:38:55 [INFO ]  	subsample_perc: 1.0
+2024-04-26 01:38:55 [INFO ]  	subsample_protected_labels: false
+2024-04-26 01:38:55 [INFO ]  	test_batch_size: 32
+2024-04-26 01:38:55 [INFO ]  	train_idx: null
+2024-04-26 01:38:55 [INFO ]  	ue_regularizer: null
+2024-04-26 01:38:55 [INFO ]  	unbalance_test: false
+2024-04-26 01:38:55 [INFO ]  	unc_thr: 0.0
+2024-04-26 01:38:55 [INFO ]  	use_collator: false
+2024-04-26 01:38:55 [INFO ]  	use_p_tags: 0
+2024-04-26 01:38:55 [INFO ]  	use_skipconnection: false
+2024-04-26 01:38:55 [INFO ]  	use_spectralnorm: false
+2024-04-26 01:38:55 [INFO ]  	weight_decay: 0.01
+2024-04-26 01:38:55 [INFO ]  	weights_dataset_name: MTC_joint
+2024-04-26 01:38:55 [INFO ]  	weights_dir: ./results/dev/MTC_joint/multilingual/English/opt_acc_mtc_joint_unbal/fairlib_bert_no_sn_MTC_joint_vanilla_20/models
+2024-04-26 01:38:55 [INFO ]  	
+Loaded data shapes: (22818, 128), (22818,), (22818,)
+Loaded data shapes: (4512, 128), (4512,), (4512,)
+Loaded data shapes: (5032, 128), (5032,), (5032,)
+2024-04-26 01:38:59 [INFO ]  train dataset size:	22818
+2024-04-26 01:38:59 [INFO ]  validation dataset size: 	4512
+2024-04-26 01:38:59 [INFO ]  test dataset size: 	5032
+2024-04-26 01:38:59 [INFO ]  datasets built!
+2024-04-26 01:39:03 [INFO ]  MLP( 
+2024-04-26 01:39:03 [INFO ]    (output_layer): Linear(in_features=300, out_features=2, bias=True)
+2024-04-26 01:39:03 [INFO ]    (AF): Tanh()
+2024-04-26 01:39:03 [INFO ]    (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:03 [INFO ]    (hidden_layers): ModuleList(
+2024-04-26 01:39:03 [INFO ]      (0): Linear(in_features=768, out_features=300, bias=True)
+2024-04-26 01:39:03 [INFO ]      (1): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:03 [INFO ]      (2): Tanh()
+2024-04-26 01:39:03 [INFO ]      (3): Linear(in_features=300, out_features=300, bias=True)
+2024-04-26 01:39:03 [INFO ]      (4): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:03 [INFO ]      (5): Tanh()
+2024-04-26 01:39:03 [INFO ]    )
+2024-04-26 01:39:03 [INFO ]    (criterion): CrossEntropyLoss()
+2024-04-26 01:39:03 [INFO ]  )
+2024-04-26 01:39:03 [INFO ]  Total number of parameters: 321602 
+
+2024-04-26 01:39:04 [INFO ]  BERTClassifier( 
+2024-04-26 01:39:04 [INFO ]    (bert): BertModel(
+2024-04-26 01:39:04 [INFO ]      (embeddings): BertEmbeddings(
+2024-04-26 01:39:04 [INFO ]        (word_embeddings): Embedding(28996, 768, padding_idx=0)
+2024-04-26 01:39:04 [INFO ]        (position_embeddings): Embedding(512, 768)
+2024-04-26 01:39:04 [INFO ]        (token_type_embeddings): Embedding(2, 768)
+2024-04-26 01:39:04 [INFO ]        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]        (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]      )
+2024-04-26 01:39:04 [INFO ]      (encoder): BertEncoder(
+2024-04-26 01:39:04 [INFO ]        (layer): ModuleList(
+2024-04-26 01:39:04 [INFO ]          (0): BertLayer(
+2024-04-26 01:39:04 [INFO ]            (attention): BertAttention(
+2024-04-26 01:39:04 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:39:04 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:39:04 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:39:04 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (output): BertOutput(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]          )
+2024-04-26 01:39:04 [INFO ]          (1): BertLayer(
+2024-04-26 01:39:04 [INFO ]            (attention): BertAttention(
+2024-04-26 01:39:04 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:39:04 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:39:04 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:39:04 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (output): BertOutput(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]          )
+2024-04-26 01:39:04 [INFO ]          (2): BertLayer(
+2024-04-26 01:39:04 [INFO ]            (attention): BertAttention(
+2024-04-26 01:39:04 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:39:04 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:39:04 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:39:04 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (output): BertOutput(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]          )
+2024-04-26 01:39:04 [INFO ]          (3): BertLayer(
+2024-04-26 01:39:04 [INFO ]            (attention): BertAttention(
+2024-04-26 01:39:04 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:39:04 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:39:04 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:39:04 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (output): BertOutput(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]          )
+2024-04-26 01:39:04 [INFO ]          (4): BertLayer(
+2024-04-26 01:39:04 [INFO ]            (attention): BertAttention(
+2024-04-26 01:39:04 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:39:04 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:39:04 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:39:04 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (output): BertOutput(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]          )
+2024-04-26 01:39:04 [INFO ]          (5): BertLayer(
+2024-04-26 01:39:04 [INFO ]            (attention): BertAttention(
+2024-04-26 01:39:04 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:39:04 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:39:04 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:39:04 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (output): BertOutput(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]          )
+2024-04-26 01:39:04 [INFO ]          (6): BertLayer(
+2024-04-26 01:39:04 [INFO ]            (attention): BertAttention(
+2024-04-26 01:39:04 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:39:04 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:39:04 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:39:04 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (output): BertOutput(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]          )
+2024-04-26 01:39:04 [INFO ]          (7): BertLayer(
+2024-04-26 01:39:04 [INFO ]            (attention): BertAttention(
+2024-04-26 01:39:04 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:39:04 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:39:04 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:39:04 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (output): BertOutput(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]          )
+2024-04-26 01:39:04 [INFO ]          (8): BertLayer(
+2024-04-26 01:39:04 [INFO ]            (attention): BertAttention(
+2024-04-26 01:39:04 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:39:04 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:39:04 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:39:04 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (output): BertOutput(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]          )
+2024-04-26 01:39:04 [INFO ]          (9): BertLayer(
+2024-04-26 01:39:04 [INFO ]            (attention): BertAttention(
+2024-04-26 01:39:04 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:39:04 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:39:04 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:39:04 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (output): BertOutput(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]          )
+2024-04-26 01:39:04 [INFO ]          (10): BertLayer(
+2024-04-26 01:39:04 [INFO ]            (attention): BertAttention(
+2024-04-26 01:39:04 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:39:04 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:39:04 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:39:04 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (output): BertOutput(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]          )
+2024-04-26 01:39:04 [INFO ]          (11): BertLayer(
+2024-04-26 01:39:04 [INFO ]            (attention): BertAttention(
+2024-04-26 01:39:04 [INFO ]              (self): BertSelfAttention(
+2024-04-26 01:39:04 [INFO ]                (query): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (key): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (value): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]              (output): BertSelfOutput(
+2024-04-26 01:39:04 [INFO ]                (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]                (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]              )
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (intermediate): BertIntermediate(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=768, out_features=3072, bias=True)
+2024-04-26 01:39:04 [INFO ]              (intermediate_act_fn): GELUActivation()
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]            (output): BertOutput(
+2024-04-26 01:39:04 [INFO ]              (dense): Linear(in_features=3072, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+2024-04-26 01:39:04 [INFO ]              (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]            )
+2024-04-26 01:39:04 [INFO ]          )
+2024-04-26 01:39:04 [INFO ]        )
+2024-04-26 01:39:04 [INFO ]      )
+2024-04-26 01:39:04 [INFO ]      (pooler): BertPooler(
+2024-04-26 01:39:04 [INFO ]        (dense): Linear(in_features=768, out_features=768, bias=True)
+2024-04-26 01:39:04 [INFO ]        (activation): Tanh()
+2024-04-26 01:39:04 [INFO ]      )
+2024-04-26 01:39:04 [INFO ]    )
+2024-04-26 01:39:04 [INFO ]    (classifier): MLP(
+2024-04-26 01:39:04 [INFO ]      (output_layer): Linear(in_features=300, out_features=2, bias=True)
+2024-04-26 01:39:04 [INFO ]      (AF): Tanh()
+2024-04-26 01:39:04 [INFO ]      (dropout): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]      (hidden_layers): ModuleList(
+2024-04-26 01:39:04 [INFO ]        (0): Linear(in_features=768, out_features=300, bias=True)
+2024-04-26 01:39:04 [INFO ]        (1): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]        (2): Tanh()
+2024-04-26 01:39:04 [INFO ]        (3): Linear(in_features=300, out_features=300, bias=True)
+2024-04-26 01:39:04 [INFO ]        (4): Dropout(p=0.1, inplace=False)
+2024-04-26 01:39:04 [INFO ]        (5): Tanh()
+2024-04-26 01:39:04 [INFO ]      )
+2024-04-26 01:39:04 [INFO ]      (criterion): CrossEntropyLoss()
+2024-04-26 01:39:04 [INFO ]    )
+2024-04-26 01:39:04 [INFO ]    (criterion): CrossEntropyLoss()
+2024-04-26 01:39:04 [INFO ]  )
+2024-04-26 01:39:04 [INFO ]  Total number of parameters: 108631874 
+
+Number of trainable parameters: 108310272
+2024-04-26 01:39:06 [INFO ]  Evaluating model...
+  0%|          | 0/141 [00:00<?, ?it/s]  1%|▏         | 2/141 [00:00<00:10, 12.67it/s]  3%|▎         | 4/141 [00:00<00:10, 13.49it/s]  4%|▍         | 6/141 [00:00<00:09, 13.65it/s]  6%|▌         | 8/141 [00:00<00:09, 14.02it/s]  7%|▋         | 10/141 [00:00<00:09, 14.22it/s]  9%|▊         | 12/141 [00:00<00:08, 14.35it/s] 10%|▉         | 14/141 [00:00<00:08, 14.43it/s] 11%|█▏        | 16/141 [00:01<00:08, 14.48it/s] 13%|█▎        | 18/141 [00:01<00:08, 14.54it/s] 14%|█▍        | 20/141 [00:01<00:08, 14.55it/s] 16%|█▌        | 22/141 [00:01<00:08, 14.54it/s] 17%|█▋        | 24/141 [00:01<00:08, 14.54it/s] 18%|█▊        | 26/141 [00:01<00:07, 14.54it/s] 20%|█▉        | 28/141 [00:01<00:07, 14.57it/s] 21%|██▏       | 30/141 [00:02<00:07, 14.55it/s] 23%|██▎       | 32/141 [00:02<00:07, 14.52it/s] 24%|██▍       | 34/141 [00:02<00:07, 14.50it/s] 26%|██▌       | 36/141 [00:02<00:07, 14.52it/s] 27%|██▋       | 38/141 [00:02<00:07, 14.51it/s] 28%|██▊       | 40/141 [00:02<00:06, 14.49it/s] 30%|██▉       | 42/141 [00:02<00:06, 14.47it/s] 31%|███       | 44/141 [00:03<00:06, 14.46it/s] 33%|███▎      | 46/141 [00:03<00:06, 14.49it/s] 34%|███▍      | 48/141 [00:03<00:06, 14.50it/s] 35%|███▌      | 50/141 [00:03<00:06, 14.49it/s] 37%|███▋      | 52/141 [00:03<00:06, 14.50it/s] 38%|███▊      | 54/141 [00:03<00:06, 14.49it/s] 40%|███▉      | 56/141 [00:03<00:05, 14.49it/s] 41%|████      | 58/141 [00:04<00:05, 14.47it/s] 43%|████▎     | 60/141 [00:04<00:05, 14.44it/s] 44%|████▍     | 62/141 [00:04<00:05, 14.46it/s] 45%|████▌     | 64/141 [00:04<00:05, 14.49it/s] 47%|████▋     | 66/141 [00:04<00:05, 14.49it/s] 48%|████▊     | 68/141 [00:04<00:05, 14.48it/s] 50%|████▉     | 70/141 [00:04<00:04, 14.46it/s] 51%|█████     | 72/141 [00:04<00:04, 14.49it/s] 52%|█████▏    | 74/141 [00:05<00:04, 14.50it/s] 54%|█████▍    | 76/141 [00:05<00:04, 14.52it/s] 55%|█████▌    | 78/141 [00:05<00:04, 14.50it/s] 57%|█████▋    | 80/141 [00:05<00:04, 14.49it/s] 58%|█████▊    | 82/141 [00:05<00:04, 14.50it/s] 60%|█████▉    | 84/141 [00:05<00:03, 14.51it/s] 61%|██████    | 86/141 [00:05<00:03, 14.50it/s] 62%|██████▏   | 88/141 [00:06<00:03, 14.49it/s] 64%|██████▍   | 90/141 [00:06<00:03, 14.48it/s] 65%|██████▌   | 92/141 [00:06<00:03, 14.52it/s] 67%|██████▋   | 94/141 [00:06<00:03, 14.53it/s] 68%|██████▊   | 96/141 [00:06<00:03, 14.51it/s] 70%|██████▉   | 98/141 [00:06<00:02, 14.48it/s] 71%|███████   | 100/141 [00:06<00:02, 14.45it/s] 72%|███████▏  | 102/141 [00:07<00:02, 14.44it/s] 74%|███████▍  | 104/141 [00:07<00:02, 14.44it/s] 75%|███████▌  | 106/141 [00:07<00:02, 14.42it/s] 77%|███████▋  | 108/141 [00:07<00:02, 14.44it/s] 78%|███████▊  | 110/141 [00:07<00:02, 14.44it/s] 79%|███████▉  | 112/141 [00:07<00:02, 14.46it/s] 81%|████████  | 114/141 [00:07<00:01, 14.49it/s] 82%|████████▏ | 116/141 [00:08<00:01, 14.47it/s] 84%|████████▎ | 118/141 [00:08<00:01, 14.51it/s] 85%|████████▌ | 120/141 [00:08<00:01, 14.50it/s] 87%|████████▋ | 122/141 [00:08<00:01, 14.47it/s] 88%|████████▊ | 124/141 [00:08<00:01, 14.45it/s] 89%|████████▉ | 126/141 [00:08<00:01, 14.44it/s] 91%|█████████ | 128/141 [00:08<00:00, 14.46it/s] 92%|█████████▏| 130/141 [00:08<00:00, 14.49it/s] 94%|█████████▎| 132/141 [00:09<00:00, 14.50it/s] 95%|█████████▌| 134/141 [00:09<00:00, 14.52it/s] 96%|█████████▋| 136/141 [00:09<00:00, 14.54it/s] 98%|█████████▊| 138/141 [00:09<00:00, 14.52it/s] 99%|█████████▉| 140/141 [00:09<00:00, 14.53it/s]100%|██████████| 141/141 [00:09<00:00, 14.46it/s]
+  0%|          | 0/158 [00:00<?, ?it/s]  1%|▏         | 2/158 [00:00<00:10, 14.61it/s]  3%|▎         | 4/158 [00:00<00:10, 14.52it/s]  4%|▍         | 6/158 [00:00<00:10, 14.55it/s]  5%|▌         | 8/158 [00:00<00:10, 14.55it/s]  6%|▋         | 10/158 [00:00<00:10, 14.52it/s]  8%|▊         | 12/158 [00:00<00:10, 14.51it/s]  9%|▉         | 14/158 [00:00<00:09, 14.50it/s] 10%|█         | 16/158 [00:01<00:09, 14.49it/s] 11%|█▏        | 18/158 [00:01<00:09, 14.50it/s] 13%|█▎        | 20/158 [00:01<00:09, 14.50it/s] 14%|█▍        | 22/158 [00:01<00:09, 14.52it/s] 15%|█▌        | 24/158 [00:01<00:09, 14.53it/s] 16%|█▋        | 26/158 [00:01<00:09, 14.53it/s] 18%|█▊        | 28/158 [00:01<00:08, 14.53it/s] 19%|█▉        | 30/158 [00:02<00:08, 14.50it/s] 20%|██        | 32/158 [00:02<00:08, 14.49it/s] 22%|██▏       | 34/158 [00:02<00:08, 14.49it/s] 23%|██▎       | 36/158 [00:02<00:08, 14.51it/s] 24%|██▍       | 38/158 [00:02<00:08, 14.51it/s] 25%|██▌       | 40/158 [00:02<00:08, 14.51it/s] 27%|██▋       | 42/158 [00:02<00:08, 14.47it/s] 28%|██▊       | 44/158 [00:03<00:07, 14.45it/s] 29%|██▉       | 46/158 [00:03<00:07, 14.46it/s] 30%|███       | 48/158 [00:03<00:07, 14.46it/s] 32%|███▏      | 50/158 [00:03<00:07, 14.49it/s] 33%|███▎      | 52/158 [00:03<00:07, 14.48it/s] 34%|███▍      | 54/158 [00:03<00:07, 14.46it/s] 35%|███▌      | 56/158 [00:03<00:07, 14.45it/s] 37%|███▋      | 58/158 [00:04<00:06, 14.48it/s] 38%|███▊      | 60/158 [00:04<00:06, 14.49it/s] 39%|███▉      | 62/158 [00:04<00:06, 14.52it/s] 41%|████      | 64/158 [00:04<00:06, 14.52it/s] 42%|████▏     | 66/158 [00:04<00:06, 14.49it/s] 43%|████▎     | 68/158 [00:04<00:06, 14.46it/s] 44%|████▍     | 70/158 [00:04<00:06, 14.49it/s] 46%|████▌     | 72/158 [00:04<00:05, 14.48it/s] 47%|████▋     | 74/158 [00:05<00:05, 14.49it/s] 48%|████▊     | 76/158 [00:05<00:05, 14.45it/s] 49%|████▉     | 78/158 [00:05<00:05, 14.43it/s] 51%|█████     | 80/158 [00:05<00:05, 14.42it/s] 52%|█████▏    | 82/158 [00:05<00:05, 14.39it/s] 53%|█████▎    | 84/158 [00:05<00:05, 14.45it/s] 54%|█████▍    | 86/158 [00:05<00:04, 14.44it/s] 56%|█████▌    | 88/158 [00:06<00:04, 14.43it/s] 57%|█████▋    | 90/158 [00:06<00:04, 14.44it/s] 58%|█████▊    | 92/158 [00:06<00:04, 14.46it/s] 59%|█████▉    | 94/158 [00:06<00:04, 14.43it/s] 61%|██████    | 96/158 [00:06<00:04, 14.42it/s] 62%|██████▏   | 98/158 [00:06<00:04, 14.44it/s] 63%|██████▎   | 100/158 [00:06<00:04, 14.44it/s] 65%|██████▍   | 102/158 [00:07<00:03, 14.45it/s] 66%|██████▌   | 104/158 [00:07<00:03, 14.49it/s] 67%|██████▋   | 106/158 [00:07<00:03, 14.49it/s] 68%|██████▊   | 108/158 [00:07<00:03, 14.50it/s] 70%|██████▉   | 110/158 [00:07<00:03, 14.51it/s] 71%|███████   | 112/158 [00:07<00:03, 14.49it/s] 72%|███████▏  | 114/158 [00:07<00:03, 14.51it/s] 73%|███████▎  | 116/158 [00:08<00:02, 14.53it/s] 75%|███████▍  | 118/158 [00:08<00:02, 14.53it/s] 76%|███████▌  | 120/158 [00:08<00:02, 14.52it/s] 77%|███████▋  | 122/158 [00:08<00:02, 14.50it/s] 78%|███████▊  | 124/158 [00:08<00:02, 14.50it/s] 80%|███████▉  | 126/158 [00:08<00:02, 14.51it/s] 81%|████████  | 128/158 [00:08<00:02, 14.50it/s] 82%|████████▏ | 130/158 [00:08<00:01, 14.48it/s] 84%|████████▎ | 132/158 [00:09<00:01, 14.48it/s] 85%|████████▍ | 134/158 [00:09<00:01, 14.50it/s] 86%|████████▌ | 136/158 [00:09<00:01, 14.46it/s] 87%|████████▋ | 138/158 [00:09<00:01, 14.42it/s] 89%|████████▊ | 140/158 [00:09<00:01, 14.40it/s] 90%|████████▉ | 142/158 [00:09<00:01, 14.40it/s] 91%|█████████ | 144/158 [00:09<00:00, 14.42it/s] 92%|█████████▏| 146/158 [00:10<00:00, 14.44it/s] 94%|█████████▎| 148/158 [00:10<00:00, 14.45it/s] 95%|█████████▍| 150/158 [00:10<00:00, 14.48it/s] 96%|█████████▌| 152/158 [00:10<00:00, 14.44it/s] 97%|█████████▋| 154/158 [00:10<00:00, 14.44it/s] 99%|█████████▊| 156/158 [00:10<00:00, 14.44it/s]100%|██████████| 158/158 [00:10<00:00, 14.54it/s]
+2024-04-26 01:39:26 [INFO ]  Validation accuracy: 83.00	macro_fscore: 67.93	micro_fscore: 83.00	TPR_GAP: 5.86	FPR_GAP: 5.86	PPR_GAP: 2.31	
+2024-04-26 01:39:26 [INFO ]  Test accuracy: 89.45	macro_fscore: 86.68	micro_fscore: 89.45	TPR_GAP: 5.27	FPR_GAP: 5.27	PPR_GAP: 10.52	
+2024-04-26 01:39:26 [INFO ]  Finished!
