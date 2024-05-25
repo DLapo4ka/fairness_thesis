@@ -1,0 +1,237 @@
+{\rtf1\ansi\ansicpg1251\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue0;\red0\green0\blue0;
+\red33\green255\blue6;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\csgray\c0;\csgray\c0\c0;
+\cssrgb\c0\c97680\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf2 Find best accuracy model by tuning hyperparameters\
+
+\f1\b0 1. Base script, no protected attribute (
+\f2\fs22 \CocoaLigature0 slurm-1932939.out
+\f1\fs24 \CocoaLigature1 ): \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf2 \CocoaLigature0 Validation accuracy: 81.27 macro_fscore: 68.26 micro_fscore: 81.27 TPR_GAP: 1.14 FPR_GAP: 1.14 PPR_GAP: 1.43\
+Test accuracy: 89.65	macro_fscore: 86.27 micro_fscore: 89.65 TPR_GAP: 1.61 FPR_GAP: 1.61 PPR_GAP: 3.49
+\f1\fs24 \cf2 \CocoaLigature1 \
+2. Base script, age protected attribute (
+\f2\fs22 \cf2 \CocoaLigature0 slurm-1932982.out
+\f1\fs24 \cf2 \CocoaLigature1 ):\
+
+\f2\fs22 \cf2 \CocoaLigature0 Validation accuracy: 81.27 macro_fscore: 68.26 micro_fscore: 81.27 TPR_GAP: 3.50 FPR_GAP: 3.50 PPR_GAP: 0.89\
+Test accuracy: 89.65	macro_fscore: 86.27 micro_fscore: 89.65 TPR_GAP: 4.48 FPR_GAP: 4.48 PPR_GAP: 10.11\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf2 \CocoaLigature1 3. Base script + lr=1e-02, age protected attribute (
+\f2\fs22 \cf2 \CocoaLigature0 slurm-1933018.out
+\f1\fs24 \cf2 \CocoaLigature1 ): \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf2 \CocoaLigature0 Validation accuracy: 80.96 macro_fscore: 44.74     micro_fscore: 80.96     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00\
+Test accuracy: 26.03	macro_fscore: 20.66     micro_fscore: 26.03     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf2 \CocoaLigature1 4. Base script + lr=1e-05, age protected attribute (
+\f2\fs22 \cf2 \CocoaLigature0 slurm-1933301.out
+\f1\fs24 \cf2 \CocoaLigature1 ):\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf2 \CocoaLigature0 Validation accuracy: 80.74 macro_fscore: 65.89     micro_fscore: 80.74     TPR_GAP: 2.78   FPR_GAP: 2.78   PPR_GAP: 0.54\
+Test accuracy: 87.48	macro_fscore: 84.06     micro_fscore: 87.48     TPR_GAP: 4.98   FPR_GAP: 4.98   PPR_GAP: 10.59\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf2 \CocoaLigature1 5. Base script + lr=1e-07, age protected attribute (
+\f2\fs22 \cf2 \CocoaLigature0 slurm-1933316.out
+\f1\fs24 \cf2 \CocoaLigature1 ):
+\f2\fs22 \cf2 \CocoaLigature0 \
+Validation accuracy: 81.16 macro_fscore: 66.59     micro_fscore: 81.16     TPR_GAP: 4.11   FPR_GAP: 4.11   PPR_GAP: 0.82\
+Test accuracy: 89.45	macro_fscore: 86.00     micro_fscore: 89.45     TPR_GAP: 4.85   FPR_GAP: 4.85   PPR_GAP: 10.56\
+
+\f1\fs24 \cf2 \CocoaLigature1 6. Base script + dropout=0.05, age protected attribute (
+\f2\fs22 \cf2 \CocoaLigature0 slurm-1933348.out
+\f1\fs24 \cf2 \CocoaLigature1 ):\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf2 \CocoaLigature0 Validation accuracy: 81.12 macro_fscore: 68.23     micro_fscore: 81.12     TPR_GAP: 3.22   FPR_GAP: 3.22   PPR_GAP: 0.69\
+Test accuracy: 89.63	macro_fscore: 86.24     micro_fscore: 89.63     TPR_GAP: 4.21   FPR_GAP: 4.21   PPR_GAP: 9.91\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf2 \CocoaLigature1 7. Base script + dropout=0.08, age protected attribute (
+\f2\fs22 \cf2 \CocoaLigature0 slurm-1933350.out
+\f1\fs24 \cf2 \CocoaLigature1 ):\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf2 \CocoaLigature0 Validation accuracy: 81.52 macro_fscore: 68.38     micro_fscore: 81.52     TPR_GAP: 3.43   FPR_GAP: 3.43   PPR_GAP: 0.88\
+Test accuracy: 89.63	macro_fscore: 86.27     micro_fscore: 89.63     TPR_GAP: 4.35 \cf3   FPR_GAP: 4.35   PPR_GAP: 10.08\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\
+
+\f0\b With for loop (slurm\cf2 \cb4 -
+\f3\fs22 \CocoaLigature0 1939445.out
+\f0\fs24 \CocoaLigature1 ):\cf0 \cb1 \
+
+\f1\b0 1. bs = 16, dp = 0, wd = 0, lr = 0.001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 80.96 macro_fscore: 44.74     micro_fscore: 80.96     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00\
+Test accuracy: 26.03       macro_fscore: 20.66     micro_fscore: 26.03     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00
+\f1\fs24 \cf0 \CocoaLigature1 \
+2. bs = 16, dp = 0, wd = 0, lr = 0.0001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 80.96 macro_fscore: 44.74     micro_fscore: 80.96     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00\
+Test accuracy: 26.03	macro_fscore: 20.66     micro_fscore: 26.03     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00
+\f1\fs24 \cf0 \CocoaLigature1 \
+3. bs = 16, dp = 0, wd = 0, lr = 0.00001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 80.16 macro_fscore: 68.21     micro_fscore: 80.16     TPR_GAP: 1.18   FPR_GAP: 1.18   PPR_GAP: 0.46\
+Test accuracy: 87.88	macro_fscore: 84.22     micro_fscore: 87.88     TPR_GAP: 4.45   FPR_GAP: 4.45   PPR_GAP: 9.18
+\f1\fs24 \cf0 \CocoaLigature1 \
+4. bs = 16, dp = 0, wd = 0, lr = 0.000001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 80.32 macro_fscore: 69.86     micro_fscore: 80.32     TPR_GAP: 1.26   FPR_GAP: 1.26   PPR_GAP: 0.09\
+Test accuracy: 89.43	macro_fscore: 85.73     micro_fscore: 89.43     TPR_GAP: 4.37   FPR_GAP: 4.37   PPR_GAP: 9.00
+\f1\fs24 \cf0 \CocoaLigature1 \
+5. bs = 16, dp = 0, wd = 0.01, lr = 0.001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 80.96 macro_fscore: 44.74     micro_fscore: 80.96     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00\
+Test accuracy: 26.03	macro_fscore: 20.66     micro_fscore: 26.03     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00
+\f1\fs24 \cf0 \CocoaLigature1 \
+6. bs = 16, dp = 0, wd = 0.01, lr = 0.0001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: \cf2 81.09\cf3  macro_fscore: 46.46     micro_fscore: 81.09     TPR_GAP: 0.15   FPR_GAP: 0.15   PPR_GAP: 0.00\
+Test accuracy: 66.95	macro_fscore: 65.68     micro_fscore: 66.95     TPR_GAP: 5.75   FPR_GAP: 5.75   PPR_GAP: 10.39
+\f1\fs24 \cf0 \CocoaLigature1 \
+7. bs = 16, dp = 0, wd = 0.01, lr = 0.00001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: \cf2 81.54\cf3  macro_fscore: 66.43     micro_fscore: 81.54     TPR_GAP: 2.25   FPR_GAP: 2.25   PPR_GAP: 0.52\
+Test accuracy: 90.56	macro_fscore: 87.66     micro_fscore: 90.56     TPR_GAP: 4.23   FPR_GAP: 4.23   PPR_GAP: 10.58
+\f1\fs24 \cf0 \CocoaLigature1 \
+8. bs = 16, dp = 0, wd = 0.01, lr = 0.000001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: \cf2 82.20\cf3  macro_fscore: 67.85     micro_fscore: 82.20     TPR_GAP: 3.86   FPR_GAP: 3.86   PPR_GAP: 0.98\
+Test accuracy: 90.80	macro_fscore: 88.09     micro_fscore: 90.80     TPR_GAP: 4.39   FPR_GAP: 4.39   PPR_GAP: 10.48
+\f1\fs24 \cf0 \CocoaLigature1 \
+9. bs = 16, dp = 0.1, wd = 0, lr = 0.001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 80.96 macro_fscore: 44.74     micro_fscore: 80.96     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00\
+Test accuracy: 26.03	macro_fscore: 20.66     micro_fscore: 26.03     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00
+\f1\fs24 \cf0 \CocoaLigature1 \
+10. bs = 16, dp = 0.1, wd = 0, lr = 0.0001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 80.96 macro_fscore: 44.74     micro_fscore: 80.96     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00\
+Test accuracy: 26.03	macro_fscore: 20.66     micro_fscore: 26.03     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00
+\f1\fs24 \cf0 \CocoaLigature1 \
+11. bs = 16, dp = 0.1, wd = 0, lr = 0.00001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 80.08 macro_fscore: 68.26     micro_fscore: 80.08     TPR_GAP: 2.86   FPR_GAP: 2.86   PPR_GAP: 0.79\
+Test accuracy: 87.20	macro_fscore: 83.55     micro_fscore: 87.20     TPR_GAP: 4.08   FPR_GAP: 4.08   PPR_GAP: 8.81
+\f1\fs24 \cf0 \CocoaLigature1 \
+12. bs = 16, dp = 0.1, wd = 0, lr = 0.000001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 80.96 macro_fscore: 70.01     micro_fscore: 80.96     TPR_GAP: 1.60   FPR_GAP: 1.60   PPR_GAP: 0.25\
+Test accuracy: 89.51	macro_fscore: 85.99     micro_fscore: 89.51     TPR_GAP: 4.39   FPR_GAP: 4.39   PPR_GAP: 9.34
+\f1\fs24 \cf0 \CocoaLigature1 \
+13. bs = 16, dp = 0.1, wd = 0.01, lr = 0.001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 80.96 macro_fscore: 44.74     micro_fscore: 80.96     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00\
+Test accuracy: 26.03	macro_fscore: 20.66     micro_fscore: 26.03     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00
+\f1\fs24 \cf0 \CocoaLigature1 \
+14. bs = 16, dp = 0.1, wd = 0.01, lr = 0.0001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 80.74 macro_fscore: 60.67     micro_fscore: 80.74     TPR_GAP: 2.13   FPR_GAP: 2.13   PPR_GAP: 0.75\
+Test accuracy: 87.70	macro_fscore: 84.92     micro_fscore: 87.70     TPR_GAP: 4.62   FPR_GAP: 4.62   PPR_GAP: 11.10
+\f1\fs24 \cf0 \CocoaLigature1 \
+15. bs = 16, dp = 0.1, wd = 0.01, lr = 0.00001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 81.34 macro_fscore: 67.10     micro_fscore: 81.34     TPR_GAP: 2.76   FPR_GAP: 2.76   PPR_GAP: 1.14\
+Test accuracy: 90.26	macro_fscore: 87.22     micro_fscore: 90.26     TPR_GAP: 4.57   FPR_GAP: 4.57   PPR_GAP: 10.58
+\f1\fs24 \cf0 \CocoaLigature1 \
+\cf5 16. bs = 16, dp = 0.1, wd = 0.01, lr = 0.000001\cf0 \
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: \cf5 82.45\cf3  macro_fscore: 68.17     micro_fscore: 82.45     TPR_GAP: 3.38   FPR_GAP: 3.38   PPR_GAP: 0.97\
+Test accuracy: 90.62	macro_fscore: 87.86     micro_fscore: 90.62     TPR_GAP: 4.69   FPR_GAP: 4.69   PPR_GAP: 10.72
+\f1\fs24 \cf0 \CocoaLigature1 \
+17. bs = 32, dp = 0, wd = 0, lr = 0.001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 80.96 macro_fscore: 44.74     micro_fscore: 80.96     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00\
+Test accuracy: 26.03	macro_fscore: 20.66     micro_fscore: 26.03     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00
+\f1\fs24 \cf0 \CocoaLigature1 \
+18. bs = 32, dp = 0, wd = 0, lr = 0.0001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 80.96 macro_fscore: 44.74     micro_fscore: 80.96     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00\
+Test accuracy: 26.03	macro_fscore: 20.66     micro_fscore: 26.03     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00
+\f1\fs24 \cf0 \CocoaLigature1 \
+19. bs = 32, dp = 0, wd = 0, lr = 0.00001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 79.45 macro_fscore: 68.67     micro_fscore: 79.45     TPR_GAP: 2.89   FPR_GAP: 2.89   PPR_GAP: 0.98\
+Test accuracy: 89.13	macro_fscore: 85.32     micro_fscore: 89.13     TPR_GAP: 4.60   FPR_GAP: 4.60   PPR_GAP: 9.27
+\f1\fs24 \cf0 \CocoaLigature1 \
+20. bs = 32, dp = 0, wd = 0, lr = 0.000001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 81.49 macro_fscore: 69.45     micro_fscore: 81.49     TPR_GAP: 2.07   FPR_GAP: 2.07   PPR_GAP: 0.74\
+Test accuracy: 89.90	macro_fscore: 86.65     micro_fscore: 89.90     TPR_GAP: 4.51   FPR_GAP: 4.51   PPR_GAP: 9.75
+\f1\fs24 \cf0 \CocoaLigature1 \
+21. bs = 32, dp = 0, wd = 0.01, lr = 0.001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 80.96 macro_fscore: 44.74     micro_fscore: 80.96     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00\
+Test accuracy: 26.03	macro_fscore: 20.66     micro_fscore: 26.03     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00
+\f1\fs24 \cf0 \CocoaLigature1 \
+22. bs = 32, dp = 0, wd = 0.01, lr = 0.0001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 80.45 macro_fscore: 62.09     micro_fscore: 80.45     TPR_GAP: 2.48   FPR_GAP: 2.48   PPR_GAP: 0.04\
+Test accuracy: 88.06	macro_fscore: 85.02     micro_fscore: 88.06     TPR_GAP: 3.83   FPR_GAP: 3.83   PPR_GAP: 10.22
+\f1\fs24 \cf0 \CocoaLigature1 \
+23. bs = 32, dp = 0, wd = 0.01, lr = 0.00001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 81.96 macro_fscore: 66.37     micro_fscore: 81.96     TPR_GAP: 2.42   FPR_GAP: 2.42   PPR_GAP: 1.42\
+Test accuracy: 91.32	macro_fscore: 88.71     micro_fscore: 91.32     TPR_GAP: 4.35   FPR_GAP: 4.35   PPR_GAP: 10.65
+\f1\fs24 \cf0 \CocoaLigature1 \
+24. bs = 32, dp = 0, wd = 0.01, lr = 0.000001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 82.29 macro_fscore: 68.28     micro_fscore: 82.29     TPR_GAP: 3.68   FPR_GAP: 3.68   PPR_GAP: 1.18\
+Test accuracy: 90.24	macro_fscore: 87.41     micro_fscore: 90.24     TPR_GAP: 4.83   FPR_GAP: 4.83   PPR_GAP: 10.38
+\f1\fs24 \cf0 \CocoaLigature1 \
+25. bs = 32, dp = 0.1, wd = 0, lr = 0.001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 80.96 macro_fscore: 44.74     micro_fscore: 80.96     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00\
+Test accuracy: 26.03	macro_fscore: 20.66     micro_fscore: 26.03     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00
+\f1\fs24 \cf0 \CocoaLigature1 \
+26. bs = 32, dp = 0.1, wd = 0, lr = 0.0001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 80.96 macro_fscore: 44.74     micro_fscore: 80.96     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00\
+Test accuracy: 26.03	macro_fscore: 20.66     micro_fscore: 26.03     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00
+\f1\fs24 \cf0 \CocoaLigature1 \
+27. bs = 32, dp = 0.1, wd = 0, lr = 0.00001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 77.79 macro_fscore: 68.31     micro_fscore: 77.79     TPR_GAP: 1.66   FPR_GAP: 1.66   PPR_GAP: 0.20\
+Test accuracy: 88.87	macro_fscore: 84.80     micro_fscore: 88.87     TPR_GAP: 4.62   FPR_GAP: 4.62   PPR_GAP: 8.59
+\f1\fs24 \cf0 \CocoaLigature1 \
+28. bs = 32, dp = 0.1, wd = 0, lr = 0.000001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 81.25 macro_fscore: 69.64     micro_fscore: 81.25     TPR_GAP: 1.80   FPR_GAP: 1.80   PPR_GAP: 0.34\
+Test accuracy: 90.02	macro_fscore: 86.70     micro_fscore: 90.02     TPR_GAP: 4.89   FPR_GAP: 4.89   PPR_GAP: 9.69
+\f1\fs24 \cf0 \CocoaLigature1 \
+29. bs = 32, dp = 0.1, wd = 0.01, lr = 0.001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 80.96 macro_fscore: 44.74     micro_fscore: 80.96     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00\
+Test accuracy: 26.03	macro_fscore: 20.66     micro_fscore: 26.03     TPR_GAP: 0.00   FPR_GAP: 0.00   PPR_GAP: 0.00
+\f1\fs24 \cf0 \CocoaLigature1 \
+30. bs = 32, dp = 0.1, wd = 0.01, lr = 0.0001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 80.10 macro_fscore: 63.19     micro_fscore: 80.10     TPR_GAP: 2.52   FPR_GAP: 2.52   PPR_GAP: 0.88\
+Test accuracy: 88.31	macro_fscore: 85.17     micro_fscore: 88.31     TPR_GAP: 4.61   FPR_GAP: 4.61   PPR_GAP: 11.00
+\f1\fs24 \cf0 \CocoaLigature1 \
+31. bs = 32, dp = 0.1, wd = 0.01, lr = 0.00001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 79.37 macro_fscore: 68.41     micro_fscore: 79.37     TPR_GAP: 2.18   FPR_GAP: 2.18   PPR_GAP: 0.34\
+Test accuracy: 88.69	macro_fscore: 85.13     micro_fscore: 88.69     TPR_GAP: 2.75   FPR_GAP: 2.75   PPR_GAP: 8.92
+\f1\fs24 \cf0 \CocoaLigature1 \
+32. bs = 32, dp = 0.1, wd = 0.01, lr = 0.000001\
+
+\f2\fs22 \cf3 \CocoaLigature0 Validation accuracy: 82.36 macro_fscore: 68.38     micro_fscore: 82.36     TPR_GAP: 3.27   FPR_GAP: 3.27   PPR_GAP: 1.02\
+Test accuracy: 90.32	macro_fscore: 87.44     micro_fscore: 90.32     TPR_GAP: 4.79   FPR_GAP: 4.79   PPR_GAP: 10.35}
